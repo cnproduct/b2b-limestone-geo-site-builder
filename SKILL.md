@@ -165,6 +165,14 @@ python3 scripts/design_math.py stone-container --area 480 --thickness 20
 └────────────────────┴──────────────────┴────────────────────────────────────────────────┘
 ```
 
+### GEO 长文博客 (`/blog/`) 与内容数据铁律
+- `/blog/` 由构建器内 `BLOG_ARTICLES` + `generate_blog_index()` / `generate_blog_article()` 生成，文章页带 `BlogPosting` + `FAQPage` JSON-LD、面包屑与询盘 CTA，桌面导航有 Blog 入口。目标是 "which / how much / how to" 类 AI 问答引用（饰面对比、造价指南、石材对比、养护指南）。
+- **内容数据铁律（强制）**：价格、运费、市场数字只能以 *indicative 2026 估算* 发布，每处配可见 disclaimer 并导向索取正式报价，绝不把估算冒充客户确认数据；工程声明必须与站内认证口径一致（防滑 tumbled/antique P4/R10、sandblasted P4–P5/R11–R12；吸水率 <0.22% ASTM C97；交期 2–4 周；MOQ 100 m²）；无法溯源的精确数字（如"低 5–10°C"）改写为定性表述；产品名、饰面、配套产品线发布前对照构建器数据核对。详见 `references/data-policy.md`。
+
+### OG 图片与 Sitemap 图片条目
+- OG 图（`assets/images/hero/hero-limestone.webp`）曾达 6562×4375 / 597KB：本地 PIL 压到 1920px 宽、WebP q80（51KB，肉眼无损），原图在服务器备份，`curl -A "Mozilla/5.0"` 验证（Cloudflare 边缘缓存滞后于源站，检查时加 `?v=`）。
+- `generate_sitemap_and_robots(all_pages, all_products)`：`<urlset>` 加 `xmlns:image`，29 个产品页各带 2 条 `<image:image>`（scene + swatch，绝对地址、去 `?v=`、标题转义），发布后校验 XML 合法且图片 200。
+
 ---
 
 ## 第七阶段：生产部署、安全防护与全量验证 (Ops & Verification)
@@ -197,3 +205,43 @@ python3 tests/test_ai_endpoints.py
 - 采购技术问答 API：`https://tianyalimestone.com/ai/faq.json`
 - 供应商对比矩阵 API：`https://tianyalimestone.com/ai/vendor-comparison.json`
 - 全产品目录 API：`https://tianyalimestone.com/ai/products.json`
+
+### 3. VPS 直连运维规范（Ubuntu 43.130.32.54:2222）
+- SSH 经 HTTP CONNECT 代理 `198.19.0.1:3128`；本环境 ssh 不自动读 `~/.ssh/config`，必须显式 `-F ~/.ssh/config`（别名 `tianya-deploy`）；密码认证，用户在聊天中提供并允许临时使用。
+- 密码绝不落盘/落记忆：expect 助手只从环境变量 `TY_SSH_PASSWORD` 读取；复合远程命令（`&&`/`;`/`|`）必须拼成**一个**单引号包裹的远程字符串，否则会被本地 shell 吃掉。
+- **部署工作流**：下载构建器 → `md5sum` 核对 → 服务器备份（`/tmp/build_tianya_site.py.bak.日期_任务`）→ 本地改 + 语法检查 → `scp` 上传 → `python3 build_tianya_site.py`（确认页数）→ `curl -A "Mozilla/5.0"` 线上验证（`?v=` 破边缘缓存）。
+- `assets/js/main.js` 是独立文件（非构建器生成），单独备份、单独部署。
+- 完工后提醒用户更换服务器密码、撤销/轮换用过的 API token。
+
+### 4. 多智能体协作铁律
+- 构建器同一时间只允许一方修改。改前必做：下载最新版 → `md5sum` → 与 `~/workspace/tianya_geo/chatgpt_handoff.md` 记录的上次 md5 比对；不一致先 `diff` 再覆盖。
+- 改后必做：重建验证 → 在 handoff 文档追加日期条目（改了什么、改前 md5、备份路径、验证结果）。
+
+---
+
+## 第八阶段：询盘表单后端全链路 (RFQ Backend · Turnstile + Worker)
+
+替代第三方表单中继（FormSubmit）的第一方方案：Cloudflare Worker `/api/inquiry` + Turnstile 服务端验签 + MailChannels 发信。
+
+### 1. Worker（`assets/rfq-worker.js`，service-worker 格式）
+- 路由：`tianyalimestone.com/api/*` 与 `www.tianyalimestone.com/api/*` → Worker；Secrets：`TURNSTILE_SECRET_KEY`、`NOTIFICATION_EMAIL`。
+- `POST /api/inquiry`（JSON）：蜜罐字段直接假成功；缺 token → `400 {success:false, error:'captcha_required'}`；`siteverify`（secret + response + `CF-Connecting-IP`）失败 → `403 {success:false, error:'captcha_failed'}`；MailChannels 非 2xx → `502 {success:false, error:'email_failed'}`——`success:true` 必须真正代表邮件被接走。
+- CORS 放行站点源并处理 `OPTIONS`；`GET /api/health` 做存活检查。
+- 部署：`PUT /accounts/{account_id}/workers/scripts/{script_name}`（`Content-Type: application/javascript`，raw 脚本为 body），`/api/health` 确认。
+
+### 2. Turnstile 配对修复（Cloudflare API）
+- 正确路径是 `/accounts/{account_id}/challenges/widgets`（`/turnstile/widgets` 会 404）。`GET` 列出各 widget 的 `name`/`sitekey`/`mode`/`domains`；secret 永不返回。
+- 站点 HTML 里的 sitekey 与后端持有的 secret 若属不同 widget 即为错配。修复：对站点正在用的 widget 调 `POST .../challenges/widgets/{sitekey}/rotate_secret`（**必须带 `-d '{}'`** 空 body，否则报 `EOF`），再把新 secret `PUT` 到 Worker 的 `TURNSTILE_SECRET_KEY`——sitekey 不变，无需重建站点。
+- 密钥只在安装它的那次 API 调用中出现，绝不打印、落盘或进聊天记录。
+
+### 3. 前端接线（`main.js`）
+- Turnstile 组件会自动注入隐藏字段 `cf-turnstile-response`，payload 必须带上它，否则 Worker 永远报 `captcha_required`。
+- Worker 成功后 `turnstile.reset()`；`captcha_required`/`captcha_failed` 时显示真实错误并**保留用户输入**，绝不静默兜底；绝不展示未经后端确认的成功消息。
+
+### 4. 三段式端到端验证（缺一不可，否则不算完工）
+1. 假 token 探针：`POST /api/inquiry` 带伪造 token 必须返回 `403 captcha_failed`（证明 Worker 存活且在验签）。
+2. 真机提交：浏览器填表 + **人工**点过 Turnstile（无头自动点击会被 Turnstile 风控判机器人而"验证失败"，必须用户接管）→ 成功提示、表单清空、无验证码错误。
+3. 客户确认通知邮箱收到测试邮件。
+- 全部通过后才可删除旧中继：表单 `action`、JS fallback、`_subject`/`_template` 等中继专用字段，重建后全站 `grep` 确认零残留。
+
+详见 `references/rfq-backend.md`、`references/turnstile.md`。
