@@ -1,0 +1,23 @@
+{
+  "name": "b2b-limestone-geo-site-builder",
+  "version": "1.0.0",
+  "description": "Fujian Tianya Cultural Stone Co., Ltd. (tianyalimestone.com) 全生命周期天然石灰石与建筑石材 B2B 出海独立站构建、文化双轨命名、ASTM/CE 严苛工程标准验证、1:1 国际对标与全链路 SEO / GEO 优化赋能 Skill。",
+  "author": "cnproduct",
+  "entrypoint": "SKILL.md",
+  "commands": {
+    "build": "python3 build_tianya_site.py",
+    "audit": "python3 scripts/validate_site.py",
+    "test": "python3 tests/test_ai_endpoints.py && python3 scripts/design_math.py self-test",
+    "container": "python3 scripts/design_math.py stone-container"
+  },
+  "tags": [
+    "b2b",
+    "natural-stone",
+    "limestone",
+    "architectural-pavers",
+    "geo-optimization",
+    "llms-txt",
+    "schema-org",
+    "seo"
+  ]
+}

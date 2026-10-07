@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" fill="none" class="tianya-brand-logo">
+  <!-- Minimalist Architectural Monogram Mark -->
+  <g transform="translate(4, 6)">
+    <rect x="0" y="0" width="34" height="34" rx="2" fill="#251700" />
+    <path d="M7 10 H27 M17 10 V26" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square"/>
+    <circle cx="17" cy="27" r="1.5" fill="#E9F551" />
+  </g>
+  <!-- Architectural Typography -->
+  <g transform="translate(48, 8)">
+    <text x="0" y="17" font-family="'Cinzel', 'Playfair Display', 'PPEiko', Georgia, serif" font-size="18" font-weight="700" letter-spacing="3.5" fill="#251700">TIANYA</text>
+    <text x="0" y="30" font-family="'Source Sans 3', 'AktivGrotesk', -apple-system, sans-serif" font-size="8.5" font-weight="600" letter-spacing="3.2" fill="#665D4D">LIMESTONE ARCHITECTURAL</text>
+  </g>
+</svg>

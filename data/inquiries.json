@@ -1,0 +1,47 @@
+[
+  {
+    "inquiry_id": "TYL-20261006-97CB",
+    "created_at": "2026-10-06 17:50:49 UTC",
+    "email": "architectural-studio@vancegroup.com.au",
+    "name": "Jonathan Vance",
+    "company": "Vance Architectural Studio Sydney",
+    "phone": "+61 2 9876 5432",
+    "product": "Qimeng Tumbled Limestone (启蒙)",
+    "project_area": "480 m²",
+    "sample_box": "Yes (Requested)",
+    "message": "Testing automated RFQ dispatch pipeline to info@tianyastone.com for Sydney harbor villa project.",
+    "source_page": "https://www.tianyalimestone.com/stone-flooring/limestone/tumbled/qimeng/",
+    "ip": "172.71.81.79",
+    "routed_to": "info@tianyastone.com"
+  },
+  {
+    "inquiry_id": "TYL-20261006-7D51",
+    "created_at": "2026-10-06 17:53:06 UTC",
+    "email": "elena.rostova@arch-design.eu",
+    "name": "Elena Rostova",
+    "company": "Bavaria Heritage Architecture",
+    "phone": "+49 89 1234567",
+    "product": "Qimeng",
+    "project_area": "320 m²",
+    "sample_box": "Yes (Requested)",
+    "message": "Need 20mm Qimeng Tumbled limestone pavers for Munich private estate.",
+    "source_page": "https://www.tianyalimestone.com/stone-flooring/limestone/tumbled/qimeng/",
+    "ip": "162.158.88.118",
+    "routed_to": "info@tianyastone.com"
+  },
+  {
+    "inquiry_id": "TYL-20261006-184A",
+    "created_at": "2026-10-06 17:53:30 UTC",
+    "email": "m.sterling@sterling-developments.co.uk",
+    "name": "Marcus Sterling",
+    "company": "Sterling Prime Developments London",
+    "phone": "+44 20 7946 0991",
+    "product": "General Contact Inquiry",
+    "project_area": "650 m²",
+    "sample_box": "Yes (Requested)",
+    "message": "Inquiry for mixed container of Antique Limestone + Flexible Stone Veneer to Felixstowe.",
+    "source_page": "https://www.tianyalimestone.com/contact-us/",
+    "ip": "172.70.142.197",
+    "routed_to": "info@tianyastone.com"
+  }
+]

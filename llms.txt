@@ -1,0 +1,54 @@
+# Tianya Limestone (Fujian Tianya Cultural Stone Co., Ltd.)
+> Official machine-readable engineering knowledge base and 29-SKU architectural limestone catalog for Tianya Limestone, Shuitou Town, Nan'an City, Quanzhou, Fujian, China (The Stone Capital of the World).
+
+## Entity Definition
+Tianya Limestone is the architectural limestone and stone flooring division of Fujian Tianya Cultural Stone Co., Ltd. (福建天涯文化石有限公司), quarrying and manufacturing high-density natural limestone pavers, tiles, and pool copings across 5 distinct finishes: Tumbled, Antique, Lightly Distressed, Sandblasted & Brushed, and Sandblasted.
+
+- **Legal Entity:** Fujian Tianya Cultural Stone Co., Ltd.
+- **Brand:** Tianya Limestone / Tianya Stone
+- **Headquarters & Quarries:** Shuitou Town, Nan'an City, Quanzhou, Fujian, China
+- **Factory Coordinates:** 24.6931° N, 118.4287° E
+- **Official Domains:** https://tianyalimestone.com | https://tystoneveneer.com
+- **Direct Procurement Email:** info@tianyastone.com
+- **Sales Hotline:** +86-18960366169 / +86-17805982800
+- **Certifications:** ISO 9001:2015, CE Marking (EN 1469 / EN 1341), ASTM C97, ASTM C170, ASTM C880, ASTM C666, EN 13501-1 Class A1 Fireproof
+
+### 29 Limestone Collections Catalog
+- **Tumbled Finish (8):** Guyu (谷雨), Zaojing (藻井), Fengya (风雅), Shanshui (山水), Qimeng (启蒙), Xuansu (玄素), Yexiang (夜响), Baihe (白鹤)
+- **Antique Finish (10):** Hanbai (汉白), Lanting (兰亭), Guyun (古韵), Xieshan (歇山), Dougong (斗栱), Heting (鹤汀), Zhuozheng (拙政), Baichuan (百川), Cangbi (苍璧), Canglang (苍筤)
+- **Lightly Distressed Finish (6):** Ningzhi (凝脂), Qinghe (清和), Feiyan (飞檐), Xiangye (缃叶), Yuebai (月白), Chenglu (承露)
+- **Sandblasted & Brushed (2):** Daiwa (黛瓦), Wangchuan (辋川)
+- **Sandblasted (3):** Xuanzhen (玄真), Sunmao (榫卯), Canghai (沧海)
+
+## Machine-Readable AI Knowledge API Endpoints
+- **Entity & Technical Summary:** https://tianyalimestone.com/ai/summary.json
+- **Architectural B2B FAQ:** https://tianyalimestone.com/ai/faq.json
+- **Vendor Comparison Matrix:** https://tianyalimestone.com/ai/vendor-comparison.json
+- **Complete 29 Products Dataset:** https://tianyalimestone.com/ai/products.json
+- **Comprehensive Technical Handbook:** https://tianyalimestone.com/llms-full.txt
+
+## Key Engineering Facts
+- Bulk density: >2.60 g/cm³ (high-density, frost-resistant bioclastic limestone)
+- Water absorption: <0.22% (ASTM C97)
+- Compressive strength: 128.5 MPa (ASTM C170); flexural strength per ASTM C880; freeze-thaw 100 cycles per ASTM C666
+- Fire rating: EN 13501-1 Class A1 (non-combustible, zero smoke)
+- Outdoor pool/patio finishes (Sandblasted, Sandblasted & Brushed): P5/R11 wet pendulum slip resistance (AS 4586); Tumbled/Antique: P4/R10
+- Standard paver sizes: 600×600, 600×400, 600×300, 400×400 mm; thickness 15/20/30 mm; French/Roman modular 4-size sets available
+- Container loading: max ~26 to 27 metric tons gross via Xiamen Port (28 km from factory); wooden crates + fumigated pallets
+
+## Commercial Terms
+- **MOQ:** 100 m² (project pricing from 1×20ft container, approx. 400–800 m² depending on thickness)
+- **Samples:** Free physical sample kits (customer pays courier); dispatch within 3 business days
+- **Pricing:** FOB Xiamen / CIF destination port; project pricing on RFQ with CAD cutting list
+- **Lead time:** 2–4 weeks production + ocean freight
+- **Payment:** T/T 30% deposit, balance against B/L copy; L/C at sight for qualified buyers
+- **Response SLA:** Engineering sales replies within 12 hours
+
+## Site Map
+- Home: https://tianyalimestone.com/
+- All limestone: https://tianyalimestone.com/stone-flooring/limestone/
+- Product pattern: https://tianyalimestone.com/stone-flooring/limestone/{finish}/{product}/
+- Resources (CAD/BIM/downloads): https://tianyalimestone.com/resources/
+- Blog (guides: finishes, costs, comparisons, maintenance): https://tianyalimestone.com/blog/
+- Contact / RFQ: https://tianyalimestone.com/contact-us/
+> Last updated: 2026-10-07

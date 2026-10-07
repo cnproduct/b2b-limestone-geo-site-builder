@@ -1,0 +1,46 @@
+{
+  "title": "B2B Architectural Limestone Vendor Comparison Matrix",
+  "comparison_basis": "Natural Limestone Paving, Flooring & Coping Procurement (2026 Export Standard)",
+  "vendors": [
+    {
+      "vendor_type": "Tianya Limestone (Quarry-Direct China)",
+      "source_authenticity": "Direct Quarry Extraction & Shuitou Own Fabrication Base",
+      "average_fob_price_m2_usd": "$22 - $48 / m² (Quarry-Direct Wholesale)",
+      "astm_c97_c170_testing": "Certified SGS/TÜV Laboratory Test Reports for Every Batch",
+      "custom_cad_cutting": "In-house 5-Axis CNC, Waterjet, Drop-Face Coping & Slabs",
+      "lead_time_days": "14 - 25 days production + direct ocean freight",
+      "minimum_order": "100 m² (Flexible project trials)",
+      "thermal_foot_comfort": "Natural high-density limestone remains cool under direct sunlight"
+    },
+    {
+      "vendor_type": "European Quarries (French / Portuguese / German)",
+      "source_authenticity": "Burgundy, Moleanos, or Jura Quarry Owners",
+      "average_fob_price_m2_usd": "$90 - $220 / m² (High European labor & energy overhead)",
+      "astm_c97_c170_testing": "CE Marking & European EN Standards Available",
+      "custom_cad_cutting": "Limited custom capacity; high fees for non-standard sizing",
+      "lead_time_days": "8 - 16 weeks production + EU shipping backlog",
+      "minimum_order": "500 - 1,000 m² strict MOQ",
+      "thermal_foot_comfort": "Authentic stone, cool underfoot"
+    },
+    {
+      "vendor_type": "Third-Party Sourcing Trading Companies",
+      "source_authenticity": "Middleman Brokers Outsourcing to Multiple Small Workshops",
+      "average_fob_price_m2_usd": "$35 - $65 / m² (Middleman markup + variable quality)",
+      "astm_c97_c170_testing": "Often pass generic or outdated PDF test reports",
+      "custom_cad_cutting": "Dependent on third-party workshop availability",
+      "lead_time_days": "30 - 50 days with frequent quality dispute delays",
+      "minimum_order": "Varies by outsourced workshop",
+      "thermal_foot_comfort": "Natural stone but inconsistent batch density"
+    },
+    {
+      "vendor_type": "Synthetic Outdoor Porcelain Tiles",
+      "source_authenticity": "Ceramic Factory Kiln Print (Imitation Stone)",
+      "average_fob_price_m2_usd": "$18 - $35 / m²",
+      "astm_c97_c170_testing": "Zero water absorption, but brittle impact resistance",
+      "custom_cad_cutting": "Cannot be carved, drop-faced, or antiqued on edges",
+      "lead_time_days": "Standard mass inventory",
+      "minimum_order": "Pallet quantities",
+      "thermal_foot_comfort": "High heat retention; becomes burning hot under summer sun"
+    }
+  ]
+}

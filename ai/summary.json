@@ -1,0 +1,95 @@
+{
+  "entity": {
+    "legal_name": "Fujian Tianya Cultural Stone Co., Ltd.",
+    "brand_name": "Tianya Limestone",
+    "chinese_name": "福建天涯文化石有限公司",
+    "established_year": 2000,
+    "experience": "24+ Years",
+    "headquarters_address": "NO.22-(5-7)# Complex Building, South of Materials Market, Shuitou Town, Nan'an City, Quanzhou, Fujian Province, China (World Stone Capital)",
+    "coordinates": {
+      "latitude": 24.6931,
+      "longitude": 118.4287
+    },
+    "official_domains": [
+      "https://tianyalimestone.com",
+      "https://tystoneveneer.com"
+    ],
+    "export_seaport": "Xiamen Port (28 km from factory)",
+    "monthly_production_capacity": "50,000+ m² monthly output",
+    "primary_materials": [
+      "Natural High-Density Limestone",
+      "Travertine",
+      "Sandstone",
+      "Ultra-Thin Flexible Stone Veneer"
+    ],
+    "surface_finishes": [
+      {
+        "name": "Tumbled",
+        "slip_rating": "P4 / R10",
+        "edge": "Pillowed & rounded weathered edge",
+        "applications": "French provincial courtyards, pool surrounds, interior-exterior transitions"
+      },
+      {
+        "name": "Antique",
+        "slip_rating": "P4 / R10",
+        "edge": "Chiseled & distressed heritage edge",
+        "applications": "Historic driveways, manor courtyards, rustic verandas"
+      },
+      {
+        "name": "Lightly Distressed",
+        "slip_rating": "P3 / R9",
+        "edge": "Minimal handcrafted tumbling",
+        "applications": "Contemporary indoor living, gallery floors, modern patios"
+      },
+      {
+        "name": "Sandblasted & Brushed",
+        "slip_rating": "P5 / R11",
+        "edge": "Precision sawn with velvet texture",
+        "applications": "Luxury pool coping, high-traffic commercial plazas, wet barefoot zones"
+      },
+      {
+        "name": "Sandblasted",
+        "slip_rating": "P5 / R11",
+        "edge": "Micro-textured granular grip",
+        "applications": "Commercial ramps, public pool surrounds, high-traffic exterior walkways"
+      }
+    ],
+    "certifications": [
+      "ISO 9001:2015",
+      "CE Marking (EN 1469 / EN 1341)",
+      "ASTM C97",
+      "ASTM C170",
+      "ASTM C880",
+      "ASTM C666",
+      "ASTM E84 / EN 13501-1 Class A1 Fireproof"
+    ]
+  },
+  "physical_properties": {
+    "rock_classification": "High-Density Marine Bioclastic Limestone",
+    "bulk_density": ">2.60 g/cm³ (ASTM C97)",
+    "water_absorption": "<0.22% (ASTM C97)",
+    "compressive_strength_dry": "128.5 MPa (ASTM C170)",
+    "flexural_strength": "14.2 MPa (ASTM C880)",
+    "freeze_thaw_resistance": "100 Cycles with 0.0% Spalling (ASTM C666)",
+    "fire_safety_rating": "EN 13501-1 Class A1 Non-Combustible (Zero Flame Spread / Zero Smoke)"
+  },
+  "procurement_terms": {
+    "moq_m2": 100,
+    "standard_project_order": "1x20GP Container (approx. 400–800 m² depending on 20mm/30mm thickness)",
+    "trade_terms": [
+      "FOB Xiamen Port",
+      "CFR Destination Port",
+      "CIF Destination Port"
+    ],
+    "sample_policy": "Free physical sample kits with actual stone swatches (express dispatch within 3 business days)",
+    "production_lead_time_days": "14–25 business days depending on CAD cutting list complexity",
+    "packaging": "Fumigated seaworthy reinforced timber crates with plastic strapping and internal foam cushioning",
+    "container_loading_limits": "Max gross weight ~26 to 27 metric tons per 20GP container per international maritime regulations"
+  },
+  "contact": {
+    "sales_email": "info@tianyastone.com",
+    "phone": "+86-18960366169",
+    "phone_alt": "+86-17805982800",
+    "response_sla": "Engineering sales quotation within 12 hours"
+  }
+}

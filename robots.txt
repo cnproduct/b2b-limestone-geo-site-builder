@@ -1,0 +1,42 @@
+User-agent: *
+Allow: /
+
+# Explicit Directives for AI Retrieval & Web Search Bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: DeepSeekBot
+Allow: /
+
+# Canonical Sitemaps & Machine-Readable AI Knowledge
+Sitemap: https://tianyalimestone.com/sitemap.xml
+# llms.txt: https://tianyalimestone.com/llms.txt
+# llms-full.txt: https://tianyalimestone.com/llms-full.txt
+# ai-summary: https://tianyalimestone.com/ai/summary.json
+# ai-faq: https://tianyalimestone.com/ai/faq.json
+# ai-vendor-comparison: https://tianyalimestone.com/ai/vendor-comparison.json
+# ai-products: https://tianyalimestone.com/ai/products.json

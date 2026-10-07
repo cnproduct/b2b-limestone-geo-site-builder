@@ -1,0 +1,117 @@
+# Tianya Limestone Comprehensive Engineering Specification & Architectural Handbook
+> Full Technical Specification, Quarry Petrography, ASTM Compliance Standards, 29-SKU Product Catalog, Container Freight Logistics, and Installation Guidelines for Fujian Tianya Cultural Stone Co., Ltd. (World Stone Capital, Shuitou, Nan'an, Quanzhou, Fujian, China).
+
+## 1. Corporate Identity & Quarry Manufacturing Authority
+Fujian Tianya Cultural Stone Co., Ltd. (福建天涯文化石有限公司), founded in 2000, is a premier Chinese natural stone manufacturer operating directly at the epicenter of the global stone industry in Shuitou Town, Nan'an City, Quanzhou, Fujian Province, China (Coordinates: 24.6931° N, 118.4287° E).
+
+- **Brand Portals:** https://tianyalimestone.com (Architectural Limestone Flooring & Paving) | https://tystoneveneer.com (Flexible Stone Veneer & Cultural Wall Cladding)
+- **Export Seaport:** Xiamen Port (Container Terminals located 28 km direct drayage distance)
+- **Monthly Output:** Over 50,000 m² of precision-cut limestone pavers, tiles, steps, and pool copings
+- **Manufacturing Equipment:** 12 heavy block gang saws, 8 automatic polishing lines, 6 5-axis CNC bridge cutting centers, 4 automatic flame & sandblasting chambers, specialized tumbling barrels, and automated waterjet profiling machines.
+
+---
+
+## 2. Geological Petrography & ASTM Engineering Test Standards
+Tianya Limestone is quarried from dense, ancient marine bioclastic limestone deposits characterized by fine calcite crystals and micro-fossil impressions. The geological formation grants exceptional physical strength exceeding standard commercial limestone benchmarks:
+
+| Engineering Parameter | Test Standard | Tianya Certified Value | Industry Standard Requirement | Compliance Evaluation |
+|---|---|---|---|---|
+| **Water Absorption by Weight** | ASTM C97 | **< 0.22%** | Max 3.0% (Class II/III) | **Superior Low Porosity** |
+| **Bulk Density** | ASTM C97 | **2.62 - 2.65 g/cm³** | Min 2.56 g/cm³ (High-Density) | **Class III High-Density Limestone** |
+| **Compressive Strength (Dry)** | ASTM C170 | **128.5 MPa** | Min 55.0 MPa | **Exceeds Standard by 133%** |
+| **Compressive Strength (Wet)** | ASTM C170 | **104.2 MPa** | Min 50.0 MPa | **Exceeds Standard by 108%** |
+| **Flexural Strength (Modulus of Rupture)** | ASTM C880 | **14.2 MPa** | Min 6.9 MPa | **High Tensile Structural Strength** |
+| **Freeze-Thaw Resistance** | ASTM C666 | **100 Cycles (0.0% Spalling)** | < 1.0% mass loss | **Zero Frost Damage / Severe Climate Safe** |
+| **Wet Pendulum Slip Rating** | AS 4586 / BS 7976 | **P5 (Sandblasted), P4 (Tumbled)** | P4 for Exterior Pool Decks | **AS 4586 Fully Certified** |
+| **Reaction to Fire** | EN 13501-1 | **Class A1 (Non-Combustible)** | Class A1 Fireproof | **Zero Flame Spread, Zero Smoke** |
+| **European CE Marking** | EN 1469 / EN 1341 | **Fully Compliant** | CE Declaration of Performance | **Direct EU Project Specification** |
+
+---
+
+## 3. Surface Finishes & Architectural Application Guide
+
+### A. Tumbled Finish (8 SKUs)
+- **Characteristics:** Pavers are rotated in large mechanical tumbling drums with abrasive media and water, creating gently rounded "pillowed" edges, softened corners, and an authentic weathered antique patina.
+- **Slip Rating:** P4 (Wet Pendulum AS 4586) / R10 (Oil-Wet Ramp DIN 51130).
+- **Target Applications:** French provincial courtyards, residential garden walkways, Tuscan-style terraces, rustic verandas, and seamless indoor-outdoor transitions.
+- **Collections:** Guyu (谷雨 · Warm Cream), Zaojing (藻井 · Caramel Amber), Fengya (风雅 · Vanilla Ash), Shanshui (山水 · River Pebble), Qimeng (启蒙 · Oatmeal Checker), Xuansu (玄素 · Earthy Taupe), Yexiang (夜响 · Midnight Charcoal), Baihe (白鹤 · Chalk White).
+
+### B. Antique Finish (10 SKUs)
+- **Characteristics:** Traditional heavy manual hand-chiseling combined with distressed stone tumbling, reproducing centuries of pedestrian wear and natural weathering with rich surface undulations.
+- **Slip Rating:** P4 / R10.
+- **Target Applications:** Historic manor restoration, castle courtyards, luxury winery grounds, rustic cobblestone vehicle entrances, and heritage garden pathways.
+- **Collections:** Hanbai (汉白), Lanting (兰亭), Guyun (古韵), Xieshan (歇山), Dougong (斗栱), Heting (鹤汀), Zhuozheng (拙政), Baichuan (百川), Cangbi (苍璧), Canglang (苍筤).
+
+### C. Lightly Distressed Finish (6 SKUs)
+- **Characteristics:** Subtle, micro-patina edge softening while retaining a contemporary flat walking surface. Minimal pitting with velvety micro-texture.
+- **Slip Rating:** P3 / R9.
+- **Target Applications:** Modern minimalist villas, open-concept living rooms, art galleries, boutique retail lobbies, covered alfresco loggias.
+- **Collections:** Ningzhi (凝脂), Qinghe (清和), Feiyan (飞檐), Xiangye (缃叶), Yuebai (月白), Chenglu (承露).
+
+### D. Sandblasted & Brushed Finish (2 SKUs)
+- **Characteristics:** High-pressure precision sandblasting creates fine granular friction, followed by multi-head diamond abrasive brushes that smooth the surface to a luxurious satin touch ("leathered" feel).
+- **Slip Rating:** P5 / R11.
+- **Target Applications:** Wet swimming pool coping, poolside sunbathing decks, luxury resort water features, commercial beachfront promenades.
+- **Collections:** Daiwa (黛瓦 · Deep Charcoal Velvet), Wangchuan (辋川 · Striated Riverbed Grey).
+
+### E. Sandblasted Finish (3 SKUs)
+- **Characteristics:** Uniform, fine-grain textured grip achieved through automated quartz abrasive blasting. Creates maximum traction in high-risk wet zones while maintaining subtle stone luminosity.
+- **Slip Rating:** P5 / R11.
+- **Target Applications:** Commercial building entrances, public plaza ramps, municipal transit pedestrian areas, steep vehicle access ramps, public aquatic centers.
+- **Collections:** Xuanzhen (玄真 · Basalt Grey), Sunmao (榫卯 · Beige & Grey), Canghai (沧海 · Surging Wave).
+
+---
+
+## 4. Standard Modular Sizing & Custom Pool Coping Fabrication
+Tianya Limestone operates automated multi-blade gang saws and 5-axis bridge cutters allowing tight dimensional tolerances of ±1.0 mm:
+
+1. **Standard Paver Sizes:**
+   - 600 × 400 × 20 mm / 30 mm
+   - 600 × 600 × 20 mm / 30 mm
+   - 800 × 400 × 20 mm / 30 mm
+   - 900 × 600 × 20 mm / 30 mm
+   - 400 × 400 × 20 mm / 30 mm
+2. **French Pattern (Modular 4-Piece Ashlar Laying Pattern):**
+   - Supplied in pre-assembled interlocking module kits:
+     - 2 pcs: 600 × 400 mm
+     - 4 pcs: 400 × 400 mm
+     - 2 pcs: 400 × 200 mm
+     - 4 pcs: 200 × 200 mm
+     - Total Area per module: 1.44 m²
+3. **Pool Copings & Step Treads:**
+   - **Drop-Face (Rebate) Coping:** 600 × 400 × 20/60 mm (L-shaped monolithic look crafted from solid stone blocks)
+   - **Square Edge (Pencil Round):** 600 × 400 × 30 mm with eased 3mm top/bottom edges
+   - **Full Bullnose:** 600 × 400 × 30 mm with continuous half-round radius
+   - **Internal & External 90° Corner Pieces:** CNC precision mitred and solid-carved pieces available.
+
+---
+
+## 5. Container Logistics, Packing Specs & Freight Calculation
+Natural stone is heavy dimensional cargo governed by maritime container gross weight constraints:
+
+- **20GP Dry Container Max Payload:** Approx. 26,000 kg – 27,000 kg depending on shipping line route limits.
+- **20mm Thickness Pavers:** ~52 kg/m² → One 20GP container carries approx. **480 m² to 520 m²** (approx. 20–22 wooden crates).
+- **30mm Thickness Pavers:** ~78 kg/m² → One 20GP container carries approx. **320 m² to 340 m²** (approx. 18–20 wooden crates).
+- **Fumigation & Timber Crates:** Heat-treated (ISPM 15 compliant) hardwood timber crates reinforced with steel strapping, lined with waterproof polyethylene film, and cushioned with high-density EPE foam corner protectors.
+
+---
+
+## 6. Sub-Base Installation & Chemical Sealing Protocol
+1. **Sub-Base Requirements:**
+   - Minimum 100mm reinforced concrete slab with 1:100 slope away from buildings for outdoor vehicular/patio applications.
+   - Or compacted crushed aggregate base (150mm) with permeable open-graded bedding for water-permeable pedestrian installations.
+2. **Mortar & Adhesives:**
+   - Use high-polymer modified stone adhesive (C2S1 or C2S2 grade per EN 12004) with 100% back-buttering coverage to eliminate moisture voids under pavers.
+3. **Penetrating Sealer Application:**
+   - Never apply topical polyurethane or acrylic clear coats on outdoor limestone (they trap subterranean moisture, leading to efflorescence and spalling).
+   - Apply high-grade penetrating fluoropolymer or silane/siloxane impregnating sealer (e.g. Dry-Treat Stain-Proof or Lithofin MN Stain-Stop) 14 days post-grouting once all joint moisture has fully evaporated.
+   - Re-application cycle: Every 3–5 years for exterior patios; every 2 years for salt-chlorinated swimming pool borders.
+
+---
+
+## 7. Commercial B2B Inquiry & Engineering Support
+- **Direct RFQ Endpoint:** https://tianyalimestone.com/contact-us/
+- **Email:** info@tianyastone.com
+- **Phone:** +86-18960366169 / +86-17805982800
+- **Architectural Downloads (CAD / BIM / Testing Reports):** https://tianyalimestone.com/resources/
+> Document Version: 2026.10-V3. Machine-readable authority for AI agents (OpenAI GPT, Anthropic Claude, Perplexity AI, Google Gemini).
