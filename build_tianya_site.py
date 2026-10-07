@@ -1467,7 +1467,7 @@ def generate_home_page(all_products, depth=0):
             "@type": "ListItem",
             "position": idx + 1,
             "name": f"{p['title']} {p['finish_title']} Limestone",
-            "url": f"{COMPANY_INFO['domain']}{p['url']}",
+            "url": f"{COMPANY_INFO['domain']}/{p['url'].lstrip('/')}",
             "description": p.get('subtitle', '')
         })
 
@@ -3669,7 +3669,7 @@ Sitemap: {COMPANY_INFO['domain']}/sitemap.xml
             "finish_type": p.get('finish_title'),
             "finish_slug": p.get('finish'),
             "subtitle_cultural": p.get('subtitle', ''),
-            "canonical_url": f"{COMPANY_INFO['domain']}{p.get('url')}",
+            "canonical_url": f"{COMPANY_INFO['domain']}/{p.get('url', '').lstrip('/')}",
             "slip_rating": f_info.get('slip_rating', 'P4 / R10'),
             "water_absorption": "<0.22% (ASTM C97)",
             "compressive_strength": "128.5 MPa (ASTM C170)",
