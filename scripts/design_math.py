@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
 Tianya Limestone - B2B Natural Stone & Architectural Paver Site Master
-Design Math, Fluid Typography & Heavy Cargo Stone Container Logistics Estimator
+Design Math, Fluid Typography, Heavy Cargo Stone Logistics & Defensive URL/Schema Verifier
 Python standard library only.
 """
 import argparse
 import json
 import math
 import re
+import urllib.parse
 
 
 # ---------------------------------------------------------------------------
@@ -53,7 +54,49 @@ def fluid_css(*values):
 
 
 # ---------------------------------------------------------------------------
-# 3. Heavy Cargo Natural Stone 20GP Container Loading Estimator
+# 3. Defensive URL Path Normalization & Verification (Guardrail 1)
+# ---------------------------------------------------------------------------
+URL_PATTERN = re.compile(r"^https?://[a-zA-Z0-9.-]+(?:/[a-zA-Z0-9_./-]*)*$")
+MALFORMED_CONCAT_PATTERN = re.compile(r"^https?://[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?![/:])[a-zA-Z0-9_]")
+
+
+def safe_urljoin(domain: str, path: str) -> str:
+    """
+    Safely joins a domain and a path, strictly preventing missing slash
+    glitches (e.g. 'domain.compath') and duplicate slashes.
+    """
+    if not domain:
+        raise ValueError("Domain cannot be empty.")
+    domain_clean = domain.rstrip("/")
+    path_clean = path.lstrip("/") if path else ""
+    joined = f"{domain_clean}/{path_clean}" if path_clean else f"{domain_clean}/"
+    if not is_valid_url(joined):
+        raise ValueError(f"Malformed URL generated: {joined}")
+    return joined
+
+
+def is_valid_url(url: str) -> bool:
+    """
+    Checks if a URL has valid scheme, host, and proper path separation.
+    Rejects malformed concatenations like 'https://tianyalimestone.comstone-flooring'.
+    """
+    if not url or not isinstance(url, str):
+        return False
+    parsed = urllib.parse.urlparse(url)
+    if not (parsed.scheme in ("http", "https") and parsed.netloc):
+        return False
+    parts = parsed.netloc.split(".")
+    if len(parts) < 2:
+        return False
+    last = parts[-1].lower()
+    # If the last domain part starts with a known TLD followed by words, it is a concatenation glitch
+    if re.match(r"^(com|org|net|io|edu|gov|cn|uk|de|au)[a-zA-Z0-9_-]+", last):
+        return False
+    return True
+
+
+# ---------------------------------------------------------------------------
+# 4. Heavy Cargo Natural Stone 20GP Container Loading Estimator (Guardrail 3)
 # ---------------------------------------------------------------------------
 CONTAINER_20GP = {
     "name": "20' Heavy-Duty General Purpose Container",
@@ -123,7 +166,7 @@ def estimate_stone_container(area_m2, thickness_mm, density_kg_m3=2620, crate_ca
 
 
 # ---------------------------------------------------------------------------
-# 4. Self Test Suite
+# 5. Self Test Suite
 # ---------------------------------------------------------------------------
 def self_test():
     # Contrast verification matching DESIGN.md
@@ -136,19 +179,27 @@ def self_test():
     css = fluid_css(36, 60, 360, 1440, 16)
     assert "clamp(" in css and "calc(" in css
 
-    # Stone container estimation
+    # Defensive URL Normalization (Guardrail 1)
+    u1 = safe_urljoin("https://tianyalimestone.com", "stone-flooring/limestone/antique/lanting/index.html")
+    assert u1 == "https://tianyalimestone.com/stone-flooring/limestone/antique/lanting/index.html"
+    assert is_valid_url(u1)
+    assert not is_valid_url("https://tianyalimestone.comstone-flooring/limestone")
+    assert not is_valid_url("invalid-url")
+
+    # Stone container estimation (Guardrail 3)
     est_20mm = estimate_stone_container(480, 20)
     assert est_20mm["shipping_estimates"]["required_20gp_containers"] == 1
     assert est_20mm["shipping_estimates"]["limiting_factor"] == "Weight (Heavy Cargo Limit)"
+    assert est_20mm["shipping_estimates"]["max_safe_m2_per_single_20gp"] <= 510
 
     est_30mm = estimate_stone_container(1000, 30)
     assert est_30mm["shipping_estimates"]["required_20gp_containers"] >= 3
 
-    print("PASS: Tianya Limestone WCAG AAA contrast, fluid typography, and heavy cargo 20GP container math.")
+    print("PASS: Tianya Limestone WCAG AAA contrast, fluid typography, safe URL join, and heavy cargo 20GP container math.")
 
 
 # ---------------------------------------------------------------------------
-# 5. CLI Controller
+# 6. CLI Controller
 # ---------------------------------------------------------------------------
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -165,6 +216,11 @@ def main():
     for name in ("min_size", "max_size", "min_width", "max_width"):
         fluid.add_argument(name, type=float)
     fluid.add_argument("--root", type=float, default=16)
+
+    # Safe urljoin command
+    url_cmd = commands.add_parser("safe-url", help="Safely join domain and path with slash defense")
+    url_cmd.add_argument("domain", help="Base domain e.g. https://tianyalimestone.com")
+    url_cmd.add_argument("path", help="Relative path e.g. stone-flooring/limestone/")
 
     # Stone container command
     stone = commands.add_parser("stone-container", help="Calculate 20GP shipping container requirements for natural stone pavers")
@@ -185,6 +241,11 @@ def main():
 
         if args.command == "fluid":
             print(fluid_css(args.min_size, args.max_size, args.min_width, args.max_width, args.root))
+            return 0
+
+        if args.command == "safe-url":
+            res = safe_urljoin(args.domain, args.path)
+            print(res)
             return 0
 
         if args.command == "stone-container":

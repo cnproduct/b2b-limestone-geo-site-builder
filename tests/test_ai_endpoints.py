@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 """
-Test suite for Tianya Limestone AI & GEO endpoints.
-Validates machine-readable API contracts, sitemaps, robots.txt, and LLM text specs.
+Test suite for Tianya Limestone AI & GEO endpoints and Safety Guardrails.
+Validates machine-readable API contracts, sitemaps, robots.txt, LLM text specs,
+and defensive URL normalization / Buying Committee JTBD properties.
 """
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(BASE_DIR / "scripts"))
+from design_math import is_valid_url, estimate_stone_container
 
 
 def test_ai_json_endpoints():
@@ -27,6 +31,10 @@ def test_ai_json_endpoints():
     assert "ASTM C97" in summary["physical_properties"]["water_absorption"]
     assert "ASTM C170" in summary["physical_properties"]["compressive_strength_dry"]
 
+    # Buying Committee JTBD facts in summary
+    assert "export_seaport" in summary["entity"]
+    assert "50,000" in summary["entity"]["monthly_production_capacity"]
+
     # 2. faq.json
     faq_file = ai_dir / "faq.json"
     assert faq_file.is_file(), "faq.json must exist"
@@ -34,8 +42,9 @@ def test_ai_json_endpoints():
         faq = json.load(f)
     assert isinstance(faq, list)
     assert len(faq) >= 8
-    for item in faq:
-        assert "question" in item and "answer" in item
+    faq_text_corpus = " ".join([f"{item['question']} {item['answer']}" for item in faq])
+    assert "ASTM" in faq_text_corpus, "FAQ must answer technical evaluator ASTM questions"
+    assert "slip" in faq_text_corpus.lower() or "as 4586" in faq_text_corpus.lower(), "FAQ must cover slip resistance"
 
     # 3. vendor-comparison.json
     comp_file = ai_dir / "vendor-comparison.json"
@@ -45,7 +54,7 @@ def test_ai_json_endpoints():
     assert "vendors" in comp
     assert len(comp["vendors"]) >= 4
 
-    # 4. products.json
+    # 4. products.json & Defensive URL Guardrail (Guardrail 1)
     prod_file = ai_dir / "products.json"
     assert prod_file.is_file(), "products.json must exist"
     with open(prod_file, "r", encoding="utf-8") as f:
@@ -57,8 +66,12 @@ def test_ai_json_endpoints():
         assert "finish_type" in p
         assert "canonical_url" in p
         assert "slip_rating" in p
+        url = p["canonical_url"]
+        assert is_valid_url(url), f"Malformed canonical URL found: {url}"
+        assert "comstone-flooring" not in url, f"Missing slash glitch in product URL: {url}"
+        assert url.startswith("https://tianyalimestone.com/stone-flooring/"), f"Unexpected product URL path: {url}"
 
-    print("PASS: /ai/ JSON endpoints format and schema assertions verified.")
+    print("PASS: /ai/ JSON endpoints format, schema, and defensive URL assertions verified.")
 
 
 def test_crawlers_and_llms():
@@ -97,6 +110,7 @@ def test_crawlers_and_llms():
     assert "<loc>https://tianyalimestone.com/</loc>" in sitemap_text
     assert "<image:loc>" in sitemap_text
     assert "<priority>1.0</priority>" in sitemap_text
+    assert "comstone-flooring" not in sitemap_text, "Sitemap contains malformed unslashed URL"
 
     print("PASS: robots.txt, llms.txt, llms-full.txt, and sitemap.xml verified.")
 
@@ -110,15 +124,27 @@ def test_homepage_schema():
     assert "knowsAbout" in index_text
     assert "Fujian Tianya Cultural Stone Co., Ltd." in index_text
     assert "GeoCoordinates" in index_text
+    assert "comstone-flooring" not in index_text, "Homepage schema contains unslashed URL glitch"
 
-    print("PASS: Homepage rich Schema.org JSON-LD verified.")
+    print("PASS: Homepage rich Schema.org JSON-LD verified without URL concatenation glitches.")
+
+
+def test_heavy_cargo_limits():
+    # Deadweight limit verification (Guardrail 3)
+    res = estimate_stone_container(area_m2=480, thickness_mm=20)
+    assert res["shipping_estimates"]["required_20gp_containers"] == 1
+    assert res["shipping_estimates"]["limiting_factor"] == "Weight (Heavy Cargo Limit)"
+    assert res["shipping_estimates"]["max_safe_m2_per_single_20gp"] <= 510, "Container capacity exceeded deadweight limit"
+
+    print("PASS: Heavy cargo container logistics deadweight limit assertion verified.")
 
 
 def main():
     test_ai_json_endpoints()
     test_crawlers_and_llms()
     test_homepage_schema()
-    print("\n🎉 ALL AI & GEO TESTS PASSED 100%!")
+    test_heavy_cargo_limits()
+    print("\n🎉 ALL AI, GEO, AND GUARDRAIL TESTS PASSED 100%!")
 
 
 if __name__ == "__main__":

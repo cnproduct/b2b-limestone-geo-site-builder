@@ -133,7 +133,8 @@ flowchart TD
 
 ```text
 b2b-limestone-geo-site-builder/
-├── SKILL.md                                 # Skill 主定义文件（包含 8 大阶段完整方法论）
+├── SKILL.md                                 # Skill 主定义文件（包含 9 大阶段完整方法论与运维闭环）
+├── SKILL_OPTIMIZATION.md                    # renwork-web-create-skill 7步通用优化与机制蒸馏报告
 ├── manifest.json                            # 标准 Agent/Codex Skill 清单元数据
 ├── README.md                                # 项目说明文档与快速上手指南
 ├── DESIGN.md                                # 1:1 视觉设计规范、字阶与对比度数学证明
@@ -155,6 +156,8 @@ b2b-limestone-geo-site-builder/
 │
 ├── references/                              # 行业知识库与标准规范
 │   ├── benchmark-discovery-methodology.md   # 全球标杆发现、提示词演进与跨行业通用 SOP
+│   ├── stone-buying-committee-jtbd.md       # 采购委员会 4 角色决策弹药与 CSI 04 42 00 规范
+│   ├── failure-cases-and-guardrails.md      # 6 大真实失败案例深度剖析与不可违反防错军规
 │   ├── astm-engineering-standards.md        # ASTM C97/C170/C880/C666 与 AS 4586 标准详解
 │   ├── limestone-product-matrix.md          # 29 款石材文化双轨命名与工艺全景表
 │   ├── logistics-container-math.md          # 20GP 极限载重与木箱装箱运算法则

@@ -294,3 +294,13 @@ python3 tests/test_ai_endpoints.py
 5. **第 5 轮：构建面向全球 AI 引擎的 GEO 流量截流端点**（复刻当前会话 Step 1524）
    - 零改动前端视觉，直接注入 `/ai/*.json`、`llms-full.txt` 与集装箱配载算力，实现对标大牌的流量截获并沉淀开源 Skill。
 
+---
+
+## 📚 关联专业规范与优化演进资产
+
+- **采购委员会决策矩阵**：[`references/stone-buying-committee-jtbd.md`](references/stone-buying-committee-jtbd.md)（4 大角色弹药与 CSI 04 42 00 规范）
+- **失败案例与质检军规**：[`references/failure-cases-and-guardrails.md`](references/failure-cases-and-guardrails.md)（6 大失误根因剖析与不可违反防错）
+- **标杆排查与通用方法论**：[`references/benchmark-discovery-methodology.md`](references/benchmark-discovery-methodology.md)（三大巨头模型与跨行业 SOP）
+- **通用技能优化与蒸馏报告**：[`SKILL_OPTIMIZATION.md`](SKILL_OPTIMIZATION.md)（遵照 `renwork-web-create-skill` 7 步生命周期全面审计）
+
+
