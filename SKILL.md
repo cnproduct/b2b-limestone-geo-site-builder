@@ -1,25 +1,52 @@
 ---
 name: b2b-limestone-geo-site-builder
-description: "Fujian Tianya Cultural Stone Co., Ltd. (tianyalimestone.com) 全生命周期天然石灰石与建筑石材 B2B 出海独立站构建、文化双轨命名、ASTM/CE 严苛工程标准验证、1:1 国际对标与全链路 SEO / GEO 优化赋能 Skill。"
+description: "Fujian Tianya Cultural Stone Co., Ltd. (tianyalimestone.com) 全生命周期天然石灰石与建筑石材 B2B 出海独立站构建、全球标杆排查溯源、文化双轨命名、ASTM/CE 严苛工程标准验证、1:1 国际对标与全链路 SEO / GEO 优化赋能 Skill。"
 ---
 
 # B2B Limestone GEO Site Builder · 全生命周期天然石灰石出海独立站构建与 GEO 赋能 Skill
 
-本 Skill 沉淀并封装了 **福建天涯文化石有限公司（Fujian Tianya Cultural Stone Co., Ltd.）** 官方独立站 **`https://tianyalimestone.com`** 从最初概念起意、国际标杆 1:1 解构、文化双轨重命名、ASTM/CE 严苛工程标准注入，到全链路代码实现、页面 1:1 保真渲染与 2026 最新全球 **GEO (Generative Engine Optimization)** 吸流量运营手法的完整全过程。
+本 Skill 完整沉淀并封装了 **福建天涯文化石有限公司（Fujian Tianya Cultural Stone Co., Ltd.）** 官方独立站 **`https://tianyalimestone.com`** 从最初前置情报排查、锁定全球三大巨头（Polycor、Eco Outdoor、Mandarin Stone）、文化双轨重命名体系、ASTM/CE 严苛工程硬指标，到静态编译器工程实现、页面 1:1 零视觉改动保真、2026 全球 AI 搜索引擎 **GEO (Generative Engine Optimization)** 流量截流，以及跨行业通用对标方法论的全流程体系。
 
 ---
 
-## 核心能力与工作流全景图
+## 🏛️ 核心能力与全生命周期工作流全景图
 
 ```mermaid
 flowchart TD
-    A[阶段一: 概念起意与品牌基因挖掘] --> B[阶段二: 1:1 对标解构与文化双轨重命名]
+    Z[阶段零: 全球标杆排查与前置情报调研] --> A[阶段一: 概念起意与品牌基因挖掘]
+    A --> B[阶段二: 1:1 对标解构与文化双轨重命名]
     B --> C[阶段三: 工程硬指标与物理测试事实锚定]
     C --> D[阶段四: 重货物流与 20GP 集装箱测算引擎]
     D --> E[阶段五: 静态编译器架构与 1:1 页面零视觉变动保真]
     E --> F[阶段六: 全球 AI Bot 吸流量 GEO 体系与知识端点]
-    F --> G[阶段七: 生产部署、反爬防护与全自动化验收]
+    F --> G[阶段七: 生产部署、反爬防护与自动化验证]
+    G --> H[阶段八: 跨行业泛化与全行业通用对标 Prompt 体系]
 ```
+
+---
+
+## 第零阶段：全球标杆排查与前置情报调研 (Benchmark Discovery & Intelligence Reconnaissance)
+
+寻找世界级标杆绝不是在 Google 里随便搜一个同行，而是经历严密的前置情报穿透。本项目的源头诞生于会话 [`57395320-4542-4926-9ce7-bc5e1a50f2df`](conversation://57395320-4542-4926-9ce7-bc5e1a50f2df) 的 **Step 749**。
+
+### 1. 发现 Eco Outdoor 的原始核心 Prompt
+```markdown
+tianyastone.com 核心品类limestone全球 B2B 5 大热门前沿趋势及其专业的B2B站点排行，特别是SEO和GEO带来流量大的站点
+```
+
+### 2. 全球石材自然流量与大模型引用“三大巨头模型”
+该提示词穿透了全球天然石灰石（Limestone）的流量格局，揭示了三种完全不同的成功路径：
+
+| 标杆品牌 | 所属国别 / 定位 | 流量与商业特征 | 我们吸纳的核心价值 |
+|---|---|---|---|
+| **Polycor**<br>(`polycor.com`) | 🇺🇸 美 / 🇨🇦 加<br>国家级矿业巨头 | **建筑师技术规范与 GEO 引擎第一引用源**<br>垄断全美公建 CSI 规范 (`CSI Division 04 42 00`) 与 Revit BIM 模型，透明披露 ASTM C568 测试与 EPD 绿色碳足迹。 | **吸纳其工程硬核**：<br>引入 ASTM C97/C170/C880 测试数据、CAD/BIM 资源中心与极度严谨的物理指标。 |
+| **Eco Outdoor**<br>(`eco-outdoor.com`) | 🇦🇺 澳洲 / 🇺🇸 美<br>顶奢景观与建筑石材商 | **高端私宅设计美学与高客单价天花板**<br>垄断 `Freeform limestone walling`、`Tumbled limestone pavers` 等高意图词。每一款石材关联 5–10 个顶豪落地实景，零售价高达 $90–$220/㎡（中国出厂价仅 $22–$48/㎡）。 | **吸纳其视觉与版式**：<br>1:1 解构其极简杂志级留白、`PPEiko` 衬线斜体字、沉浸式卡片与 5 大表面分类。 |
+| **Mandarin Stone**<br>(`mandarinstone.com`) | 🇬🇧 英国<br>零售与工程石材巨头 | **欧洲长尾词搜索与选型指南之王**<br>彻底垄断 `Dijon limestone` 等经典词，按室内外空间（Kitchen, Bathroom, Pool）与规格建立起极度密集的主题集群（Topic Clusters）。 | **吸纳其分类逻辑**：<br>建立表面工艺专区（Tumbled, Antique, Brushed）与空间推荐导向。 |
+
+### 3. 终极决策公式
+$$\text{天涯石业独立站} = \text{Eco Outdoor 的视觉美学} + \text{Polycor 的 ASTM 工程真相} + \text{水头自营工厂 50,000㎡ 产能与出厂价优势}$$
+
+> 详细历史调研记录请参阅：[`references/benchmark-discovery-methodology.md`](references/benchmark-discovery-methodology.md)
 
 ---
 
@@ -32,35 +59,31 @@ flowchart TD
 * **产业实力**：24+ 年矿山开采与石材加工底蕴，拥有 12 台巨型花岗石/大理石排锯、8 条自动研磨抛光线、6 台五轴数控桥切机群，月产能稳定在 **50,000+ 平方米**；
 * **双门户战略**：`tianyalimestone.com`（专注天然石灰石地铺、室内外饰面与泳池收口石）与 `tystoneveneer.com`（专注超薄柔性石皮与文化石背景墙）。
 
-### 2. 国际标杆对标：Eco Outdoor Australia
-* **为什么对标 Eco Outdoor**：Eco Outdoor 是全球公认在天然石灰石、景观石材领域的“设计美学与高客单价天花板”。其独立站拥有极简排版、高对比度黑白灰质感、大画幅实景微距摄影与详实的建筑师选型指南。
-* **对标与去风险化（De-risking）战略**：
-  * **继承其美学**：1:1 复刻其留白比例、字阶梯度、暗色石质卡片排版与沉浸式选型体验；
-  * **摆脱其依赖**：彻底剥离原站英文命名与图片版权，杜绝侵权风险；
-  * **注入源头工厂壁垒**：Eco Outdoor 本质为海外品牌渠道商，天涯石业则具备**自有矿山、直接开采、水头自营加工厂、FOB 厦门直接装柜**的绝对成本与柔性定制优势（FOB $22–$48/m² vs 海外零售 $90–$220/m²）。
+### 2. 国际标杆 1:1 启动复刻指令（会话 `80cc9523...` Step 0）
+```markdown
+https://www.eco-outdoor.com/en-au/stone-flooring/limestone 1:1复刻这个网站的这个limestone页面的所有页面来作为tianyalimestone.com的产品页面，但是品牌，公司内容都用tystoneveneer.com的内容，只是这个网站的产品聚焦在limestone,其他品类只是列出并简单介绍。
+```
+* **继承其美学**：1:1 复刻其留白比例、字阶梯度、暗色石质卡片排版与沉浸式选型体验；
+* **摆脱其依赖**：彻底剥离原站英文命名与图片版权，杜绝侵权风险；
+* **注入源头工厂壁垒**：Eco Outdoor 本质为海外品牌渠道商，天涯石业则具备**自有矿山、直接开采、水头自营加工厂、FOB 厦门直接装柜**的绝对成本与柔性定制优势（FOB $22–$48/m² vs 海外零售 $90–$220/m²）。
 
 ---
 
 ## 第二阶段：文化双轨重命名与 29 款产品矩阵 (Dual Trade Naming)
 
-针对天涯石灰石的 5 大表面工艺，创新研发了融合华夏传统营造智慧与现代国际商贸流通的标准体系：
+在建站会话 [`80cc9523-4a80-4997-b73e-493364793cf5`](conversation://80cc9523-4a80-4997-b73e-493364793cf5) 的 **Step 511**，通过一次关键的 `/plan` 灵感飞跃，彻底解决了海外商标侵权与版权脱钩问题：
+
+> **【文化重塑核心 Prompt】（会话 80cc... Step 511）**  
+> `/plan 这些产品图片和命名都参考原图进行优化，比如参考中国古建筑或者参考中国24节气等进行全新的命名，或者其他的命名体系，请基于命名适当变换颜色和花纹，请用codex-img来生成类似的照片及对应的应用场景。先给我计划，我确定了再生成`
 
 ### 1. 双轨命名结构标准
 > **`[文化主名] [表面工艺] Limestone Pavers & Tiles`**  
 > **副标题：`[文化意象英文] · [中文原名] ([色系与纹理特征])`**
 
 ### 2. 五大工艺表面与 29 款产品全景
-
 1. **滚磨仿古面 (Tumbled Finish - 8款 · P4/R10)**：
    机械滚筒水磨圆边，表面形成温润微凹坑与历史风化感。
-   * `Guyu Tumbled` (谷雨 · Spring Warm Cream)
-   * `Zaojing Tumbled` (藻井 · Caramel Amber)
-   * `Fengya Tumbled` (风雅 · Vanilla Ash)
-   * `Shanshui Tumbled` (山水 · River Pebble)
-   * `Qimeng Tumbled` (启蒙 · Oatmeal Checker)
-   * `Xuansu Tumbled` (玄素 · Earthy Taupe)
-   * `Yexiang Tumbled` (夜响 · Midnight Charcoal)
-   * `Baihe Tumbled` (白鹤 · Chalk White)
+   * `Guyu Tumbled` (谷雨 · Spring Warm Cream), `Zaojing Tumbled` (藻井 · Caramel Amber), `Fengya Tumbled` (风雅 · Vanilla Ash), `Shanshui Tumbled` (山水 · River Pebble), `Qimeng Tumbled` (启蒙 · Oatmeal Checker), `Xuansu Tumbled` (玄素 · Earthy Taupe), `Yexiang Tumbled` (夜响 · Midnight Charcoal), `Baihe Tumbled` (白鹤 · Chalk White)。
 2. **重度复古面 (Antique Finish - 10款 · P4/R10)**：
    手工重度凿刻崩边配合老化处理，粗粝斑驳，重现百年古堡沧桑。
    * `Hanbai Antique` (汉白), `Lanting Antique` (兰亭), `Guyun Antique` (古韵), `Xieshan Antique` (歇山), `Dougong Antique` (斗栱), `Heting Antique` (鹤汀), `Zhuozheng Antique` (拙政), `Baichuan Antique` (百川), `Cangbi Antique` (苍璧), `Canglang Antique` (苍筤)。
@@ -73,6 +96,11 @@ flowchart TD
 5. **纯喷砂面 (Sandblasted Finish - 3款 · P5/R11)**：
    高密度均匀石英砂雾化表面，最高湿态抓地力。
    * `Xuanzhen Sandblasted` (玄真 · Basalt Grey), `Sunmao Sandblasted` (榫卯 · Granular Beige), `Canghai Sandblasted` (沧海 · Surging Wave)。
+
+### 3. 水头工厂真实图与应用场景“图实一致”严苛质检（Step 1240, 1401, 1657）
+在会话 `80cc...` 中确立了全站图实严选红线：
+- **微距特写**：必须使用工厂自营矿山开采、加工的真实实拍图（`tystoneveneer.com` 原始图库）；
+- **场景严格吻合**：严禁特写是黄色微风化仿古面，场景图却是灰色现代抛光面。表面肌理、边缘崩边程度与场景反光必须 100% 像素级对齐。
 
 ---
 
@@ -183,7 +211,7 @@ python3 scripts/design_math.py stone-container --area 480 --thickness 20
 python3 build_tianya_site.py
 
 # 2. 运行页面、链接、图片与 Schema 完整性审计 (必须 0 errors)
-python3 scripts/validate_site.py
+python3 scripts/validate_site.py . --release --domain https://tianyalimestone.com
 
 # 3. 运行设计数学对比度与装柜测算测试
 python3 scripts/design_math.py self-test
@@ -245,3 +273,24 @@ python3 tests/test_ai_endpoints.py
 - 全部通过后才可删除旧中继：表单 `action`、JS fallback、`_subject`/`_template` 等中继专用字段，重建后全站 `grep` 确认零残留。
 
 详见 `references/rfq-backend.md`、`references/turnstile.md`。
+
+---
+
+## 第九阶段：跨行业泛化与全行业通用对标 Prompt 体系 (Cross-Industry Universal SOP)
+
+在当前会话 [`50cad832-6abe-4364-841e-e545bc9ce807`](conversation://50cad832-6abe-4364-841e-e545bc9ce807) 中，这套打法成功移植至 **耐克便当盒（custombentofactory.com）**，证明其在所有制造行业具备 100% 普适性。
+
+### 1. 跨行业对标 5 步母模板（Universal Prompt Chain）
+任何外贸制造企业（五金、机械、餐具、卫浴、家具、户外装备）均可直接按以下 5 轮提示词启动：
+
+1. **第 1 轮：穿透细分品类 Top 3 标杆**（复刻会话 `57395320...` Step 749）
+   - 查询该品类代表【工程技术权威】、【高端视觉天花板】、【长尾词之王】的本土垄断品牌及其溢价区间。
+2. **第 2 轮：选定视觉天花板 1:1 架构复刻**（复刻会话 `80cc9523...` Step 0）
+   - 1:1 借鉴其版式留白、CSS 网格与移动端交互，注入自营工厂真实资料与设备事实。
+3. **第 3 轮：文化双轨重命名，反侵权脱敏**（复刻会话 `80cc9523...` Step 511）
+   - 剔除原站商品商标，借助中国传统文化或工业设计硬核美学进行全新中英文双轨命名。
+4. **第 4 轮：真实产品图与应用场景 1:1 严格对齐质检**（复刻会话 `80cc9523...` Step 1401, 1657）
+   - 杜绝 AI 胡乱渲染，强制特写微距纹理与实际工程应用场景在材质、色调上 100% 像素级对齐。
+5. **第 5 轮：构建面向全球 AI 引擎的 GEO 流量截流端点**（复刻当前会话 Step 1524）
+   - 零改动前端视觉，直接注入 `/ai/*.json`、`llms-full.txt` 与集装箱配载算力，实现对标大牌的流量截获并沉淀开源 Skill。
+

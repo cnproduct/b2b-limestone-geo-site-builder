@@ -6,11 +6,34 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Production Verified](https://img.shields.io/badge/Live%20Site-tianyalimestone.com-2ea44f.svg)](https://tianyalimestone.com)
 
-本 Skill 完整沉淀并开源了 **福建天涯文化石有限公司（Fujian Tianya Cultural Stone Co., Ltd.）** 官方独立站 **[`https://tianyalimestone.com`](https://tianyalimestone.com)** 从最初业务构思、国际顶级标杆 1:1 解构、文化双轨重命名体系、ASTM/CE 严苛工程物理测试锚定，到静态编译器工程实现、页面 1:1 零视觉改动保真、全球 AI 搜索流量劫持 **GEO (Generative Engine Optimization)**，以及自动化远程部署测试的全过程。
+本 Skill 完整沉淀并开源了 **福建天涯文化石有限公司（Fujian Tianya Cultural Stone Co., Ltd.）** 官方独立站 **[`https://tianyalimestone.com`](https://tianyalimestone.com)** 从最初前置情报排查、锁定全球三大巨头（Polycor、Eco Outdoor、Mandarin Stone）、文化双轨重命名体系、ASTM/CE 严苛工程硬指标，到静态编译器工程实现、页面 1:1 零视觉改动保真、2026 全球 AI 搜索引擎 **GEO (Generative Engine Optimization)** 流量截流，以及跨行业通用对标方法论的全流程体系。
 
 ---
 
-## 🏛️ 项目背景与企业真实基因 (Brand Truths)
+## 🏛️ 项目背景与三大真实会话演进脉络
+
+本项目的方法论并非纸上谈兵，而是跨越了三个真实会话的实战推演与闭环：
+
+```mermaid
+flowchart TD
+    subgraph S1 ["会话一: 57395320... (标杆发现与前置情报)"]
+        A1["分析 tianyastone.com 现有品类"] --> A2["关键 Prompt (Step 749):<br/>全球 B2B 趋势与流量巨头排查"]
+        A2 --> A3["全球三大巨头模型浮现:<br/>1. Polycor (技术权威)<br/>2. Eco Outdoor (美学天花板)<br/>3. Mandarin Stone (长尾词之王)"]
+    end
+
+    subgraph S2 ["会话二: 80cc9523... (天涯石灰石 1:1 落地与文化重塑)"]
+        B1["锁定 Eco Outdoor 1:1 架构复刻 (Step 0)"] --> B2["文化双轨重命名 /plan (Step 511)<br/>(二十四节气与营造法式)"]
+        B2 --> B3["水头工厂实图与场景 1:1 严苛质检<br/>(Step 1240, 1401, 1657)"]
+    end
+
+    subgraph S3 ["会话三: 50cad832... (跨行业泛化、GEO 反哺与开源)"]
+        C1["跨界便当盒: 对标 Bentgo.com (Step 0, 333)"] --> C2["形成 2026 全球 AI 搜索引擎 GEO 体系"]
+        C2 --> C3["反哺天涯石业: 零设计改动注入 GEO (Step 1524)"]
+        C3 --> C4["开源沉淀: cnproduct/b2b-limestone-geo-site-builder"]
+    end
+
+    S1 --> S2 --> S3
+```
 
 * **企业主体**：福建天涯文化石有限公司（Fujian Tianya Cultural Stone Co., Ltd. / Tianya Limestone）
 * **地理坐标**：中国福建省泉州市南安市水头镇（世界石雕之都，全球最大石材集散加工枢纽，北纬 24.6931°，东经 118.4287°）
@@ -22,25 +45,37 @@
 
 ---
 
-## 🚀 7 大构建阶段：从概念到全球 GEO 流量获取
+## 🚀 8 大构建阶段：从前置情报发现到全行业通用 SOP
 
 ```mermaid
 flowchart TD
-    A[阶段一: 商业概念与企业事实挖掘] --> B[阶段二: Eco Outdoor 1:1 对标与文化双轨重命名]
+    Z[阶段零: 全球标杆排查与前置情报调研] --> A[阶段一: 商业概念与企业事实挖掘]
+    A --> B[阶段二: Eco Outdoor 1:1 对标与文化双轨重命名]
     B --> C[阶段三: ASTM C97/C170/C880/C666 物理硬指标注入]
     C --> D[阶段四: 重货物流与 20GP 集装箱极限载重测算]
     D --> E[阶段五: 静态编译器开发与 1:1 零视觉变动保真]
     E --> F[阶段六: 全球 AI 引擎 GEO 体系与知识端点]
     F --> G[阶段七: 生产部署、反爬防御与持续自动化测试]
+    G --> H[阶段八: 跨行业泛化与全行业通用对标 Prompt 体系]
 ```
+
+### 阶段零：全球标杆排查与前置情报调研 (Discovery)
+- **原始核心 Prompt（会话 57395320... Step 749）**：
+  > `tianyastone.com 核心品类limestone全球 B2B 5 大热门前沿趋势及其专业的B2B站点排行，特别是SEO和GEO带来流量大的站点`
+- **确立全球天然石灰石三大巨头模型**：
+  1. **Polycor** (`polycor.com`)：全美公建 CSI 建筑规范与 BIM 权威，ASTM C568 测试与 EPD 绿色碳足迹首选引用源。
+  2. **Eco Outdoor** (`eco-outdoor.com`)：澳洲/北美现代顶豪景观石材视觉天花板，零售价高达 $90–$220/㎡（出厂价 $22–$48/㎡）。
+  3. **Mandarin Stone** (`mandarinstone.com`)：欧洲 Dijon 石灰石长尾词之王，空间主题集群典范。
+- **决策公式**：
+  $$\text{天涯石灰石独立站} = \text{Eco Outdoor 美学} + \text{Polycor ASTM 工程硬核} + \text{水头源头工厂出厂价与 50,000㎡ 产能}$$
 
 ### 阶段一：概念起意与品牌基因挖掘
 - 确立 B2B 高客单价石材出海的“不可动摇事实底座”，摒弃外贸模板站假空大口号。
-- 深度整合水头自营工厂加工装备、自有矿山荒料储备、CE 认证及 ISO 9001 质量管理体系。
+- 整合水头自营工厂加工装备、自有矿山荒料储备、CE 认证及 ISO 9001 质量管理体系。
 
 ### 阶段二：1:1 对标解构与文化双轨重命名
-- **国际标杆对标**：解构澳洲顶级石材品牌 **Eco Outdoor**（设计美学与溢价天花板）。
-- **去风险化与反侵权**：1:1 吸收其极简留白、字阶律动、沉浸式卡片排版；全站图片、文本、命名 100% 自研重构，杜绝版权隐患。
+- **启动复刻 Prompt（会话 80cc... Step 0）**：`https://www.eco-outdoor.com/en-au/stone-flooring/limestone 1:1复刻...`
+- **文化重塑 Prompt（会话 80cc... Step 511）**：`/plan 这些产品图片和命名都参考原图进行优化，比如参考中国古建筑或者参考中国24节气等全新的命名...`
 - **文化双轨命名 (Dual Trade Naming)**：
   - 格式：`[文化主名] [表面工艺] Limestone Pavers & Tiles`
   - 覆盖 5 大工艺表面与 **29 款主力产品**：
@@ -49,6 +84,7 @@ flowchart TD
     3. **微做旧面 (Lightly Distressed - 6款)**：Ningzhi (凝脂), Qinghe (清和), Feiyan (飞檐), Xiangye (缃叶), Yuebai (月白), Chenglu (承露)
     4. **喷砂拉丝面 (Sandblasted & Brushed - 2款)**：Daiwa (黛瓦), Wangchuan (辋川)
     5. **纯喷砂面 (Sandblasted - 3款)**：Xuanzhen (玄真), Sunmao (榫卯), Canghai (沧海)
+- **图实一致严苛质检（会话 80cc... Step 1401, 1657）**：强制确保微距特写与 3D 豪宅工程场景图在肌理、崩边和色调上 100% 像素级对齐。
 
 ### 阶段三：工程硬指标与物理测试事实锚定
 设计院与国际总包商只认权威第三方实验室指标。全站深度固化天涯实测工程参数：
@@ -87,13 +123,17 @@ flowchart TD
 - 一键无缝打包同步部署脚本 `scripts/deploy_remote.sh`。
 - 多维度自动化测试套件 `tests/test_ai_endpoints.py` + `scripts/design_math.py self-test` + `scripts/validate_site.py --release`。
 
+### 阶段八：跨行业泛化与全行业通用对标 Prompt 体系
+- 在便当盒（`bentgo.com`）建站与双向 Skill 融合中验证成功，并形成全行业通用的 5 步母模板。
+- 详情请查阅专文：[`references/benchmark-discovery-methodology.md`](references/benchmark-discovery-methodology.md)。
+
 ---
 
 ## 📂 仓库目录结构
 
 ```text
 b2b-limestone-geo-site-builder/
-├── SKILL.md                                 # Skill 主定义文件（包含 7 大阶段完整方法论）
+├── SKILL.md                                 # Skill 主定义文件（包含 8 大阶段完整方法论）
 ├── manifest.json                            # 标准 Agent/Codex Skill 清单元数据
 ├── README.md                                # 项目说明文档与快速上手指南
 ├── DESIGN.md                                # 1:1 视觉设计规范、字阶与对比度数学证明
@@ -114,6 +154,7 @@ b2b-limestone-geo-site-builder/
 │   └── products.json                        # 29 款主力产品详细物理参数
 │
 ├── references/                              # 行业知识库与标准规范
+│   ├── benchmark-discovery-methodology.md   # 全球标杆发现、提示词演进与跨行业通用 SOP
 │   ├── astm-engineering-standards.md        # ASTM C97/C170/C880/C666 与 AS 4586 标准详解
 │   ├── limestone-product-matrix.md          # 29 款石材文化双轨命名与工艺全景表
 │   ├── logistics-container-math.md          # 20GP 极限载重与木箱装箱运算法则
@@ -145,25 +186,6 @@ python3 preview_server.py 8080
 计算特定面积与厚度所需的 20GP 集装箱数量、重量利用率及装箱配载：
 ```bash
 python3 scripts/design_math.py stone-container --area 500 --thickness 20
-```
-**输出示例**：
-```json
-{
-  "input_specification": {
-    "requested_area_m2": 500.0,
-    "thickness_mm": 20.0,
-    "unit_weight_kg_m2": 52.4
-  },
-  "packaging_summary": {
-    "total_crates": 21,
-    "total_gross_weight_kg": 27250.0
-  },
-  "shipping_estimates": {
-    "required_20gp_containers": 2,
-    "limiting_factor": "Weight (Heavy Cargo Limit)",
-    "max_safe_m2_per_single_20gp": 486
-  }
-}
 ```
 
 ### 3. 执行全站发布级静态链接与 Schema 审计
