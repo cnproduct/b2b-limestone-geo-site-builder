@@ -303,4 +303,14 @@ python3 tests/test_ai_endpoints.py
 - **标杆排查与通用方法论**：[`references/benchmark-discovery-methodology.md`](references/benchmark-discovery-methodology.md)（三大巨头模型与跨行业 SOP）
 - **通用技能优化与蒸馏报告**：[`SKILL_OPTIMIZATION.md`](SKILL_OPTIMIZATION.md)（遵照 `renwork-web-create-skill` 7 步生命周期全面审计）
 
+---
+
+## 🌐 全站默认无 HTML 后缀规范 (Clean URLs Mandatory Standard)
+
+无论是天然石材独立站还是跨行业泛化独立站，默认全面移除 `.html` 扩展名：
+- **内链**：首页 `href="./"`，二级列表与详情页 `href="limestone-tiles"`、`href="about-us"`，严禁携带 `.html`；
+- **SEO & GEO**：Sitemap `<loc>`、Canonical 标签、OpenGraph 社交卡片与 JSON-LD 结构化数据全量采用 Clean URLs；
+- **服务器配置**：标配 `vercel.json` (`cleanUrls: true`)、`nginx.conf` (`try_files $uri $uri.html $uri/ =404;`) 与 `.htaccess` 伪静态规则。
+
+
 
