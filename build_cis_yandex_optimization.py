@@ -292,7 +292,7 @@ def render_header_ru(depth=1, active_tab="ru_home"):
         <span>•</span>
         <span class="inline-flex items-center border border-primary-70 rounded overflow-hidden text-[11px]">
           <a href="{r}index.html" class="px-2 py-0.5 text-primary-40 hover:text-white">EN</a>
-          <a href="{r}ru/index.html" class="px-2 py-0.5 bg-[#E9F551] text-black font-bold">RU · СНГ</a>
+          <a href="{r}ru/index.html" class="px-2 py-0.5 font-bold" style="background-color:#E9F551;color:#1a1a18;">RU · СНГ</a>
         </span>
       </div>
     </div>
@@ -847,39 +847,39 @@ def generate_ru_home_page(all_products):
             <strong>Fujian Tianya Cultural Stone Co., Ltd.</strong> (основан в 2000 г.) производит 29 коллекций высокоплотного морского биокластического известняка (2650 кг/м³, 128,5 МПа) для фасадов, цоколей, террас и бассейнов. Прямая альтернатива 1:1 французскому Бургундскому камню, португальскому Moleanos и немецкому Jura с ж/д и морской доставкой в <strong>Москву, Алматы, Астану и Ташкент</strong>.
           </p>
           <div class="flex flex-wrap gap-3">
-            <a href="#catalog-29" class="px-6 py-3.5 bg-[#E9F551] text-black text-xs font-semibold uppercase tracking-wider rounded-sm hover:bg-white transition-colors">
+            <a href="#catalog-29" class="px-6 py-3.5 text-xs font-semibold uppercase tracking-wider rounded-sm transition-colors" style="background-color:#E9F551;color:#1a1a18;">
               Смотреть 29 коллекций
             </a>
-            <a href="{r}ru/cis-central-asia/index.html" class="px-6 py-3.5 bg-white/10 border border-white/30 text-white text-xs font-semibold uppercase tracking-wider rounded-sm hover:bg-white hover:text-black transition-colors">
+            <a href="{r}ru/cis-central-asia/index.html" class="px-6 py-3.5 border border-white text-white text-xs font-semibold uppercase tracking-wider rounded-sm hover:bg-white hover:text-black transition-colors" style="background-color:rgba(255,255,255,0.12);">
               Хаб ЕАЭС: ГОСТ · Импортозамещение · Ж/Д Логистика →
             </a>
-            <a href="#enquiry-section" class="px-6 py-3.5 border border-[#E9F551] text-[#E9F551] text-xs font-semibold uppercase tracking-wider rounded-sm hover:bg-[#E9F551] hover:text-black transition-colors">
+            <a href="#enquiry-section" class="px-6 py-3.5 border text-xs font-semibold uppercase tracking-wider rounded-sm transition-colors" style="border-color:#E9F551;color:#E9F551;">
               Бесплатные образцы ({bts.COMPANY_INFO['email']})
             </a>
           </div>
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10 pt-8 border-t border-white/15 text-xs">
             <div>
-              <strong class="text-xl font-heading text-[#E9F551] block">&lt; 0,22%</strong>
+              <strong class="text-xl font-heading block" style="color:#E9F551;">&lt; 0,22%</strong>
               <span class="text-primary-40">Водопоглощение (ASTM C97)</span>
             </div>
             <div>
-              <strong class="text-xl font-heading text-[#E9F551] block">128,5 МПа</strong>
+              <strong class="text-xl font-heading block" style="color:#E9F551;">128,5 МПа</strong>
               <span class="text-primary-40">Прочность на сжатие</span>
             </div>
             <div>
-              <strong class="text-xl font-heading text-[#E9F551] block">F100 · НГ</strong>
+              <strong class="text-xl font-heading block" style="color:#E9F551;">F100 · НГ</strong>
               <span class="text-primary-40">Морозостойкость и пожаробезопасность</span>
             </div>
             <div>
-              <strong class="text-xl font-heading text-[#E9F551] block">12–22 дня</strong>
+              <strong class="text-xl font-heading block" style="color:#E9F551;">12–22 дня</strong>
               <span class="text-primary-40">Ж/Д Достык · Хоргос · Забайкальск</span>
             </div>
           </div>
         </div>
         <div class="lg:col-span-5 relative min-h-[320px]">
           <img src="{r}assets/images/hero/hero-limestone.webp" alt="Архитектурный известняк Tianya Limestone для террас, фасадов и бассейнов" class="w-full h-full object-cover">
-          <div class="absolute bottom-4 left-4 right-4 bg-black/75 backdrop-blur-sm p-4 rounded text-xs text-white border border-white/15">
-            <div class="font-semibold text-[#E9F551]">Экспортный стандарт упаковки ISPM 15 (20GP = 26–27 тонн)</div>
+          <div class="absolute bottom-4 left-4 right-4 p-4 rounded text-xs text-white border" style="background-color:rgba(26,26,24,0.88);border-color:rgba(255,255,255,0.22);">
+            <div class="font-semibold" style="color:#E9F551;">Экспортный стандарт упаковки ISPM 15 (20GP = 26–27 тонн)</div>
             <div class="text-primary-20 mt-0.5">Прямые расчеты в CNY (CIPS), RUB, KZT, USD · Полный пакет документов ТН ВЭД 6802 / 6801</div>
           </div>
         </div>
@@ -887,10 +887,10 @@ def generate_ru_home_page(all_products):
     </section>
 
     <!-- Блок быстрого перехода в Инженерный Хаб ЕАЭС и Центральной Азии -->
-    <section class="bg-[#F7FFEC] border-b border-primary-15 py-6">
+    <section class="border-b border-primary-15 py-6" style="background-color:#F7FFEC;">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <div class="text-xs sm:text-sm text-primary-100">
-          <span class="font-bold uppercase tracking-wider bg-primary-100 text-[#E9F551] px-2.5 py-1 rounded-sm mr-2">Спецраздел СНГ</span>
+          <span class="font-bold uppercase tracking-wider px-2.5 py-1 rounded-sm mr-2" style="background-color:#251700;color:#E9F551;">Спецраздел СНГ</span>
           <strong>Проектируете объект в РФ, Казахстане или Узбекистане?</strong> Изучите таблицу соответствия ГОСТ 30629-2011, матрицу замены европейского известняка 1:1 и сроки ж/д доставки 20GP контейнеров.
         </div>
         <a href="{r}ru/cis-central-asia/index.html" class="px-5 py-2.5 bg-primary-100 text-white text-xs font-semibold uppercase tracking-wider rounded-sm hover:bg-black whitespace-nowrap">
@@ -1385,7 +1385,7 @@ def inject_yandex_seo_across_site():
         lang_pill = (
             f'        <span>•</span>\n'
             f'        <span class="inline-flex items-center border border-primary-70 rounded overflow-hidden text-[11px]" data-cis-lang-switch="1">\n'
-            f'          <a href="{r}index.html" class="px-2 py-0.5 bg-[#E9F551] text-black font-bold">EN</a>\n'
+            f'          <a href="{r}index.html" class="px-2 py-0.5 font-bold" style="background-color:#E9F551;color:#1a1a18;">EN</a>\n'
             f'          <a href="{r}ru/index.html" class="px-2 py-0.5 text-white hover:text-[#E9F551] font-medium" title="Русский портал · РФ, Казахстан, Узбекистан">RU · СНГ</a>\n'
             f'        </span>'
         )
