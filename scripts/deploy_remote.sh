@@ -59,7 +59,7 @@ echo "=== [3/5] Uploading ${ARCHIVE_NAME} to ${REMOTE_HOST}:${REMOTE_PORT} ==="
 
 echo "=== [4/5] Extracting to Production Directory and Setting Permissions ==="
 /opt/homebrew/bin/sshpass -p "${REMOTE_PASS}" ssh -o StrictHostKeyChecking=no -p "${REMOTE_PORT}" "${REMOTE_USER}@${REMOTE_HOST}" "
-    echo '${REMOTE_PASS}' | sudo -S tar -xzf /tmp/${ARCHIVE_NAME} -C ${REMOTE_DIR}/ && \
+    echo '${REMOTE_PASS}' | sudo -S tar -xzf /tmp/${ARCHIVE_NAME} -C ${REMOTE_DIR}/ --overwrite && \
     echo '${REMOTE_PASS}' | sudo -S find ${REMOTE_DIR} -name '._*' -delete && \
     echo '${REMOTE_PASS}' | sudo -S chown -R ${REMOTE_USER}:www-data ${REMOTE_DIR} && \
     echo '${REMOTE_PASS}' | sudo -S chmod -R 755 ${REMOTE_DIR} && \
