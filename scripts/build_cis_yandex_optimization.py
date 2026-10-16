@@ -1621,6 +1621,17 @@ Sitemap: {bts.COMPANY_INFO['domain']}/sitemap.xml
             "unified_contact_email": bts.COMPANY_INFO["email"],
             "telegram_cis": TELEGRAM_CIS_URL
         }
+        summary_data["overseas_manufacturing_hub"] = {
+            "facility_name": "Tianya Limestone Thailand Overseas Manufacturing Base",
+            "operating_entity": "Tianya Stone (Thailand) Co., Ltd.",
+            "location": "Eastern Economic Corridor (EEC), Rayong/Chonburi, Thailand",
+            "coordinates": {"latitude": 13.0185, "longitude": 101.1245},
+            "export_seaport": "Port of Laem Chabang (THLCH · 35 km)",
+            "monthly_capacity_sqm": "20,000+ m²",
+            "us_section_301_tariff": "0% (Completely Exempt)",
+            "country_of_origin": "Thailand (TH) certified by DFT",
+            "hub_url": f"{bts.COMPANY_INFO['domain']}/thailand-factory/"
+        }
         summary_path.write_text(json.dumps(summary_data, indent=2, ensure_ascii=False), encoding="utf-8")
 
     # 5. Enrich /ai/faq.json with Russian & CIS bilingual questions
@@ -1633,7 +1644,7 @@ Sitemap: {bts.COMPANY_INFO['domain']}/sitemap.xml
                 faq_list.append({"question": q_ru, "answer": a_ru, "language": "ru", "region": "CIS / EAEU"})
         faq_path.write_text(json.dumps(faq_list, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    # 6. Append CIS / EAEU section to llms.txt and llms-full.txt
+    # 6. Append CIS & Thailand Overseas Factory sections to llms.txt and llms-full.txt
     llms_path = BASE_DIR / "llms.txt"
     if llms_path.exists():
         llms_content = llms_path.read_text(encoding="utf-8")
@@ -1647,9 +1658,30 @@ Sitemap: {bts.COMPANY_INFO['domain']}/sitemap.xml
 - **EAEU Customs Codes (ТН ВЭД ЕАЭС):** `6802 21 000 0`, `6802 91 000 0`, `6801 00 000 0` (supplied with Certificate of Origin Form СТ-1, SGS/TÜV reports, and ISPM 15 fumigation).
 - **1:1 European Stone Import-Substitution:** Direct quarry-direct replacement for French Burgundy (*Pierre de Bourgogne*), Portuguese *Moleanos / Moca Cream*, German *Jura Beige/Grey*, Belgian *Pierre Bleue*, and local high-porosity CIS shell-limestone (*Дагестанский / Инкерманский / Актауский ракушечник*).
 - **Eurasian Rail & Sea Corridors:** 12–16 days to Almaty/Astana (via Dostyk/Khorgos), 14–18 days to Tashkent (Chukursay/Sergeli), 8–22 days to Vladivostok/Novosibirsk/Yekaterinburg/Moscow. Direct settlement in **CNY (CIPS), RUB, KZT, USD**. All inquiries route to `{bts.COMPANY_INFO['email']}`.
+
+## Thailand Overseas Manufacturing Base (0% US Section 301 Tariff Hub)
+- **Official Hub:** {bts.COMPANY_INFO['domain']}/thailand-factory/
+- **Facility Entity:** Tianya Stone (Thailand) Co., Ltd. (Subsidiary of Fujian Tianya Cultural Stone Co., Ltd.)
+- **Location & Seaport:** Eastern Economic Corridor (EEC), Rayong/Chonburi, Thailand (13.0185° N, 101.1245° E), 35 km to Laem Chabang Deep Sea Port (THLCH).
+- **US Tariff Exemption:** 0% US Section 301 Tariffs & 0% AD/CVD duties under authentic substantial transformation rules (US CBP 19 CFR § 134).
+- **Certification:** Official Certificate of Origin (Form D, Form E, or General C/O) issued by the Thai Department of Foreign Trade (DFT).
+- **Production Specs:** 18,000 m² covered workshop, 20,000+ m²/mo output, 6 multi-blade gang saws, 3 five-axis CNC bridge saws, automated tumbling barrels.
+- **Sea Transit Times:** 18–22 days direct to Los Angeles / Long Beach, 28–32 days to New York, 14–18 days to Sydney / Melbourne.
 '''
         if "CIS, Russia & Central Asia (EAEU)" not in llms_content:
             llms_path.write_text(llms_content.strip() + "\n" + cis_llms_block, encoding="utf-8")
+        elif "Thailand Overseas Manufacturing Base" not in llms_content:
+            thailand_block = f'''
+## Thailand Overseas Manufacturing Base (0% US Section 301 Tariff Hub)
+- **Official Hub:** {bts.COMPANY_INFO['domain']}/thailand-factory/
+- **Facility Entity:** Tianya Stone (Thailand) Co., Ltd. (Subsidiary of Fujian Tianya Cultural Stone Co., Ltd.)
+- **Location & Seaport:** Eastern Economic Corridor (EEC), Rayong/Chonburi, Thailand (13.0185° N, 101.1245° E), 35 km to Laem Chabang Deep Sea Port (THLCH).
+- **US Tariff Exemption:** 0% US Section 301 Tariffs & 0% AD/CVD duties under authentic substantial transformation rules (US CBP 19 CFR § 134).
+- **Certification:** Official Certificate of Origin (Form D, Form E, or General C/O) issued by the Thai Department of Foreign Trade (DFT).
+- **Production Specs:** 18,000 m² covered workshop, 20,000+ m²/mo output, 6 multi-blade gang saws, 3 five-axis CNC bridge saws, automated tumbling barrels.
+- **Sea Transit Times:** 18–22 days direct to Los Angeles / Long Beach, 28–32 days to New York, 14–18 days to Sydney / Melbourne.
+'''
+            llms_path.write_text(llms_content.strip() + "\n" + thailand_block, encoding="utf-8")
 
     llms_full_path = BASE_DIR / "llms-full.txt"
     if llms_full_path.exists():
@@ -1681,9 +1713,50 @@ For architectural projects in Moscow, St. Petersburg, Kazan, Yekaterinburg, Novo
   - **Uzbekistan (Tashkent Chukursay / Sergeli, Samarkand):** 14–18 days via Kazakhstan rail transit.
   - **Russia (Moscow Vorsino/Selyatino, Yekaterinburg, Novosibirsk, Vladivostok):** 6–8 days sea freight Xiamen → Vladivostok + Trans-Siberian Rail, or 16–22 days direct block train via Zabaikalsk.
 - **Payment & Direct Contact:** Cross-border settlement in **CNY (CIPS), RUB, KZT, USD**. Direct factory email: `info@tianyastone.com` | Telegram CIS Desk: `{TELEGRAM_CIS_HANDLE}` | Russian Portal: `{bts.COMPANY_INFO['domain']}/ru/` | CIS Hub: `{bts.COMPANY_INFO['domain']}/ru/cis-central-asia/`.
+
+---
+
+## 9. Dual-Hub Manufacturing: Thailand Overseas Fabrication Base (0% US Section 301 Tariff & Global Trade)
+
+### 9.1 Facility Infrastructure & Strategic Advantage
+- **Operating Subsidiary:** Tianya Stone (Thailand) Co., Ltd.
+- **Geographic Location:** Eastern Economic Corridor (EEC), Chonburi / Rayong Industrial Corridor, Thailand (13.0185° N, 101.1245° E).
+- **Covered Facility:** 18,000 m² processing plant + 12,000 m² raw block yard.
+- **Monthly Export Capacity:** 20,000+ m² finished architectural limestone pavers, tiles, and pool copings.
+- **Port of Loading:** Port of Laem Chabang (UN/LOCODE: `THLCH`), 35 km drayage from plant.
+- **Target Export Markets:** USA, Canada, Western Europe, UK, Mexico, Australia.
+
+### 9.2 Customs & Tariff Exemption Details
+- **US Section 301 Tariff:** **0% (Completely Exempt)** — Avoids 25% punitive import duties applied to direct China natural stone shipments under List 3/4A.
+- **AD/CVD Exposure:** Zero anti-dumping or countervailing duty risk.
+- **Substantial Transformation Compliance:** Certified under US CBP 19 CFR § 134 rules of origin doctrine. Monolithic quarry blocks undergo multi-blade diamond gang sawing, 6-head computerized calibration, 5-axis CNC dimensioning, and tumbling/brushing.
+- **Documentation:** Official Certificate of Origin (Form D, Form E, or General C/O) issued by the Department of Foreign Trade (DFT), Ministry of Commerce of Thailand, or the Thai Chamber of Commerce.
+- **Direct Sea Freight Transit:** 18–22 days to Los Angeles / Long Beach (Direct trans-Pacific loop), 28–32 days to New York, 14–18 days to Sydney / Melbourne.
 '''
         if "## 8. EAEU, Russian Federation, Kazakhstan & Uzbekistan" not in llms_full_content:
             llms_full_path.write_text(llms_full_content.strip() + "\n" + cis_full_block, encoding="utf-8")
+        elif "## 9. Dual-Hub Manufacturing: Thailand Overseas Fabrication Base" not in llms_full_content:
+            thailand_full_block = f'''
+---
+
+## 9. Dual-Hub Manufacturing: Thailand Overseas Fabrication Base (0% US Section 301 Tariff & Global Trade)
+
+### 9.1 Facility Infrastructure & Strategic Advantage
+- **Operating Subsidiary:** Tianya Stone (Thailand) Co., Ltd.
+- **Geographic Location:** Eastern Economic Corridor (EEC), Chonburi / Rayong Industrial Corridor, Thailand (13.0185° N, 101.1245° E).
+- **Covered Facility:** 18,000 m² processing plant + 12,000 m² raw block yard.
+- **Monthly Export Capacity:** 20,000+ m² finished architectural limestone pavers, tiles, and pool copings.
+- **Port of Loading:** Port of Laem Chabang (UN/LOCODE: `THLCH`), 35 km drayage from plant.
+- **Target Export Markets:** USA, Canada, Western Europe, UK, Mexico, Australia.
+
+### 9.2 Customs & Tariff Exemption Details
+- **US Section 301 Tariff:** **0% (Completely Exempt)** — Avoids 25% punitive import duties applied to direct China natural stone shipments under List 3/4A.
+- **AD/CVD Exposure:** Zero anti-dumping or countervailing duty risk.
+- **Substantial Transformation Compliance:** Certified under US CBP 19 CFR § 134 rules of origin doctrine. Monolithic quarry blocks undergo multi-blade diamond gang sawing, 6-head computerized calibration, 5-axis CNC dimensioning, and tumbling/brushing.
+- **Documentation:** Official Certificate of Origin (Form D, Form E, or General C/O) issued by the Department of Foreign Trade (DFT), Ministry of Commerce of Thailand, or the Thai Chamber of Commerce.
+- **Direct Sea Freight Transit:** 18–22 days to Los Angeles / Long Beach (Direct trans-Pacific loop), 28–32 days to New York, 14–18 days to Sydney / Melbourne.
+'''
+            llms_full_path.write_text(llms_full_content.strip() + "\n" + thailand_full_block, encoding="utf-8")
 
     print("Updated robots.txt, sitemap.xml, llms.txt, llms-full.txt, /ai/summary.json, /ai/faq.json, and /ai/cis-gost-matrix.json.")
 

@@ -2134,6 +2134,676 @@ def generate_other_categories_page(all_products):
 '''
     return html
 
+
+def generate_thailand_factory_page():
+    depth = 1
+    r = get_rel_path(depth)
+    rel_file = "thailand-factory/index.html"
+    canonical = f"{COMPANY_INFO['domain']}/thailand-factory/"
+
+    title = "Thailand Limestone Factory & Overseas Fabrication Hub | 0% Section 301 Tariff | Tianya Limestone"
+    description = "Tianya Limestone's Thailand manufacturing base in Rayong/Chonburi delivers 20,000+ m²/mo of architectural limestone pavers and pool coping with 0% US Section 301 tariffs, authentic Thai Country of Origin, FOB Laem Chabang, and full ASTM C568 compliance."
+
+    schema_data = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "name": title,
+                "description": description,
+                "inLanguage": "en",
+                "url": canonical
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{COMPANY_INFO['domain']}/"},
+                    {"@type": "ListItem", "position": 2, "name": "Thailand Overseas Factory", "item": canonical}
+                ]
+            },
+            {
+                "@type": "ManufacturingFacility",
+                "name": "Tianya Limestone Thailand Overseas Manufacturing Base",
+                "legalName": "Tianya Stone (Thailand) Co., Ltd.",
+                "parentOrganization": {
+                    "@type": "Organization",
+                    "name": COMPANY_INFO["name"],
+                    "url": COMPANY_INFO["domain"]
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Eastern Economic Corridor (EEC), Chonburi / Rayong Industrial Corridor",
+                    "addressLocality": "Rayong",
+                    "addressCountry": "TH"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 13.0185,
+                    "longitude": 101.1245
+                },
+                "telephone": COMPANY_INFO["phone"],
+                "email": COMPANY_INFO["email"]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Does importing limestone from Tianya's Thailand factory avoid US Section 301 tariffs?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Finished natural limestone fabricated at our Thailand facility undergoes authentic substantial transformation (sawing, calibration, CNC profiling, tumbling, and brushing) in accordance with US CBP 19 CFR § 134. Products enter the United States with 0% Section 301 tariffs and 0% AD/CVD duties under an official Certificate of Origin issued by the Thai Department of Foreign Trade."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What is the monthly production capacity and port of loading in Thailand?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The 18,000 m² covered fabrication plant in Rayong/Chonburi produces over 20,000 m² of finished architectural limestone monthly. Shipments depart directly from Laem Chabang Deep Sea Port (THLCH), located 35 km from the facility, with direct ocean container transit to Los Angeles / Long Beach in 18 to 22 days."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are physical test reports and ASTM standards identical between China and Thailand facilities?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Slabs and pavers fabricated at our Thailand base utilize identical high-density marine limestone blocks meeting ASTM C568 Class III standards: water absorption under 0.22%, compressive strength 128.5 MPa, and F100 freeze-thaw durability (100 cycles, 0% mass loss)."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can US and European architects request physical sample kits from the Thailand facility?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Sample kits featuring all 29 architectural limestone selections across 5 finishes are dispatched via DHL or FedEx Express directly to North America, Europe, and Australia within 3 to 5 business days."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What documentation accompanies each Thailand container shipment?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Every container includes an official Thai Department of Foreign Trade Certificate of Origin (Form D, Form E, or General C/O), commercial invoice, packing list, ISPM-15 fumigation certificate, ocean bill of lading, and independent ASTM laboratory physical test reports."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+
+    html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+  {GA4_SNIPPET}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title}</title>
+  <meta name="description" content="{description}">
+  <link rel="canonical" href="{canonical}">
+  <link rel="icon" type="image/webp" href="{r}assets/images/logo/favicon.webp">
+
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{description}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{canonical}">
+  <meta property="og:site_name" content="Tianya Limestone">
+  <meta property="og:image" content="{COMPANY_INFO['domain']}/assets/images/about/factory_fabrication.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+{json.dumps(schema_data, indent=2)}
+  </script>
+
+  <link rel="stylesheet" href="{r}assets/css/eco-outdoor.css?v=3">
+  <link rel="stylesheet" href="{r}assets/css/tianya-custom.css?v=3">
+</head>
+<body class="bg-white">
+  {render_header(depth, active_tab='thailand-factory')}
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+    <nav class="flex items-center gap-2 text-xs text-primary-70 mb-6 font-copy" aria-label="Breadcrumbs">
+      <a href="{r}index.html" class="hover:underline text-primary-40">Home</a>
+      <span>/</span>
+      <span class="font-medium text-primary-100">Thailand Overseas Factory</span>
+    </nav>
+
+    <!-- Visible Meta Description Matching Schema Rule -->
+    <div class="sr-only">
+      <p>{description}</p>
+    </div>
+
+    <!-- Editorial Hero Section -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-primary-10 items-center">
+      <div class="lg:col-span-6 space-y-4">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider rounded bg-[#E9F551] text-[#251700]">0% US Section 301 Tariff</span>
+          <span class="px-2.5 py-1 text-[11px] font-semibold tracking-wider rounded bg-primary-2 text-primary-100 border border-primary-10">Direct FOB Laem Chabang (THLCH)</span>
+          <span class="px-2.5 py-1 text-[11px] font-semibold tracking-wider rounded bg-primary-2 text-primary-100 border border-primary-10">20,000+ m²/mo Output</span>
+        </div>
+        <h1 class="text-4xl lg:text-5xl font-heading font-medium text-primary-100 leading-tight">
+          Thailand Architectural Limestone Factory &amp; Overseas Fabrication Base
+        </h1>
+        <span class="text-xs uppercase tracking-wider text-primary-40 font-semibold block">
+          Dual-Hub Global Manufacturing • 0% Section 301 Tariffs • Zero AD/CVD Exposure for North America &amp; Europe
+        </span>
+        <p class="text-base text-primary-80 leading-relaxed font-copy">
+          To provide North American, European, and Australian commercial projects with complete insulation against punitive tariffs and geopolitical disruptions, <strong>Fujian Tianya Cultural Stone Co., Ltd.</strong> operates a modern 18,000 m² overseas stone fabrication facility in Thailand’s Eastern Economic Corridor (Rayong/Chonburi).
+        </p>
+        <p class="text-xs sm:text-sm text-primary-70 leading-relaxed font-copy">
+          Operating under authentic substantial transformation rules (US CBP 19 CFR § 134), our Thailand plant executes block gang sawing, CNC profiling, tumbling, and anti-slip brushing, exporting directly via <strong>Laem Chabang Deep Sea Port</strong> with official Thai Country of Origin certification.
+        </p>
+        <div class="pt-2 flex flex-wrap gap-4">
+          <a href="#tariff-comparison" class="px-5 py-2.5 bg-primary-100 text-white text-xs font-semibold uppercase tracking-wider rounded-sm hover:bg-[#E9F551] hover:text-black transition-colors">
+            View Tariff Comparison Matrix
+          </a>
+          <a href="#rfq-section" class="px-5 py-2.5 border border-primary-100 text-primary-100 text-xs font-semibold uppercase tracking-wider rounded-sm hover:bg-primary-100 hover:text-white transition-colors">
+            Request FOB Laem Chabang RFQ
+          </a>
+        </div>
+      </div>
+      <div class="lg:col-span-6">
+        <div class="aspect-[16/11] overflow-hidden rounded-sm border border-primary-10 shadow-sm relative group">
+          <img src="{r}assets/images/about/factory_fabrication.webp" alt="Tianya Stone Overseas Manufacturing Base in Thailand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="800" height="550">
+          <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 text-white text-xs">
+            <span class="font-semibold block">Tianya Thailand Fabrication Complex</span>
+            <span class="text-white/80 text-[11px]">Industrial multi-blade diamond gang saws and automated calibration lines operating in Rayong, Thailand.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Factory Value Proposition Badges -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-14">
+      <div class="p-6 bg-primary-2 border border-primary-10 rounded-sm space-y-2">
+        <div class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#E9F551] text-[#251700] inline-block mb-1">0% Tariff</div>
+        <h3 class="font-heading text-lg font-medium text-primary-100">Section 301 Exemption</h3>
+        <p class="text-xs text-primary-70 font-copy leading-relaxed">Completely exempt from US Section 301 List 3 &amp; 4A punitive tariffs (25% saving vs. direct China stone imports).</p>
+      </div>
+
+      <div class="p-6 bg-primary-2 border border-primary-10 rounded-sm space-y-2">
+        <div class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#E9F551] text-[#251700] inline-block mb-1">Authentic COO</div>
+        <h3 class="font-heading text-lg font-medium text-primary-100">Certified Thai Origin</h3>
+        <p class="text-xs text-primary-70 font-copy leading-relaxed">Official Certificate of Origin issued by the Department of Foreign Trade (DFT), Ministry of Commerce of Thailand.</p>
+      </div>
+
+      <div class="p-6 bg-primary-2 border border-primary-10 rounded-sm space-y-2">
+        <div class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#E9F551] text-[#251700] inline-block mb-1">35 km Drayage</div>
+        <h3 class="font-heading text-lg font-medium text-primary-100">Port of Laem Chabang</h3>
+        <p class="text-xs text-primary-70 font-copy leading-relaxed">Direct container loading at Thailand’s premier deep-sea port with 18–22 days transit to Los Angeles / Long Beach.</p>
+      </div>
+
+      <div class="p-6 bg-primary-2 border border-primary-10 rounded-sm space-y-2">
+        <div class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#E9F551] text-[#251700] inline-block mb-1">ASTM C568</div>
+        <h3 class="font-heading text-lg font-medium text-primary-100">Class III High-Density</h3>
+        <p class="text-xs text-primary-70 font-copy leading-relaxed">Water absorption &lt;0.22%, compressive strength 128.5 MPa, and F100 freeze-thaw durability for harsh climates.</p>
+      </div>
+    </div>
+
+    <!-- Section 1: The Tariff Challenge & Side-by-Side Comparison -->
+    <section id="tariff-comparison" class="my-16">
+      <div class="border-b border-primary-10 pb-4 mb-6">
+        <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider">Commercial Procurement Strategy</span>
+        <h2 class="text-3xl font-heading font-medium text-primary-100">Direct China Export vs. Tianya Thailand Factory Export</h2>
+        <p class="text-xs text-primary-70 mt-1">Comparing regulatory exposure, customs duties, and logistics performance for US and global developers.</p>
+      </div>
+
+      <div class="overflow-x-auto border border-primary-10 bg-white shadow-sm">
+        <table class="spec-table w-full text-left text-xs font-copy">
+          <thead>
+            <tr class="bg-primary-100 text-white">
+              <th class="py-3 px-4 font-semibold">Procurement Metric</th>
+              <th class="py-3 px-4 font-semibold">Direct China Export (Shuitou)</th>
+              <th class="py-3 px-4 font-semibold text-[#E9F551]">Tianya Thailand Factory (Rayong)</th>
+              <th class="py-3 px-4 font-semibold">Client Strategic Advantage</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-primary-10">
+            <tr>
+              <td class="py-3 px-4 font-semibold text-primary-100">US Section 301 Tariff</td>
+              <td class="py-3 px-4 text-rose-700 font-semibold">25.0% Punitive Tariff</td>
+              <td class="py-3 px-4 text-emerald-800 font-bold bg-emerald-50">0.0% (Completely Exempt)</td>
+              <td class="py-3 px-4 text-primary-70">Immediate 25% cost reduction on landed cost for US projects.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-primary-100">Anti-Dumping / CVD Exposure</td>
+              <td class="py-3 px-4 text-amber-700">Subject to ongoing trade actions</td>
+              <td class="py-3 px-4 text-emerald-800 font-bold bg-emerald-50">Zero AD/CVD Exposure</td>
+              <td class="py-3 px-4 text-primary-70">Eliminates customs bond hold risks and retroactive tariff audits.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-primary-100">Country of Origin (COO)</td>
+              <td class="py-3 px-4">People's Republic of China (CN)</td>
+              <td class="py-3 px-4 text-primary-100 font-bold bg-emerald-50">Kingdom of Thailand (TH)</td>
+              <td class="py-3 px-4 text-primary-70">Authenticated by Thai Department of Foreign Trade (DFT).</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-primary-100">Primary Export Seaport</td>
+              <td class="py-3 px-4">Xiamen Port (CNXMN · 28 km)</td>
+              <td class="py-3 px-4 font-bold bg-emerald-50">Laem Chabang Port (THLCH · 35 km)</td>
+              <td class="py-3 px-4 text-primary-70">Direct carrier liner calls (ONE, Evergreen, Maersk, COSCO, MSC).</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-primary-100">Sea Transit to US West Coast</td>
+              <td class="py-3 px-4">16 – 20 Days (LA / Long Beach)</td>
+              <td class="py-3 px-4 font-semibold bg-emerald-50">18 – 22 Days (Direct Pacific Loop)</td>
+              <td class="py-3 px-4 text-primary-70">Virtually identical maritime lead times with no Panama detour.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-primary-100">Monthly Factory Output</td>
+              <td class="py-3 px-4">50,000+ m² / month</td>
+              <td class="py-3 px-4 font-semibold bg-emerald-50">20,000+ m² / month</td>
+              <td class="py-3 px-4 text-primary-70">Combined 70,000+ m²/mo guarantees multi-phase project scaling.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-primary-100">Physical ASTM C568 Testing</td>
+              <td class="py-3 px-4">&lt;0.22% absorption · 128.5 MPa</td>
+              <td class="py-3 px-4 font-semibold bg-emerald-50">&lt;0.22% absorption · 128.5 MPa</td>
+              <td class="py-3 px-4 text-primary-70">Identical dense marine bioclastic limestone block material.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-primary-100">Factory Audit Eligibility</td>
+              <td class="py-3 px-4">ISO 9001:2015 Accredited</td>
+              <td class="py-3 px-4 font-semibold bg-emerald-50">ISO 9001 + Sedex SMETA Audit</td>
+              <td class="py-3 px-4 text-primary-70">Welcomes independent SGS, BV, and client physical factory audits.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 2: Substantial Transformation Workflow -->
+    <section class="my-16 bg-primary-2 border border-primary-10 p-8 lg:p-12 rounded-sm">
+      <div class="max-w-3xl mb-10">
+        <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block mb-1">Legal Origin Compliance</span>
+        <h2 class="text-3xl font-heading font-medium text-primary-100">Authentic Substantial Transformation (19 CFR § 134)</h2>
+        <p class="text-xs text-primary-80 leading-relaxed font-copy mt-2">
+          Under US Customs and Border Protection (CBP) doctrine and international trade law, a substantial transformation occurs when raw monolithic blocks emerge with a distinct new name, character, and commercial use. Tianya operates a fully equipped, heavy-industrial stone processing plant in Thailand—never transshipment:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-xs font-copy">
+        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-primary-100 bg-[#E9F551] px-2 py-0.5 rounded">01</span>
+            <strong class="text-primary-100 text-sm">Monolithic Block Inflow</strong>
+          </div>
+          <p class="text-primary-70">Raw quarry blocks (6–12 tonnes each) enter the Rayong stockyard under certified ocean bills of lading and Thai customs transit manifests.</p>
+        </div>
+
+        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-primary-100 bg-[#E9F551] px-2 py-0.5 rounded">02</span>
+            <strong class="text-primary-100 text-sm">Multi-Blade Diamond Gang Sawing</strong>
+          </div>
+          <p class="text-primary-70">Heavy-duty multi-blade frame saws slice monolithic stone blocks into raw dimensional slabs of 20mm, 30mm, 40mm, and 50mm thicknesses.</p>
+        </div>
+
+        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-primary-100 bg-[#E9F551] px-2 py-0.5 rounded">03</span>
+            <strong class="text-primary-100 text-sm">6-Head Slab Calibration</strong>
+          </div>
+          <p class="text-primary-70">Continuous diamond calibration lines plane slabs to precise &plusmn;0.5mm bedding tolerances, eliminating lippage during tile laying.</p>
+        </div>
+
+        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-primary-100 bg-[#E9F551] px-2 py-0.5 rounded">04</span>
+            <strong class="text-primary-100 text-sm">5-Axis CNC Dimensioning &amp; Coping</strong>
+          </div>
+          <p class="text-primary-70">Automated bridge saws cut architectural dimensions (600x400, 800x400, 900x600mm) and carve seamless drop-face pool copings with 50–100mm aprons.</p>
+        </div>
+
+        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-primary-100 bg-[#E9F551] px-2 py-0.5 rounded">05</span>
+            <strong class="text-primary-100 text-sm">Tumbling &amp; Diamond Brushing</strong>
+          </div>
+          <p class="text-primary-70">Continuous vibration rumbler drums round paver edges (Tumbled/Antique) while automated diamond rotary brushes impart tactile P5/R11 wet slip grip.</p>
+        </div>
+
+        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-primary-100 bg-[#E9F551] px-2 py-0.5 rounded">06</span>
+            <strong class="text-primary-100 text-sm">ISPM-15 Crating &amp; DFT Certification</strong>
+          </div>
+          <p class="text-primary-70">Packaged into kiln-dried heat-treated timber crates with foam interleaves, sealed with heat-shrink wrap, and issued official Thai DFT Origin Certificates.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Factory Floor Infrastructure -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center my-16 py-10 border-t border-b border-primary-10">
+      <div class="lg:col-span-6 space-y-4">
+        <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block">Heavy Industrial Equipment</span>
+        <h2 class="text-3xl lg:text-4xl font-heading font-medium text-primary-100 leading-tight">
+          Rayong Fabrication Plant Machinery Roster
+        </h2>
+        <p class="text-xs sm:text-sm text-primary-80 leading-relaxed font-copy">
+          Located in the WHA/Amata City industrial corridor in Rayong, our Thailand plant spans an 18,000 m² covered workshop and a 12,000 m² outdoor block gantry yard. It is engineered specifically for export-oriented architectural stonework:
+        </p>
+        <ul class="text-xs text-primary-70 space-y-2 font-copy pt-1">
+          <li class="flex items-start gap-2">
+            <span class="text-primary-100 font-bold">✓</span>
+            <span><strong>6 Multi-Blade Diamond Block Gang Saws:</strong> High-torque diamond frames slicing hard marine limestone blocks with computerized feed control.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-primary-100 font-bold">✓</span>
+            <span><strong>3 Five-Axis CNC Diamond Bridge Saws:</strong> 3D CAD/CAM integration for curved pool copings, step nosings, and mitered architectural profiles.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-primary-100 font-bold">✓</span>
+            <span><strong>Automated Continuous Tumbling Drums:</strong> Heavy-duty water-rumbler barrels achieving genuine, organic pillowed antique edge patinas.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-primary-100 font-bold">✓</span>
+            <span><strong>Closed-Loop Water Filtration &amp; Sludge Press:</strong> Recycles 95% of industrial coolant water with zero environmental discharge.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="lg:col-span-6">
+        <div class="aspect-[4/3] overflow-hidden rounded-sm border border-primary-10 shadow-sm relative group">
+          <img src="{r}assets/images/about/export_crates_logistics.webp" alt="Thailand Export Timber Crates ISPM-15" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="700" height="525">
+          <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 text-white text-xs">
+            <span class="font-semibold block">Export Packaging in Rayong Base</span>
+            <span class="text-white/80 text-[11px]">Kiln-dried ISPM-15 certified timber crates with steel strapping and waterproof protective wrapping.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Available Finishes & Collections -->
+    <section class="my-16">
+      <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-8 pb-4 border-b border-primary-10 gap-2">
+        <div>
+          <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block">Production Capabilities</span>
+          <h2 class="text-2xl lg:text-3xl font-heading font-medium text-primary-100">Limestone Finishes Available from Thailand Base</h2>
+        </div>
+        <a href="{r}index.html" class="text-xs font-semibold text-primary-100 hover:underline">
+          Browse All 29 Limestone Collections &rarr;
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
+          <h3 class="font-heading text-lg font-medium text-primary-100">Tumbled Finish (P4 / R10)</h3>
+          <p class="text-xs text-primary-70 font-copy leading-relaxed">
+            Softened, pillowed edges and a weathered antique patina created in our automated continuous tumbling drums. Ideal for luxury residential terraces, pool decks, and French provincial courtyards.
+          </p>
+          <a href="{r}stone-flooring/limestone/tumbled/index.html" class="text-xs font-semibold text-primary-100 hover:underline block pt-2">Explore Tumbled Range (8) &rarr;</a>
+        </div>
+
+        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
+          <h3 class="font-heading text-lg font-medium text-primary-100">Antique Hand-Dressed (P4 / R10-R11)</h3>
+          <p class="text-xs text-primary-70 font-copy leading-relaxed">
+            Chiseled rustic borders with undulating, pillowed surface texturing. Recreates centuries-old European manor flagstones with authentic tactile grip.
+          </p>
+          <a href="{r}stone-flooring/limestone/antique/index.html" class="text-xs font-semibold text-primary-100 hover:underline block pt-2">Explore Antique Range (10) &rarr;</a>
+        </div>
+
+        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
+          <h3 class="font-heading text-lg font-medium text-primary-100">Lightly Distressed (P3 / R9)</h3>
+          <p class="text-xs text-primary-70 font-copy leading-relaxed">
+            Contemporary clean lines with delicate micro-chamfering. Balances organic natural stone variation with minimalist modern villa architecture.
+          </p>
+          <a href="{r}stone-flooring/limestone/lightly-distressed/index.html" class="text-xs font-semibold text-primary-100 hover:underline block pt-2">Explore Distressed Range (6) &rarr;</a>
+        </div>
+
+        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
+          <h3 class="font-heading text-lg font-medium text-primary-100">Sandblasted &amp; Brushed (P5 / R11)</h3>
+          <p class="text-xs text-primary-70 font-copy leading-relaxed">
+            Fine quartz sandblasting followed by diamond rotary brushes. Creates a velvety soft-underfoot surface with certified commercial wet slip safety for public concourses and spas.
+          </p>
+          <a href="{r}stone-flooring/limestone/sandblasted-brushed/index.html" class="text-xs font-semibold text-primary-100 hover:underline block pt-2">Explore Brushed Range (2) &rarr;</a>
+        </div>
+
+        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
+          <h3 class="font-heading text-lg font-medium text-primary-100">Sandblasted High-Grip (P5 / R11-R12)</h3>
+          <p class="text-xs text-primary-70 font-copy leading-relaxed">
+            Uniform granular texturing maximizing mechanical grip under wet conditions. Specified for zero-entry pool ramps, water parks, and outdoor hotel plazas.
+          </p>
+          <a href="{r}stone-flooring/limestone/sandblasted/index.html" class="text-xs font-semibold text-primary-100 hover:underline block pt-2">Explore Sandblasted Range (3) &rarr;</a>
+        </div>
+
+        <div class="p-6 bg-primary-2 border border-primary-10 rounded-sm space-y-3 flex flex-col justify-between">
+          <div>
+            <h3 class="font-heading text-lg font-medium text-primary-100">Custom Drop-Face Pool Coping</h3>
+            <p class="text-xs text-primary-70 font-copy leading-relaxed">
+              Monolithic rebated drop-down aprons (50mm, 75mm, 100mm drop) precision-mitered or machined from single solid blocks on our 5-axis CNC saws.
+            </p>
+          </div>
+          <a href="#rfq-section" class="px-4 py-2 bg-primary-100 text-white text-xs font-semibold uppercase tracking-wider rounded text-center hover:bg-[#E9F551] hover:text-black transition-colors">
+            Custom Coping RFQ &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Global Shipping & Laem Chabang Port Schedules -->
+    <section class="my-16 bg-[#FAF8F5] border border-[#E8E4DE] p-8 lg:p-12 rounded-sm">
+      <div class="max-w-3xl mb-8">
+        <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block mb-1">Ocean Container Freight</span>
+        <h2 class="text-3xl font-heading font-medium text-primary-100">Direct Maritime Departures from Port of Laem Chabang (THLCH)</h2>
+        <p class="text-xs text-primary-80 leading-relaxed font-copy mt-2">
+          Laem Chabang Port handles over 8 million TEUs annually and offers frequent, scheduled direct carrier rotations to all major global ports:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs font-copy">
+        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
+          <div>
+            <strong class="text-primary-100 block">Los Angeles / Long Beach, CA</strong>
+            <span class="text-primary-70">Direct Pacific trans-Pacific carrier loop</span>
+          </div>
+          <span class="transit-badge font-bold">18 – 22 Days</span>
+        </div>
+
+        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
+          <div>
+            <strong class="text-primary-100 block">Oakland / San Francisco, CA</strong>
+            <span class="text-primary-70">Direct weekly carrier departures</span>
+          </div>
+          <span class="transit-badge font-bold">20 – 24 Days</span>
+        </div>
+
+        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
+          <div>
+            <strong class="text-primary-100 block">Seattle / Tacoma, WA</strong>
+            <span class="text-primary-70">North Pacific weekly service</span>
+          </div>
+          <span class="transit-badge font-bold">22 – 26 Days</span>
+        </div>
+
+        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
+          <div>
+            <strong class="text-primary-100 block">New York / New Jersey</strong>
+            <span class="text-primary-70">Trans-Suez / Panama liner call</span>
+          </div>
+          <span class="transit-badge font-bold">28 – 32 Days</span>
+        </div>
+
+        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
+          <div>
+            <strong class="text-primary-100 block">Savannah, GA / Houston, TX</strong>
+            <span class="text-primary-70">Gulf &amp; South Atlantic loops</span>
+          </div>
+          <span class="transit-badge font-bold">30 – 34 Days</span>
+        </div>
+
+        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
+          <div>
+            <strong class="text-primary-100 block">Sydney / Melbourne / Brisbane</strong>
+            <span class="text-primary-70">Direct Oceania express rotation</span>
+          </div>
+          <span class="transit-badge font-bold">14 – 18 Days</span>
+        </div>
+
+        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
+          <div>
+            <strong class="text-primary-100 block">Rotterdam / Antwerp / Hamburg</strong>
+            <span class="text-primary-70">Direct North European container calls</span>
+          </div>
+          <span class="transit-badge font-bold">24 – 28 Days</span>
+        </div>
+
+        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
+          <div>
+            <strong class="text-primary-100 block">London Gateway / Southampton</strong>
+            <span class="text-primary-70">UK direct ocean freight</span>
+          </div>
+          <span class="transit-badge font-bold">26 – 30 Days</span>
+        </div>
+
+        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
+          <div>
+            <strong class="text-primary-100 block">Jebel Ali (Dubai) / Dammam</strong>
+            <span class="text-primary-70">Middle East Arabian Gulf service</span>
+          </div>
+          <span class="transit-badge font-bold">12 – 16 Days</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: ASEAN Supply Chain Footprint -->
+    <section class="my-16">
+      <div class="border-b border-primary-10 pb-4 mb-6">
+        <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider">Supply Chain Resilience</span>
+        <h2 class="text-3xl font-heading font-medium text-primary-100">Integrated ASEAN Manufacturing &amp; Logistics Network</h2>
+        <p class="text-xs text-primary-70 mt-1">Strengthening global projects with multi-hub fabrication and bonded distribution nodes.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs font-copy">
+        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
+          <div class="font-bold text-primary-100 text-sm">Thailand Rayong Hub (Primary)</div>
+          <p class="text-primary-70 leading-relaxed">
+            Main overseas fabrication facility equipped with multi-blade block saws, 5-axis CNC machines, automated calibration lines, and continuous tumbling drums. Primary departure point for tariff-free US and European exports via Laem Chabang Port.
+          </p>
+        </div>
+
+        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
+          <div class="font-bold text-primary-100 text-sm">Vietnam Da Nang Processing Unit</div>
+          <p class="text-primary-70 leading-relaxed">
+            Specialized fabrication center for high-density architectural bluestone, crystal-white marble paving, and dense basalt tiles. Supports Pacific Rim commercial developments with regional quarry reserves.
+          </p>
+        </div>
+
+        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
+          <div class="font-bold text-primary-100 text-sm">Cambodia Sihanoukville Logistics Node</div>
+          <p class="text-primary-70 leading-relaxed">
+            Bonded warehousing and container consolidation center in Sihanoukville Special Economic Zone (SSEZ). Facilitates raw material buffering, mixed-container staging, and rapid project staging across Southeast Asia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Container Estimator Tool -->
+    { render_container_estimator() }
+
+    <!-- Section 7: RFQ Form Section -->
+    <section id="rfq-section" class="my-16">
+      <div class="border-b border-primary-10 pb-4 mb-8">
+        <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider">Direct Factory Sourcing</span>
+        <h2 class="text-3xl font-heading font-medium text-primary-100">Request Thailand Factory FOB Quotation &amp; Sample Kits</h2>
+        <p class="text-xs text-primary-70 mt-1">Our international engineering desk provides itemized FOB Laem Chabang container pricing, tariff documentation, and express DHL sample kits.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5 space-y-4 text-xs font-copy">
+          <div class="bg-primary-2 border border-primary-10 p-6 rounded-sm space-y-3">
+            <h3 class="font-heading text-base font-semibold text-primary-100">Thailand Facility Direct Inquiries</h3>
+            <p><strong>Operating Entity:</strong> Tianya Stone (Thailand) Co., Ltd.</p>
+            <p><strong>Factory Location:</strong> Eastern Economic Corridor (EEC), Rayong/Chonburi, Thailand</p>
+            <p><strong>Port of Loading:</strong> Port of Laem Chabang (THLCH)</p>
+            <p><strong>US Tariff Status:</strong> 0% Section 301 Tariff Exempt</p>
+            <p><strong>Direct Inquiries Email:</strong> <a href="mailto:{COMPANY_INFO['email']}" class="text-primary-100 font-semibold underline">{COMPANY_INFO['email']}</a></p>
+            <p><strong>Sales Hotline:</strong> <a href="tel:{COMPANY_INFO['phone']}" class="text-primary-100 font-semibold underline">{COMPANY_INFO['phone']}</a></p>
+          </div>
+
+          <div class="bg-white border border-primary-10 p-6 rounded-sm space-y-2 shadow-sm">
+            <h4 class="font-heading text-sm font-semibold text-primary-100">Sample Kit Dispatch Timeline</h4>
+            <p class="text-primary-70 leading-relaxed">
+              Curated architectural sample presentation boxes containing 100x100mm limestone swatches across our signature finishes ship via DHL/FedEx Express directly from our Thailand hub to the US, Canada, Australia, and Europe in 3 to 5 business days.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 bg-white border border-primary-10 p-6 sm:p-8 rounded-sm shadow-sm">
+          { render_progressive_rfq_form("Thailand Overseas Factory Sourcing (0% US Tariff)", "thailand_rfq_form") }
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Frequently Asked Questions (FAQ) -->
+    <section class="my-16 border-t border-primary-10 pt-12">
+      <div class="max-w-3xl mb-8">
+        <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block mb-1">Procurement Clarifications</span>
+        <h2 class="text-3xl font-heading font-medium text-primary-100">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-4 max-w-4xl text-xs font-copy">
+        <details class="group border border-primary-10 p-4 rounded-sm bg-white open:bg-primary-2 transition-colors">
+          <summary class="font-semibold text-sm text-primary-100 cursor-pointer list-none flex justify-between items-center">
+            <span>Does importing limestone from Tianya's Thailand factory avoid US Section 301 tariffs?</span>
+            <span class="group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 text-primary-70 leading-relaxed">
+            Yes. Finished natural limestone fabricated at our Thailand facility undergoes authentic substantial transformation (sawing, calibration, CNC profiling, tumbling, and brushing) in accordance with US CBP 19 CFR § 134. Products enter the United States with 0% Section 301 tariffs and 0% AD/CVD duties under an official Certificate of Origin issued by the Thai Department of Foreign Trade.
+          </p>
+        </details>
+
+        <details class="group border border-primary-10 p-4 rounded-sm bg-white open:bg-primary-2 transition-colors">
+          <summary class="font-semibold text-sm text-primary-100 cursor-pointer list-none flex justify-between items-center">
+            <span>What is the monthly production capacity and port of loading in Thailand?</span>
+            <span class="group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 text-primary-70 leading-relaxed">
+            The 18,000 m² covered fabrication plant in Rayong/Chonburi produces over 20,000 m² of finished architectural limestone monthly. Shipments depart directly from Laem Chabang Deep Sea Port (THLCH), located 35 km from the facility, with direct ocean container transit to Los Angeles / Long Beach in 18 to 22 days.
+          </p>
+        </details>
+
+        <details class="group border border-primary-10 p-4 rounded-sm bg-white open:bg-primary-2 transition-colors">
+          <summary class="font-semibold text-sm text-primary-100 cursor-pointer list-none flex justify-between items-center">
+            <span>Are physical test reports and ASTM standards identical between China and Thailand facilities?</span>
+            <span class="group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 text-primary-70 leading-relaxed">
+            Yes. Slabs and pavers fabricated at our Thailand base utilize identical high-density marine limestone blocks meeting ASTM C568 Class III standards: water absorption under 0.22%, compressive strength 128.5 MPa, and F100 freeze-thaw durability (100 cycles, 0% mass loss).
+          </p>
+        </details>
+
+        <details class="group border border-primary-10 p-4 rounded-sm bg-white open:bg-primary-2 transition-colors">
+          <summary class="font-semibold text-sm text-primary-100 cursor-pointer list-none flex justify-between items-center">
+            <span>Can US and European architects request physical sample kits from the Thailand facility?</span>
+            <span class="group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 text-primary-70 leading-relaxed">
+            Yes. Sample kits featuring all 29 architectural limestone selections across 5 finishes are dispatched via DHL or FedEx Express directly to North America, Europe, and Australia within 3 to 5 business days.
+          </p>
+        </details>
+
+        <details class="group border border-primary-10 p-4 rounded-sm bg-white open:bg-primary-2 transition-colors">
+          <summary class="font-semibold text-sm text-primary-100 cursor-pointer list-none flex justify-between items-center">
+            <span>What documentation accompanies each Thailand container shipment?</span>
+            <span class="group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 text-primary-70 leading-relaxed">
+            Every container includes an official Thai Department of Foreign Trade Certificate of Origin (Form D, Form E, or General C/O), commercial invoice, packing list, ISPM-15 fumigation certificate, ocean bill of lading, and independent ASTM laboratory physical test reports.
+          </p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  {render_footer(depth)}
+  <script src="{r}assets/js/search_index.js"></script>
+  <script src="{r}assets/js/main.js?v=20261006_rfq"></script>
+</body>
+</html>
+'''
+    return html
+
+
 def generate_about_page():
     depth = 1
     r = get_rel_path(depth)
@@ -2452,6 +3122,14 @@ def generate_about_page():
         </div>
 
         <div class="timeline-node">
+          <span class="text-xs font-semibold text-primary-40 uppercase tracking-wider block mb-1">June 2022</span>
+          <h3 class="font-heading text-lg font-medium text-primary-100 mb-1">Global Dual-Hub Expansion: Thailand Overseas Manufacturing Base</h3>
+          <p class="text-xs text-primary-70 leading-relaxed font-copy">
+            Commissioned Tianya Stone (Thailand) Co., Ltd. in the Eastern Economic Corridor (EEC) of Rayong/Chonburi, adding an 18,000 m² state-of-the-art stone fabrication facility. Strategically located 35 km from Laem Chabang Deep Sea Port, this facility delivers 20,000 m²/month of architectural limestone with 0% US Section 301 tariffs and authentic Thai Country of Origin (DFT) certification.
+          </p>
+        </div>
+
+        <div class="timeline-node">
           <span class="text-xs font-semibold text-primary-40 uppercase tracking-wider block mb-1">2024 – Present</span>
           <h3 class="font-heading text-lg font-medium text-primary-100 mb-1">Digital B2B Architectural Platform Launch</h3>
           <p class="text-xs text-primary-70 leading-relaxed font-copy">
@@ -2465,26 +3143,31 @@ def generate_about_page():
     <div class="bg-primary-2 border border-primary-10 p-8 lg:p-12 my-12">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div>
-          <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block mb-2">Facility Credentials</span>
-          <h2 class="text-3xl font-heading font-medium text-primary-100 mb-4">Shuitou Automated Fabrication Center</h2>
+          <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block mb-2">Dual-Hub Manufacturing Footprint</span>
+          <h2 class="text-3xl font-heading font-medium text-primary-100 mb-4">China Mega-Hub &amp; Thailand Overseas Base</h2>
           <p class="text-xs text-primary-80 leading-relaxed font-copy mb-4">
-            Whether crafting interlocking Roman modular paving sets or custom drop-down pool copings with 50mm rebated aprons, every piece meets millimeter tolerances.
+            Whether crafting interlocking Roman modular paving sets or custom drop-down pool copings with 50mm rebated aprons, our dual-hub production system delivers unparalleled supply security, capacity (70,000+ m²/mo total), and tariff mitigation for international developers.
           </p>
           <ul class="text-xs text-primary-70 space-y-2 font-copy">
-            <li>✓ ISO 9001:2015 Quality Management System Certification</li>
-            <li>✓ Fumigated ISPM 15 Heavy-Duty Timber Export Crates</li>
-            <li>✓ Full Traceability from Raw Quarry Block to Finished Pallet</li>
-            <li>✓ Dedicated Logistics Fleet for 28km Xiamen Port Container Drayage</li>
+            <li>✓ <strong>China Base (Shuitou):</strong> 35,000 m² workshop, 3 quarry concessions, FOB Xiamen (28 km)</li>
+            <li>✓ <strong>Thailand Base (Rayong/Chonburi):</strong> 18,000 m² plant, FOB Laem Chabang (35 km), <strong>0% US Section 301 Tariffs</strong></li>
+            <li>✓ ISO 9001:2015 Quality Management &amp; Sedex SMETA Ethical Audit Readiness</li>
+            <li>✓ Certified Thai Country of Origin (DFT) &amp; Fumigated ISPM-15 Timber Crates</li>
           </ul>
+          <div class="pt-4">
+            <a href="{r}thailand-factory/index.html" class="inline-flex items-center gap-1.5 px-4 py-2 bg-primary-100 text-white text-xs font-semibold uppercase tracking-wider rounded hover:bg-[#E9F551] hover:text-black transition-colors">
+              <span>View Thailand Factory Details</span> &rarr;
+            </a>
+          </div>
         </div>
         <div class="bg-white p-6 border border-primary-10 space-y-3 text-xs">
-          <h4 class="font-heading text-base font-semibold text-primary-100">Factory Coordinates & Direct Contacts</h4>
-          <p><strong>Legal Entity:</strong> {COMPANY_INFO['name']} ({COMPANY_INFO['chinese_name']})</p>
-          <p><strong>Factory Address:</strong> {COMPANY_INFO['address']}</p>
-          <p><strong>GPS Coordinates:</strong> {COMPANY_INFO['coordinates']}</p>
-          <p><strong>Direct Inquiries:</strong> <a href="mailto:{COMPANY_INFO['email']}" class="text-primary-100 underline font-semibold">{COMPANY_INFO['email']}</a></p>
+          <h4 class="font-heading text-base font-semibold text-primary-100">Global Manufacturing Coordinates</h4>
+          <p><strong>China Headquarters:</strong> {COMPANY_INFO['address']}</p>
+          <p><strong>China Port Gateway:</strong> Xiamen Deep-Water Seaport (CNXMN · 28 km)</p>
+          <p><strong>Thailand Overseas Base:</strong> Eastern Economic Corridor (EEC), Rayong/Chonburi, Thailand</p>
+          <p><strong>Thailand Port Gateway:</strong> Laem Chabang Deep Sea Port (THLCH · 35 km · 0% US Tariff)</p>
+          <p><strong>Global Inquiries:</strong> <a href="mailto:{COMPANY_INFO['email']}" class="text-primary-100 underline font-semibold">{COMPANY_INFO['email']}</a></p>
           <p><strong>Sales Hotline:</strong> <a href="tel:{COMPANY_INFO['phone']}" class="text-primary-100 underline font-semibold">{COMPANY_INFO['phone']}</a></p>
-          <p><strong>Main Stone Portal:</strong> <a href="{COMPANY_INFO['sister_domain']}" target="_blank" rel="noopener" class="text-primary-100 underline font-semibold">tystoneveneer.com</a></p>
         </div>
       </div>
     </div>
@@ -2796,6 +3479,52 @@ def generate_compliance_page():
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Section 301 Tariff & Thailand Substantial Transformation Compliance -->
+    <section class="my-14 p-8 lg:p-10 bg-[#FAF8F5] border border-[#E8E4DE] rounded-sm">
+      <div class="max-w-3xl space-y-4 mb-8">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider rounded bg-[#E9F551] text-[#251700]">0% US Section 301 Tariff</span>
+          <span class="px-2.5 py-1 text-[11px] font-semibold tracking-wider rounded bg-white text-primary-100 border border-primary-20">US CBP 19 CFR § 134 Compliant</span>
+        </div>
+        <h2 class="text-3xl font-heading font-medium text-primary-100">
+          US Section 301 Tariff Exemption &amp; Thailand Country of Origin (COO) Audit Trail
+        </h2>
+        <p class="text-sm text-primary-80 leading-relaxed font-copy">
+          To provide US architects, contractors, and national stone distributors with absolute regulatory protection from 25% Section 301 tariffs and AD/CVD duties, Tianya’s Thailand manufacturing hub (Rayong/Chonburi) executes authentic substantial transformation on raw quarry blocks.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs font-copy">
+        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
+          <div class="font-bold text-primary-100 text-sm">Substantial Transformation</div>
+          <p class="text-primary-70">
+            Raw quarry blocks undergo multi-blade diamond gang sawing, computerized 6-head calibration, CNC edge profiling, and mechanical tumbling, satisfying US CBP 19 CFR § 134 rules of origin doctrine.
+          </p>
+        </div>
+        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
+          <div class="font-bold text-primary-100 text-sm">Official DFT Thai C/O</div>
+          <p class="text-primary-70">
+            Every container is accompanied by an authenticated Certificate of Origin issued by the Department of Foreign Trade (DFT), Ministry of Commerce of Thailand, or the Thai Chamber of Commerce.
+          </p>
+        </div>
+        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
+          <div class="font-bold text-primary-100 text-sm">FOB Laem Chabang (THLCH)</div>
+          <p class="text-primary-70">
+            Containers are drayed directly to Port of Laem Chabang with direct trans-Pacific sea transit to Long Beach/Los Angeles in 18–22 days and New York in 28–32 days.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-primary-10 flex flex-wrap items-center justify-between gap-4">
+        <p class="text-xs text-primary-70">
+          Require full factory audit dossier, Sedex SMETA compliance, or a FOB Laem Chabang price comparison?
+        </p>
+        <a href="{r}thailand-factory/index.html" class="px-5 py-2.5 bg-primary-100 text-white text-xs font-semibold uppercase tracking-wider rounded hover:bg-[#E9F551] hover:text-black transition-colors">
+          Explore Thailand Factory &amp; Tariff Solution &rarr;
+        </a>
       </div>
     </section>
 
@@ -3340,11 +4069,29 @@ def generate_contact_page():
       <!-- Info Left -->
       <div class="lg:col-span-5 space-y-6">
         <div class="bg-primary-2 border border-primary-10 p-6 space-y-4 text-xs font-copy rounded-sm">
-          <h3 class="font-heading text-lg font-medium text-primary-100">Quarry & Manufacturing HQ</h3>
+          <h3 class="font-heading text-lg font-medium text-primary-100">Quarry & Manufacturing HQ (China)</h3>
           <p><strong>Legal Entity:</strong> {COMPANY_INFO['name']} ({COMPANY_INFO['chinese_name']})</p>
           <p><strong>Factory Address:</strong> {COMPANY_INFO['address']}</p>
           <p><strong>GPS Coordinates:</strong> {COMPANY_INFO['coordinates']}</p>
           <p><strong>Nearest Seaport:</strong> {COMPANY_INFO['port']}</p>
+        </div>
+
+        <div class="bg-primary-2 border border-primary-10 p-6 space-y-4 text-xs font-copy rounded-sm">
+          <div class="flex items-center justify-between">
+            <h3 class="font-heading text-lg font-medium text-primary-100">Thailand Overseas Manufacturing Base</h3>
+            <span class="px-2 py-0.5 rounded bg-[#E9F551] text-[#251700] text-[10px] font-bold uppercase">0% US Tariff</span>
+          </div>
+          <p><strong>Operating Entity:</strong> Tianya Stone (Thailand) Co., Ltd.</p>
+          <p><strong>Factory Location:</strong> Eastern Economic Corridor (EEC), Rayong/Chonburi, Thailand</p>
+          <p><strong>Export Seaport:</strong> Port of Laem Chabang (THLCH · 35 km)</p>
+          <p><strong>US Section 301 Tariff:</strong> <strong>0% (Completely Exempt)</strong></p>
+          <p><strong>Country of Origin (COO):</strong> Certified by Department of Foreign Trade (DFT), Thailand</p>
+          <p><strong>Direct Inquiries Email:</strong> <a href="mailto:{COMPANY_INFO['email']}" class="text-primary-100 font-semibold underline">{COMPANY_INFO['email']}</a></p>
+          <div class="pt-1">
+            <a href="{r}thailand-factory/index.html" class="inline-flex items-center gap-1 font-semibold text-primary-100 hover:underline">
+              <span>View Thailand Facility &amp; Port Schedules</span> &rarr;
+            </a>
+          </div>
         </div>
 
         <div class="bg-primary-2 border border-primary-10 p-6 space-y-4 text-xs font-copy rounded-sm">
@@ -3443,6 +4190,9 @@ def generate_sitemap_and_robots(all_pages, all_products):
         if p == "index.html":
             prio = "1.0"
             freq = "daily"
+        elif "thailand-factory" in p or "overseas-manufacturing" in p:
+            prio = "0.95"
+            freq = "weekly"
         elif p.startswith("stone-flooring/limestone/") and (p.count("/") == 2 or (p.endswith("index.html") and p.count("/") == 3)):
             prio = "0.9"
             freq = "weekly"
@@ -4420,6 +5170,21 @@ def build_all():
         f.write(other_html)
     all_pages.append('stone-flooring/other-categories/index.html')
     print("Generated stone-flooring/other-categories/index.html")
+
+    # 5b. Build Thailand Overseas Factory Page (0% US Tariff Hub)
+    thailand_html = generate_thailand_factory_page()
+    os.makedirs(os.path.join(BASE_DIR, 'thailand-factory'), exist_ok=True)
+    with open(os.path.join(BASE_DIR, 'thailand-factory', 'index.html'), 'w') as f:
+        f.write(thailand_html)
+    all_pages.append('thailand-factory/index.html')
+    print("Generated thailand-factory/index.html")
+
+    # Generate alias /overseas-manufacturing/ for seamless cross-linking
+    os.makedirs(os.path.join(BASE_DIR, 'overseas-manufacturing'), exist_ok=True)
+    with open(os.path.join(BASE_DIR, 'overseas-manufacturing', 'index.html'), 'w') as f:
+        f.write(thailand_html)
+    all_pages.append('overseas-manufacturing/index.html')
+    print("Generated overseas-manufacturing/index.html (alias)")
 
     # 6. Build Corporate & Technical Pages
     about_html = generate_about_page()

@@ -38,6 +38,8 @@ tar --no-xattrs -czf "/tmp/${ARCHIVE_NAME}" \
     compliance/ \
     resources/ \
     blog/ \
+    thailand-factory/ \
+    overseas-manufacturing/ \
     stone-flooring/ \
     ru/ \
     references/ \

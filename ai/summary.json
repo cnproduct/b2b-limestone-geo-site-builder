@@ -119,5 +119,19 @@
     ],
     "unified_contact_email": "info@tianyastone.com",
     "telegram_cis": "https://t.me/tianya_limestone_cis"
+  },
+  "overseas_manufacturing_hub": {
+    "facility_name": "Tianya Limestone Thailand Overseas Manufacturing Base",
+    "operating_entity": "Tianya Stone (Thailand) Co., Ltd.",
+    "location": "Eastern Economic Corridor (EEC), Rayong/Chonburi, Thailand",
+    "coordinates": {
+      "latitude": 13.0185,
+      "longitude": 101.1245
+    },
+    "export_seaport": "Port of Laem Chabang (THLCH · 35 km)",
+    "monthly_capacity_sqm": "20,000+ m²",
+    "us_section_301_tariff": "0% (Completely Exempt)",
+    "country_of_origin": "Thailand (TH) certified by DFT",
+    "hub_url": "https://tianyalimestone.com/thailand-factory/"
   }
 }
