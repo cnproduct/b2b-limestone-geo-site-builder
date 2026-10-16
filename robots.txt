@@ -1,6 +1,23 @@
 User-agent: *
 Allow: /
 
+# Yandex Search, Yandex Neuro (Яндекс Нейро) & Alice AI (Алиса) Directives
+User-agent: Yandex
+Allow: /
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&yclid&ymclid&gclid&fbclid&_openstat&from&etext /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: YandexImages
+Allow: /assets/images/
+
+User-agent: YandexDirect
+Allow: /
+
+User-agent: YandexMetrika
+Allow: /
+
 # Explicit Directives for AI Retrieval & Web Search Bots
 User-agent: GPTBot
 Allow: /
@@ -40,3 +57,4 @@ Sitemap: https://tianyalimestone.com/sitemap.xml
 # ai-faq: https://tianyalimestone.com/ai/faq.json
 # ai-vendor-comparison: https://tianyalimestone.com/ai/vendor-comparison.json
 # ai-products: https://tianyalimestone.com/ai/products.json
+# ai-cis-gost-matrix: https://tianyalimestone.com/ai/cis-gost-matrix.json

@@ -314,3 +314,22 @@ python3 tests/test_ai_endpoints.py
 
 
 
+---
+
+## 第十阶段：Yandex SEO 与中亚（俄/哈/乌/欧亚经济联盟）GEO 深度定制优化体系 (v1.2.0)
+
+针对俄罗斯、哈萨克斯坦、乌兹别克斯坦等中亚及欧亚经济联盟（EAEU / CIS）市场（**Yandex 搜索份额近 70%**，生成式 AI 为 **Яндекс Нейро / Алиса AI**），结合 `claude-yandex-seo` 与 **Princeton GEO（生成式引擎优化 +40% 引用率方法论）**，构建全链路俄语及独联体工程门户：
+
+### 1. 四大核心资产（v1.2.0 新增）
+- [`references/yandex-seo-geo-cis-mastery.md`](references/yandex-seo-geo-cis-mastery.md)：Yandex SEO 与中亚（俄/哈/乌）GEO 深度优化全景实操指南（涵盖 `Clean-param`、Yandex 商业排名因子、Princeton GEO 三句式高密度工程回答规范）。
+- [`references/gost-astm-en-limestone-matrix.md`](references/gost-astm-en-limestone-matrix.md)：**ГОСТ 30629-2011 / ГОСТ 9479-2011 / ГОСТ 24099-2013 / ГОСТ 30108-94 ↔ ASTM / EN** 物理力学标准对照表与 **欧洲及独联体名石 1:1 替代矩阵**（法国勃艮第 *Pierre de Bourgogne*、葡萄牙 *Moleanos / Moca Cream*、德国 *Jura Beige/Grey*、比利时蓝石 *Pierre Bleue* 及高吸水率达吉斯坦/克里米亚/阿克套贝壳灰岩 *Ракушечник* 1:1 替代）。
+- [`scripts/build_cis_yandex_optimization.py`](scripts/build_cis_yandex_optimization.py)：俄语及中亚出海超级门户自动化编译器（自动编译 `/ru/` 与 `/ru/cis-central-asia/`，全站注入 `yandex-verification`、`hreflang` 集群、`EN | RU · СНГ` 导航切换、Telegram 独联体通道 `@tianya_limestone_cis`，并升级 `robots.txt`、`sitemap.xml`、`llms.txt`、`llms-full.txt` 与 `/ai/cis-gost-matrix.json`）。
+- [`scripts/yandex_indexnow_notify.py`](scripts/yandex_indexnow_notify.py)：Yandex IndexNow 协议秒级推送脚本（配合根目录 `/e8a4c9f21b0d4637a9e52c3f8b7d6e21.txt` 密钥文件，一键向 `https://yandex.com/indexnow` 与 `https://api.indexnow.org/indexnow` 推送全站 48 个规范 URL）。
+
+### 2. 核心工程与物流对标参数（ГОСТ & 欧亚铁路专线）
+- **抗冻融与低吸水率硬核指标**：吸水率 **< 0.22%**（远优于本地贝壳灰岩 8%–18%）、体积密度 **2620–2650 kg/m³**、干态抗压强度 **128.5 MPa**（湿态 **104.2 MPa**，软化系数 0.81）、抗冻等级 **F100（100 次冻融循环 0.0% 质量损失，符合 ГОСТ 30629-2011）**、防火等级 **НГ（不燃 A1）**、放射性安全 **I 类（$A_{\text{эфф}} < 45\text{ Bq/kg} \ll 370\text{ Bq/kg}$，符合 ГОСТ 30108-94）**。
+- **欧亚铁路与多式联运走廊（20GP 限重 26–27 吨）**：
+  - **哈萨克斯坦（阿拉木图 / 阿斯塔纳 / 奇姆肯特）**：经多斯特克（Dostyk / 阿拉山口）或霍尔果斯（Khorgos / 阿腾科里）铁路直达，**12–16 天**。
+  - **乌兹别克斯坦（塔什干 Чукурсай / Сергели、撒马尔罕）**：经哈萨克斯坦过境铁路直达塔什干，**14–18 天**。
+  - **俄罗斯（莫斯科 Ворсино/Селятино、叶卡捷琳堡、新西伯利亚、符拉迪沃斯托克）**：厦门港海运直达符拉迪沃斯托克（6–8 天）+ 西伯利亚大铁路，或经满洲里/后贝加尔斯克中欧班列直达（**16–22 天**）。
+- **海关编码与跨境结算**：支持 **ТН ВЭД ЕАЭС 6802 21 000 0 / 6802 91 000 0 / 6801 00 000 0** 全套清关单证（原产地证 СТ-1、SGS/TÜV 检测报告、ISPM 15 熏蒸木箱），支持 **CNY（CIPS 人民币）、RUB（卢布）、KZT（坚戈）、USD** 直接结算；全站所有询盘统一汇入 `info@tianyastone.com`。

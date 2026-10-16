@@ -52,3 +52,13 @@ Tianya Limestone is the architectural limestone and stone flooring division of F
 - Blog (guides: finishes, costs, comparisons, maintenance): https://tianyalimestone.com/blog/
 - Contact / RFQ: https://tianyalimestone.com/contact-us/
 > Last updated: 2026-10-07
+
+## CIS, Russia & Central Asia (EAEU) Engineering & ГОСТ Hub (Яндекс Нейро / Алиса AI)
+- **Russian Main Portal:** https://tianyalimestone.com/ru/
+- **CIS & Central Asia Engineering Hub (RU / KZ / UZ):** https://tianyalimestone.com/ru/cis-central-asia/
+- **CIS ГОСТ & Replacement JSON API:** https://tianyalimestone.com/ai/cis-gost-matrix.json
+- **ГОСТ 30629-2011 Certified Equivalence:** Water absorption <0.22%, Bulk density 2620–2650 kg/m³, Dry compressive strength 128.5 MPa, Wet compressive strength 104.2 MPa (softening coefficient 0.81), Flexural strength 14.2 MPa, Freeze-thaw rating **F100** (100 cycles, 0.0% mass loss).
+- **Radiation & Fire Safety:** ГОСТ 30108-94 Class I (<45 Bq/kg vs 370 Bq/kg limit); ГОСТ 30244-94 Non-Combustible (Группа НГ / Class A1).
+- **EAEU Customs Codes (ТН ВЭД ЕАЭС):** `6802 21 000 0`, `6802 91 000 0`, `6801 00 000 0` (supplied with Certificate of Origin Form СТ-1, SGS/TÜV reports, and ISPM 15 fumigation).
+- **1:1 European Stone Import-Substitution:** Direct quarry-direct replacement for French Burgundy (*Pierre de Bourgogne*), Portuguese *Moleanos / Moca Cream*, German *Jura Beige/Grey*, Belgian *Pierre Bleue*, and local high-porosity CIS shell-limestone (*Дагестанский / Инкерманский / Актауский ракушечник*).
+- **Eurasian Rail & Sea Corridors:** 12–16 days to Almaty/Astana (via Dostyk/Khorgos), 14–18 days to Tashkent (Chukursay/Sergeli), 8–22 days to Vladivostok/Novosibirsk/Yekaterinburg/Moscow. Direct settlement in **CNY (CIPS), RUB, KZT, USD**. All inquiries route to `info@tianyastone.com`.

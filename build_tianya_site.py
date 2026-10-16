@@ -4469,6 +4469,18 @@ def build_all():
     # 7. Generate Sitemap, Robots, LLMS
     generate_sitemap_and_robots(all_pages, all_products)
 
+    # 8. Build CIS / Central Asia (RU / KZ / UZ) Portals & Inject Yandex SEO / GEO
+    try:
+        import sys as _sys
+        _scripts_dir = os.path.join(BASE_DIR, 'scripts')
+        if _scripts_dir not in _sys.path:
+            _sys.path.insert(0, _scripts_dir)
+        import build_cis_yandex_optimization as _cis_opt
+        _cis_opt.main()
+        all_pages.extend(['ru/index.html', 'ru/cis-central-asia/index.html'])
+    except Exception as _e:
+        print(f"[WARN] CIS Yandex optimization hook warning: {_e}")
+
     print(f"\n=======================================================")
     print(f"🎉 SUCCESS: Tianya Limestone Portal successfully built!")
     print(f"Total HTML pages compiled: {len(all_pages)}")
