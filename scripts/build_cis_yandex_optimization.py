@@ -535,7 +535,7 @@ def render_footer_ru(depth=1):
           <div class="text-xs text-primary-40 space-y-1">
             <p><strong>Адрес завода:</strong> {bts.COMPANY_INFO['address']}</p>
             <p><strong>Единый Email для запросов:</strong> <a href="mailto:{bts.COMPANY_INFO['email']}" class="text-[#E9F551] hover:underline font-semibold">{bts.COMPANY_INFO['email']}</a></p>
-            <p><strong>WhatsApp / Телефон:</strong> <a href="tel:{bts.COMPANY_INFO['phone']}" class="text-white hover:text-[#E9F551]">{bts.COMPANY_INFO['phone']}</a> / {bts.COMPANY_INFO['phone_alt']}</p>
+            <p><strong>WhatsApp / Телефон:</strong> <a href="tel:{bts.COMPANY_INFO['phone']}" class="text-white hover:text-[#E9F551]">{bts.COMPANY_INFO['phone']}</a></p>
             <p><strong>Telegram (Отдел СНГ):</strong> <a href="{TELEGRAM_CIS_URL}" target="_blank" rel="noopener" class="text-[#E9F551] hover:underline">{TELEGRAM_CIS_HANDLE}</a></p>
           </div>
         </div>
