@@ -18,7 +18,8 @@ import json
 import re
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+_curr = Path(__file__).resolve().parent
+BASE_DIR = _curr.parent if _curr.name == "scripts" else _curr
 sys.path.insert(0, str(BASE_DIR))
 
 import build_tianya_site as bts

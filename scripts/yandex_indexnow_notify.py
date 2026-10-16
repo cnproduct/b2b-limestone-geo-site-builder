@@ -10,7 +10,8 @@ import json
 import urllib.request
 import urllib.error
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+_curr = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(_curr) if os.path.basename(_curr) == "scripts" else _curr
 SITEMAP_PATH = os.path.join(BASE_DIR, "sitemap.xml")
 HOST = "tianyalimestone.com"
 KEY = "e8a4c9f21b0d4637a9e52c3f8b7d6e21"

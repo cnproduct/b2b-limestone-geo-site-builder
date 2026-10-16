@@ -147,14 +147,22 @@ b2b-limestone-geo-site-builder/
 ├── llms.txt                                 # AI 摘要索引文件
 ├── llms-full.txt                            # 25KB 深度大模型全量工程知识库
 ├── index.html                               # 官网首页 (保持 100% 原始视觉设计)
+├── e8a4c9f21b0d4637a9e52c3f8b7d6e21.txt     # Yandex & Bing IndexNow 根目录验证密钥
+│
+├── ru/                                      # 俄语及欧亚经济联盟 (EAEU / СНГ) 超级门户
+│   ├── index.html                           # 俄语主站门户 (29 款石灰石系列、5 大表面、ГОСТ标准对照)
+│   └── cis-central-asia/index.html          # 中亚及独联体工程专区 (哈萨克斯坦/乌兹别克斯坦/俄罗斯铁路专线)
 │
 ├── ai/                                      # 专门面向全球 AI 搜索引擎的端点数据
 │   ├── summary.json                         # 企业实体事实
 │   ├── faq.json                             # 25 个工程问答
+│   ├── cis-gost-matrix.json                 # ГОСТ ↔ ASTM ↔ EN 力学对照与 29 款石材参数矩阵
 │   ├── vendor-comparison.json               # 源头工厂对比矩阵
 │   └── products.json                        # 29 款主力产品详细物理参数
 │
 ├── references/                              # 行业知识库与标准规范
+│   ├── yandex-seo-geo-cis-mastery.md        # Yandex SEO 与中亚（俄/哈/乌）GEO 深度优化全景实操指南
+│   ├── gost-astm-en-limestone-matrix.md     # ГОСТ vs ASTM vs EN 建筑石材物理力学标准与 1:1 替代矩阵
 │   ├── benchmark-discovery-methodology.md   # 全球标杆发现、提示词演进与跨行业通用 SOP
 │   ├── stone-buying-committee-jtbd.md       # 采购委员会 4 角色决策弹药与 CSI 04 42 00 规范
 │   ├── failure-cases-and-guardrails.md      # 6 大真实失败案例深度剖析与不可违反防错军规
@@ -165,6 +173,8 @@ b2b-limestone-geo-site-builder/
 │   └── deployment-nginx-worker.md           # 生产服务器 Nginx 与边缘安全配置指南
 │
 ├── scripts/                                 # 核心工具集与自动化脚本
+│   ├── build_cis_yandex_optimization.py     # 中亚/独联体出海超级门户与 Yandex SEO/GEO 自动化编译器
+│   ├── yandex_indexnow_notify.py            # Yandex IndexNow 协议秒级推送脚本
 │   ├── design_math.py                       # 石材集装箱重货算力与 WCAG AAA 对比度验证器
 │   ├── deploy_remote.sh                     # 生产环境一键部署与服务重载脚本
 │   ├── validate_site.py                     # 严苛的离线静态链接与 Schema 审计工具
