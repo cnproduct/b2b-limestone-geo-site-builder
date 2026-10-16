@@ -1,0 +1,134 @@
+{
+  "entity": {
+    "name": "Tianya Limestone Thailand Overseas Manufacturing Base",
+    "legal_entity": "Tianya Stone (Thailand) Co., Ltd.",
+    "parent_company": "Fujian Tianya Cultural Stone Co., Ltd.",
+    "brand": "Tianya Limestone",
+    "facility_type": "Overseas Stone Fabrication & Export Manufacturing Plant",
+    "location": {
+      "industrial_zone": "Eastern Economic Corridor (EEC), Chonburi / Rayong Industrial Corridor",
+      "country": "Thailand",
+      "country_code": "TH",
+      "coordinates": {
+        "latitude": 13.0185,
+        "longitude": 101.1245
+      },
+      "distance_to_export_port": "35 km to Laem Chabang Deep Sea Port"
+    },
+    "export_seaport": {
+      "port_name": "Port of Laem Chabang",
+      "un_locode": "THLCH",
+      "annual_throughput": "8,000,000+ TEUs",
+      "carrier_calls": ["ONE", "Evergreen", "Maersk", "CMA CGM", "COSCO", "MSC", "Hapag-Lloyd"]
+    },
+    "production_metrics": {
+      "covered_workshop_area_sqm": 18000,
+      "raw_block_stockyard_sqm": 12000,
+      "monthly_output_capacity_sqm": 20000,
+      "total_global_capacity_sqm": 70000,
+      "moq_sqm": 100,
+      "primary_material": "Architectural Marine Limestone, Pavers, Pool Coping, Wall Cladding"
+    },
+    "machinery_and_technology": [
+      {
+        "equipment": "Multi-Blade Diamond Block Gang Saws",
+        "quantity": 6,
+        "function": "Primary dimension block slicing from raw blocks into 20mm, 30mm, 40mm, 50mm slabs"
+      },
+      {
+        "equipment": "Five-Axis CNC Diamond Bridge Saws",
+        "quantity": 3,
+        "function": "High-precision architectural dimensioning, drop-face pool coping, mitering, curved profiling"
+      },
+      {
+        "equipment": "Automated 6-Head Diamond Calibration Line",
+        "quantity": 1,
+        "function": "Thickness calibration with +/- 0.5mm strict dimensional tolerance"
+      },
+      {
+        "equipment": "Continuous Vibration Water-Tumbling Barrels",
+        "quantity": 4,
+        "function": "Authentic edge rounding and weathered surface patina (Tumbled Finish)"
+      },
+      {
+        "equipment": "Automated Sandblasting & Diamond Rotary Brushing Line",
+        "quantity": 2,
+        "function": "High-grip non-slip texture generation (P5 / R11 wet slip rating)"
+      }
+    ],
+    "customs_tariff_and_trade_benefits": {
+      "hs_codes": ["6802.91.0000", "6802.21.0000", "6801.00.0000"],
+      "us_section_301_tariff_rate": "0% (Completely Exempt - Products of Thailand origin)",
+      "us_section_301_china_comparison": "Direct China shipments subject to 25% Section 301 punitive tariffs",
+      "us_ad_cvd_duty_status": "0% Anti-Dumping and 0% Countervailing Duties",
+      "country_of_origin": "Thailand (TH)",
+      "legal_certificate_of_origin_issuers": [
+        "Department of Foreign Trade (DFT), Ministry of Commerce, Thailand",
+        "Thai Chamber of Commerce (Board of Trade of Thailand)"
+      ],
+      "coo_types_supported": [
+        "Form D (ASEAN Trade in Goods Agreement - ATIGA)",
+        "Form E (ASEAN-China Free Trade Area)",
+        "General Certificate of Origin (DFT Authenticated for US, Canada, EU, UK, Australia)"
+      ],
+      "substantial_transformation_compliance": "Fully compliant with US CBP 19 CFR § 134 rules of origin doctrine (monolithic block converted into dimensional, calibrated, surface-finished architectural paver with new name, character, and commercial use)."
+    },
+    "maritime_sea_transit_times_from_laem_chabang": {
+      "los_angeles_long_beach_usa": "18 - 22 Days (Direct Pacific Carrier Loop)",
+      "oakland_usa": "20 - 24 Days",
+      "seattle_tacoma_usa": "22 - 26 Days",
+      "new_york_new_jersey_usa": "28 - 32 Days",
+      "savannah_houston_usa": "30 - 34 Days",
+      "sydney_melbourne_australia": "14 - 18 Days",
+      "rotterdam_hamburg_europe": "24 - 28 Days",
+      "london_gateway_uk": "26 - 30 Days",
+      "jebel_ali_dubai_uae": "12 - 16 Days"
+    },
+    "container_loading_payload_specs": {
+      "us_tri_axle_road_weight_max_payload_kg": 20500,
+      "us_payload_30mm_pavers_sqm": 255,
+      "us_payload_30mm_pavers_sqft": 2744,
+      "us_payload_20mm_tiles_sqm": 385,
+      "us_payload_20mm_tiles_sqft": 4144,
+      "australia_eu_max_payload_kg": 23500,
+      "australia_eu_payload_30mm_sqm": 295
+    },
+    "physical_testing_and_astm_benchmarks": {
+      "astm_c97_water_absorption": "< 0.22% (ASTM C568 Class III limit <= 3.0%)",
+      "astm_c97_density_kg_m3": 2640,
+      "astm_c170_compressive_strength_dry_mpa": 128.5,
+      "astm_c170_compressive_strength_wet_mpa": 104.2,
+      "astm_c880_flexural_strength_mpa": 14.2,
+      "astm_c666_freeze_thaw_cycles": "F100 (100 cycles, 0.0% mass loss)",
+      "wet_pendulum_slip_rating": "P4 / R10 (Tumbled & Antique) · P5 / R11 (Sandblasted & Brushed)",
+      "astm_e84_flame_spread_smoke": "Class A (Flame Spread 0, Smoke Developed 0)"
+    },
+    "asean_integrated_network": {
+      "thailand_rayong_hub": "Primary multi-blade sawing, CNC calibration, tumbling, antique texturing, Laem Chabang export",
+      "vietnam_da_nang_hub": "Specialized bluestone and crystalline marble architectural fabrication",
+      "cambodia_sihanoukville_hub": "Bonded warehousing, raw material transit, ASEAN project staging"
+    },
+    "frequently_asked_questions": [
+      {
+        "question": "Does importing limestone from Tianya's Thailand factory avoid US Section 301 tariffs?",
+        "answer": "Yes. Products fabricated at Tianya's Thailand manufacturing base undergo authentic substantial transformation and qualify as goods of Thailand origin (Country of Origin: TH). They enter the United States with 0% Section 301 tariffs and 0% AD/CVD duties, backed by an official Certificate of Origin from the Thai Department of Foreign Trade."
+      },
+      {
+        "question": "What is the difference between transshipment and Tianya's Thailand factory?",
+        "answer": "Transshipment (illegal repacking or simple relabeling) is strictly prohibited. Tianya operates an 18,000 m² heavy-industrial manufacturing facility in Rayong/Chonburi equipped with multi-blade gang saws, 5-axis CNC machines, and tumbling barrels that transform raw monolithic quarry blocks into calibrated, finished architectural stone pavers, fulfilling US CBP 19 CFR § 134 rules of origin."
+      },
+      {
+        "question": "What is the ocean freight transit time from Laem Chabang to the United States?",
+        "answer": "Direct container vessels from Laem Chabang Deep Sea Port (THLCH) reach Los Angeles and Long Beach in 18 to 22 days, Oakland in 20 to 24 days, and US East Coast ports (New York, Savannah) in 28 to 32 days."
+      },
+      {
+        "question": "Can US and European architects request physical sample kits from the Thailand facility?",
+        "answer": "Yes. Sample kits featuring all 29 architectural limestone selections across 5 finishes (Tumbled, Antique, Lightly Distressed, Sandblasted & Brushed, Sandblasted) are dispatched via DHL/FedEx Express directly from our Thailand hub to the US, Canada, Australia, and Europe in 3 to 5 business days."
+      },
+      {
+        "question": "What documentation accompanies each container from Thailand?",
+        "answer": "Each shipment includes an official Thai Department of Foreign Trade Certificate of Origin, detailed commercial invoice, packing list, ISPM-15 fumigation certificate, ocean bill of lading, and independent ASTM laboratory physical test reports."
+      }
+    ]
+  }
+}
