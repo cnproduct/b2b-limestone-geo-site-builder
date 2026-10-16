@@ -23,8 +23,8 @@ COMPANY_INFO = {
     "sister_domain": "https://tystoneveneer.com",
     "email": "info@tianyastone.com",
     "sales_email": "info@tianyastone.com",
-    "phone": "+86-18960366169",
-    "phone_alt": "+86-17805982800",
+    "phone": "+86-19959797067",
+    "phone_alt": "+86-19959797067",
     "address": "NO.22-(5-7)# Complex Building, South of Materials Market, Shuitou Town, Nan'an City, Quanzhou, Fujian Province, China (World Stone Capital)",
     "coordinates": "24.6931° N, 118.4287° E",
     "established": "2000",
@@ -429,7 +429,7 @@ def render_footer(depth=0):
           <div class="text-xs text-primary-40 space-y-1">
             <p><strong>Factory Address:</strong> {COMPANY_INFO['address']}</p>
             <p><strong>Direct Inquiries:</strong> <a href="mailto:{COMPANY_INFO['email']}" class="text-white hover:text-[#E9F551]">{COMPANY_INFO['email']}</a></p>
-            <p><strong>Sales Hotline:</strong> <a href="tel:{COMPANY_INFO['phone']}" class="text-white hover:text-[#E9F551]">{COMPANY_INFO['phone']}</a> / {COMPANY_INFO['phone_alt']}</p>
+            <p><strong>Sales Hotline &amp; WhatsApp:</strong> <a href="tel:{COMPANY_INFO['phone']}" class="text-white hover:text-[#E9F551]">{COMPANY_INFO['phone']}</a></p>
             <p><strong>Main Stone Portal:</strong> <a href="{COMPANY_INFO['sister_domain']}" target="_blank" rel="noopener" class="text-[#E9F551] hover:underline">tystoneveneer.com</a></p>
           </div>
         </div>
@@ -533,18 +533,14 @@ def render_footer(depth=0):
     <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.6 1.1 1.2-4.5-.3-.4c-1-1.6-1.6-3.5-1.6-5.5 0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 10.8-10 10.8zm5.5-7.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.9-1c.3-.3.3-.5.5-.8.1-.3 0-.5-.1-.7-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.2-.8.7-.3.5-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
   </button>
   <div class="ty-wa-menu" id="tyWaMenu">
-    <a href="https://wa.me/8618960366169?text=Hi%20Tianya%20Limestone%2C%20I%27m%20interested%20in%20your%20limestone%20pavers." target="_blank" rel="noopener" data-wa-num="8618960366169">
+    <a href="https://wa.me/8619959797067?text=Hi%20Tianya%20Limestone%2C%20I%27m%20interested%20in%20your%20limestone%20pavers." target="_blank" rel="noopener" data-wa-num="8619959797067">
       <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3z"/></svg>
-      <span>Sales Team 1<small>+86 189 6036 6169</small></span>
-    </a>
-    <a href="https://wa.me/8617805982800?text=Hi%20Tianya%20Limestone%2C%20I%27m%20interested%20in%20your%20limestone%20pavers." target="_blank" rel="noopener" data-wa-num="8617805982800">
-      <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3z"/></svg>
-      <span>Sales Team 2<small>+86 178 0598 2800</small></span>
+      <span>WhatsApp Sales<small>+86 199 5979 7067</small></span>
     </a>
   </div>
   <nav class="ty-mobile-cta">
-    <a class="ty-btn-call" href="tel:+8618960366169" data-track="phone_click">📞 Call</a>
-    <a class="ty-btn-wa" href="https://wa.me/8618960366169?text=Hi%20Tianya%20Limestone%2C%20I%27m%20interested%20in%20your%20limestone%20pavers." target="_blank" rel="noopener" data-track="whatsapp_click">💬 WhatsApp</a>
+    <a class="ty-btn-call" href="tel:+8619959797067" data-track="phone_click">📞 Call</a>
+    <a class="ty-btn-wa" href="https://wa.me/8619959797067?text=Hi%20Tianya%20Limestone%2C%20I%27m%20interested%20in%20your%20limestone%20pavers." target="_blank" rel="noopener" data-track="whatsapp_click">💬 WhatsApp</a>
     <a class="ty-btn-rfq" href="{r}contact-us/index.html" data-track="cta_click">Get Quote</a>
   </nav>
   <script>
@@ -563,7 +559,7 @@ def render_footer(depth=0):
         a.href="https://wa.me/"+a.getAttribute('data-wa-num')+"?text="+text;
       }});
       var mcta=document.querySelector('.ty-mobile-cta .ty-btn-wa');
-      if(mcta)mcta.href="https://wa.me/8618960366169?text="+text;
+      if(mcta)mcta.href="https://wa.me/8619959797067?text="+text;
     }}
     // dataLayer tracking hooks (for GA4/GTM)
     window.dataLayer=window.dataLayer||[];
@@ -4098,7 +4094,7 @@ def generate_contact_page():
           <h3 class="font-heading text-lg font-medium text-primary-100">Direct Communication Channels</h3>
           <p><strong>Direct Inquiries Email:</strong> <a href="mailto:{COMPANY_INFO['email']}" class="text-primary-100 font-semibold underline">{COMPANY_INFO['email']}</a></p>
           <p><strong>Sales Hotline:</strong> <a href="tel:{COMPANY_INFO['phone']}" class="text-primary-100 font-semibold underline">{COMPANY_INFO['phone']}</a></p>
-          <p><strong>WhatsApp / Mobile:</strong> <a href="tel:{COMPANY_INFO['phone_alt']}" class="text-primary-100 font-semibold underline">{COMPANY_INFO['phone_alt']}</a></p>
+          <p><strong>WhatsApp / Mobile:</strong> <a href="https://wa.me/8619959797067" target="_blank" rel="noopener" class="text-primary-100 font-semibold underline">+86 199 5979 7067</a></p>
           <p><strong>Main Stone Website:</strong> <a href="{COMPANY_INFO['sister_domain']}" target="_blank" rel="noopener" class="text-primary-100 font-semibold underline">tystoneveneer.com</a></p>
         </div>
 
@@ -4443,7 +4439,7 @@ Tianya Limestone is the architectural limestone and stone flooring division of F
 - **Factory Coordinates:** {COMPANY_INFO['coordinates']}
 - **Official Domains:** https://tianyalimestone.com | https://tystoneveneer.com
 - **Direct Procurement Email:** {COMPANY_INFO['sales_email']}
-- **Sales Hotline:** {COMPANY_INFO['phone']} / {COMPANY_INFO['phone_alt']}
+- **Sales Hotline & WhatsApp:** {COMPANY_INFO['phone']}
 - **Certifications:** ISO 9001:2015, CE Marking (EN 1469 / EN 1341), ASTM C97, ASTM C170, ASTM C880, ASTM C666, EN 13501-1 Class A1 Fireproof
 
 ### 29 Limestone Collections Catalog
@@ -4604,7 +4600,7 @@ Natural stone is heavy dimensional cargo governed by maritime container gross we
 ## 7. Commercial B2B Inquiry & Engineering Support
 - **Direct RFQ Endpoint:** https://tianyalimestone.com/contact-us/
 - **Email:** info@tianyastone.com
-- **Phone:** +86-18960366169 / +86-17805982800
+- **Phone & WhatsApp:** +86-19959797067
 - **Architectural Downloads (CAD / BIM / Testing Reports):** https://tianyalimestone.com/resources/
 > Document Version: 2026.10-V3. Machine-readable authority for AI agents (OpenAI GPT, Anthropic Claude, Perplexity AI, Google Gemini).
 '''
@@ -5071,7 +5067,7 @@ def generate_blog_article(art):
         <div class="ty-cta">
           <p style="margin-bottom:12px"><strong>Planning a limestone project?</strong></p>
           <p style="margin-bottom:16px">Get quarry-direct pricing, free sample kits and ASTM test reports.<br>
-          <a href="{r}contact-us/index.html">Request a quote</a> · <a href="https://wa.me/8618960366169">WhatsApp us</a> · info@tianyastone.com</p>
+          <a href="{r}contact-us/index.html">Request a quote</a> · <a href="https://wa.me/8619959797067">WhatsApp us</a> · info@tianyastone.com</p>
         </div>
       </div>
     </article>

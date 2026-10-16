@@ -635,13 +635,9 @@ def render_footer_ru(depth=1):
     <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.6 1.1 1.2-4.5-.3-.4c-1-1.6-1.6-3.5-1.6-5.5 0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 10.8-10 10.8zm5.5-7.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.9-1c.3-.3.3-.5.5-.8.1-.3 0-.5-.1-.7-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.2-.8.7-.3.5-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
   </button>
   <div class="ty-wa-menu" id="tyWaMenu">
-    <a href="https://wa.me/8618960366169?text=Здравствуйте%2C%20Tianya%20Limestone!%20Интересует%20поставка%20известняка%20и%20образцы." target="_blank" rel="noopener" data-wa-num="8618960366169">
+    <a href="https://wa.me/8619959797067?text=Здравствуйте%2C%20Tianya%20Limestone!%20Интересует%20поставка%20известняка%20и%20образцы." target="_blank" rel="noopener" data-wa-num="8619959797067">
       <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3z"/></svg>
-      <span>WhatsApp Экспорт 1<small>+86 189 6036 6169</small></span>
-    </a>
-    <a href="https://wa.me/8617805982800?text=Здравствуйте%2C%20Tianya%20Limestone!%20Интересует%20поставка%20известняка%20и%20образцы." target="_blank" rel="noopener" data-wa-num="8617805982800">
-      <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3z"/></svg>
-      <span>WhatsApp Экспорт 2<small>+86 178 0598 2800</small></span>
+      <span>WhatsApp Экспорт<small>+86 199 5979 7067</small></span>
     </a>
     <a href="{TELEGRAM_CIS_URL}" target="_blank" rel="noopener" class="ty-tg-link">
       <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.96-.75 3.78-1.65 6.31-2.74 7.58-3.27 3.61-1.51 4.35-1.77 4.84-1.78.11 0 .35.03.5.16.13.1.17.24.18.34.02.07.02.21.01.33z"/></svg>
@@ -649,8 +645,8 @@ def render_footer_ru(depth=1):
     </a>
   </div>
   <nav class="ty-mobile-cta">
-    <a class="ty-btn-call" href="tel:+8618960366169" data-track="phone_click">📞 Звонок</a>
-    <a class="ty-btn-wa" href="https://wa.me/8618960366169?text=Здравствуйте%2C%20Tianya%20Limestone!%20Интересует%20поставка%20известняка." target="_blank" rel="noopener" data-track="whatsapp_click">💬 WhatsApp</a>
+    <a class="ty-btn-call" href="tel:+8619959797067" data-track="phone_click">📞 Звонок</a>
+    <a class="ty-btn-wa" href="https://wa.me/8619959797067?text=Здравствуйте%2C%20Tianya%20Limestone!%20Интересует%20поставка%20известняка." target="_blank" rel="noopener" data-track="whatsapp_click">💬 WhatsApp</a>
     <a class="ty-btn-rfq" href="#enquiry-section" data-track="cta_click">Запрос КП</a>
   </nav>
   <script>
@@ -967,7 +963,7 @@ def generate_ru_home_page(all_products):
             </p>
             <div class="bg-white border border-primary-10 p-5 rounded-sm space-y-2.5 text-xs">
               <div><strong>Единый Email отдела экспорта:</strong> <a href="mailto:{bts.COMPANY_INFO['email']}" class="text-primary-100 underline font-semibold">{bts.COMPANY_INFO['email']}</a></div>
-              <div><strong>WhatsApp / WeChat (24/7):</strong> <a href="https://wa.me/8618960366169" class="underline">{bts.COMPANY_INFO['phone']}</a> / {bts.COMPANY_INFO['phone_alt']}</div>
+              <div><strong>WhatsApp / Телефон (24/7):</strong> <a href="https://wa.me/8619959797067" target="_blank" rel="noopener" class="underline font-semibold">+86 199 5979 7067</a></div>
               <div><strong>Telegram (СНГ и Центральная Азия):</strong> <a href="{TELEGRAM_CIS_URL}" target="_blank" rel="noopener" class="underline font-semibold">{TELEGRAM_CIS_HANDLE}</a></div>
               <div><strong>Минимальная партия (MOQ):</strong> от 100 м² · Контейнерные скидки от 1 × 20GP (320–520 м²)</div>
               <div><strong>Валюта контракта:</strong> CNY (юани через CIPS), RUB, KZT, USD</div>
@@ -1302,8 +1298,7 @@ def generate_cis_hub_page(all_products):
             </p>
             <div class="bg-white border border-primary-10 p-5 rounded-sm space-y-2.5 text-xs">
               <div><strong>Email завода (все запросы):</strong> <a href="mailto:{bts.COMPANY_INFO['email']}" class="text-primary-100 underline font-bold">{bts.COMPANY_INFO['email']}</a></div>
-              <div><strong>WhatsApp 1:</strong> <a href="https://wa.me/8618960366169" class="underline">+86 189 6036 6169</a></div>
-              <div><strong>WhatsApp 2:</strong> <a href="https://wa.me/8617805982800" class="underline">+86 178 0598 2800</a></div>
+              <div><strong>WhatsApp / Телефон (24/7):</strong> <a href="https://wa.me/8619959797067" target="_blank" rel="noopener" class="underline font-semibold">+86 199 5979 7067</a></div>
               <div><strong>Telegram (СНГ):</strong> <a href="{TELEGRAM_CIS_URL}" target="_blank" rel="noopener" class="underline font-semibold">{TELEGRAM_CIS_HANDLE}</a></div>
             </div>
           </div>
@@ -1553,7 +1548,7 @@ Sitemap: {bts.COMPANY_INFO['domain']}/sitemap.xml
             "chinese_name": bts.COMPANY_INFO["chinese_name"],
             "quarry_and_factory": bts.COMPANY_INFO["address"],
             "unified_inquiry_email": bts.COMPANY_INFO["email"],
-            "whatsapp": [bts.COMPANY_INFO["phone"], bts.COMPANY_INFO["phone_alt"]],
+            "whatsapp": [bts.COMPANY_INFO["phone"]],
             "telegram_cis": TELEGRAM_CIS_URL,
             "russian_portal_url": f"{bts.COMPANY_INFO['domain']}/ru/",
             "cis_engineering_hub_url": f"{bts.COMPANY_INFO['domain']}/ru/cis-central-asia/"
