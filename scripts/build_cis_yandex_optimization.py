@@ -18,8 +18,7 @@ import json
 import re
 from pathlib import Path
 
-_curr = Path(__file__).resolve().parent
-BASE_DIR = _curr.parent if _curr.name == "scripts" else _curr
+BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE_DIR))
 
 import build_tianya_site as bts
@@ -535,7 +534,7 @@ def render_footer_ru(depth=1):
           <div class="text-xs text-primary-40 space-y-1">
             <p><strong>Адрес завода:</strong> {bts.COMPANY_INFO['address']}</p>
             <p><strong>Единый Email для запросов:</strong> <a href="mailto:{bts.COMPANY_INFO['email']}" class="text-[#E9F551] hover:underline font-semibold">{bts.COMPANY_INFO['email']}</a></p>
-            <p><strong>WhatsApp / Телефон:</strong> <a href="tel:{bts.COMPANY_INFO['phone']}" class="text-white hover:text-[#E9F551]">{bts.COMPANY_INFO['phone']}</a></p>
+            <p><strong>WhatsApp / Телефон:</strong> <a href="tel:{bts.COMPANY_INFO['phone']}" class="text-white hover:text-[#E9F551]">{bts.COMPANY_INFO['phone']}</a> / {bts.COMPANY_INFO['phone_alt']}</p>
             <p><strong>Telegram (Отдел СНГ):</strong> <a href="{TELEGRAM_CIS_URL}" target="_blank" rel="noopener" class="text-[#E9F551] hover:underline">{TELEGRAM_CIS_HANDLE}</a></p>
           </div>
         </div>
@@ -635,9 +634,13 @@ def render_footer_ru(depth=1):
     <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.6 1.1 1.2-4.5-.3-.4c-1-1.6-1.6-3.5-1.6-5.5 0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 10.8-10 10.8zm5.5-7.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.9-1c.3-.3.3-.5.5-.8.1-.3 0-.5-.1-.7-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.2-.8.7-.3.5-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
   </button>
   <div class="ty-wa-menu" id="tyWaMenu">
-    <a href="https://wa.me/8619959797067?text=Здравствуйте%2C%20Tianya%20Limestone!%20Интересует%20поставка%20известняка%20и%20образцы." target="_blank" rel="noopener" data-wa-num="8619959797067">
+    <a href="https://wa.me/8618960366169?text=Здравствуйте%2C%20Tianya%20Limestone!%20Интересует%20поставка%20известняка%20и%20образцы." target="_blank" rel="noopener" data-wa-num="8618960366169">
       <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3z"/></svg>
-      <span>WhatsApp Экспорт<small>+86 199 5979 7067</small></span>
+      <span>WhatsApp Экспорт 1<small>+86 189 6036 6169</small></span>
+    </a>
+    <a href="https://wa.me/8617805982800?text=Здравствуйте%2C%20Tianya%20Limestone!%20Интересует%20поставка%20известняка%20и%20образцы." target="_blank" rel="noopener" data-wa-num="8617805982800">
+      <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3z"/></svg>
+      <span>WhatsApp Экспорт 2<small>+86 178 0598 2800</small></span>
     </a>
     <a href="{TELEGRAM_CIS_URL}" target="_blank" rel="noopener" class="ty-tg-link">
       <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.96-.75 3.78-1.65 6.31-2.74 7.58-3.27 3.61-1.51 4.35-1.77 4.84-1.78.11 0 .35.03.5.16.13.1.17.24.18.34.02.07.02.21.01.33z"/></svg>
@@ -645,8 +648,8 @@ def render_footer_ru(depth=1):
     </a>
   </div>
   <nav class="ty-mobile-cta">
-    <a class="ty-btn-call" href="tel:+8619959797067" data-track="phone_click">📞 Звонок</a>
-    <a class="ty-btn-wa" href="https://wa.me/8619959797067?text=Здравствуйте%2C%20Tianya%20Limestone!%20Интересует%20поставка%20известняка." target="_blank" rel="noopener" data-track="whatsapp_click">💬 WhatsApp</a>
+    <a class="ty-btn-call" href="tel:+8618960366169" data-track="phone_click">📞 Звонок</a>
+    <a class="ty-btn-wa" href="https://wa.me/8618960366169?text=Здравствуйте%2C%20Tianya%20Limestone!%20Интересует%20поставка%20известняка." target="_blank" rel="noopener" data-track="whatsapp_click">💬 WhatsApp</a>
     <a class="ty-btn-rfq" href="#enquiry-section" data-track="cta_click">Запрос КП</a>
   </nav>
   <script>
@@ -963,7 +966,7 @@ def generate_ru_home_page(all_products):
             </p>
             <div class="bg-white border border-primary-10 p-5 rounded-sm space-y-2.5 text-xs">
               <div><strong>Единый Email отдела экспорта:</strong> <a href="mailto:{bts.COMPANY_INFO['email']}" class="text-primary-100 underline font-semibold">{bts.COMPANY_INFO['email']}</a></div>
-              <div><strong>WhatsApp / Телефон (24/7):</strong> <a href="https://wa.me/8619959797067" target="_blank" rel="noopener" class="underline font-semibold">+86 199 5979 7067</a></div>
+              <div><strong>WhatsApp / WeChat (24/7):</strong> <a href="https://wa.me/8618960366169" class="underline">{bts.COMPANY_INFO['phone']}</a> / {bts.COMPANY_INFO['phone_alt']}</div>
               <div><strong>Telegram (СНГ и Центральная Азия):</strong> <a href="{TELEGRAM_CIS_URL}" target="_blank" rel="noopener" class="underline font-semibold">{TELEGRAM_CIS_HANDLE}</a></div>
               <div><strong>Минимальная партия (MOQ):</strong> от 100 м² · Контейнерные скидки от 1 × 20GP (320–520 м²)</div>
               <div><strong>Валюта контракта:</strong> CNY (юани через CIPS), RUB, KZT, USD</div>
@@ -1298,7 +1301,8 @@ def generate_cis_hub_page(all_products):
             </p>
             <div class="bg-white border border-primary-10 p-5 rounded-sm space-y-2.5 text-xs">
               <div><strong>Email завода (все запросы):</strong> <a href="mailto:{bts.COMPANY_INFO['email']}" class="text-primary-100 underline font-bold">{bts.COMPANY_INFO['email']}</a></div>
-              <div><strong>WhatsApp / Телефон (24/7):</strong> <a href="https://wa.me/8619959797067" target="_blank" rel="noopener" class="underline font-semibold">+86 199 5979 7067</a></div>
+              <div><strong>WhatsApp 1:</strong> <a href="https://wa.me/8618960366169" class="underline">+86 189 6036 6169</a></div>
+              <div><strong>WhatsApp 2:</strong> <a href="https://wa.me/8617805982800" class="underline">+86 178 0598 2800</a></div>
               <div><strong>Telegram (СНГ):</strong> <a href="{TELEGRAM_CIS_URL}" target="_blank" rel="noopener" class="underline font-semibold">{TELEGRAM_CIS_HANDLE}</a></div>
             </div>
           </div>
@@ -1378,11 +1382,12 @@ def inject_yandex_seo_across_site():
         )
 
         # 2. Inject EN | RU · СНГ switcher into Top Announcement Strip if not present
+        home_r = r if r else './'
         lang_pill = (
             f'        <span>•</span>\n'
             f'        <span class="inline-flex items-center border border-primary-70 rounded overflow-hidden text-[11px]" data-cis-lang-switch="1">\n'
-            f'          <a href="{r}index.html" class="px-2 py-0.5 font-bold" style="background-color:#E9F551;color:#1a1a18;">EN</a>\n'
-            f'          <a href="{r}ru/index.html" class="px-2 py-0.5 text-white hover:text-[#E9F551] font-medium" title="Русский портал · РФ, Казахстан, Узбекистан">RU · СНГ</a>\n'
+            f'          <a href="{home_r}" class="px-2 py-0.5 font-bold" style="background-color:#E9F551;color:#1a1a18;">EN</a>\n'
+            f'          <a href="{r}ru/" class="px-2 py-0.5 text-white hover:text-[#E9F551] font-medium" title="Русский портал · РФ, Казахстан, Узбекистан">RU · СНГ</a>\n'
             f'        </span>'
         )
         if 'data-cis-lang-switch="1"' not in content:
@@ -1392,29 +1397,36 @@ def inject_yandex_seo_across_site():
 
         # 3. Inject RU · СНГ link into Desktop Nav before Contact link if not present
         ru_nav_item = (
-            f'          <a href="{r}ru/cis-central-asia/index.html" data-cis-nav="1" class="px-2.5 py-1 text-xs font-semibold text-[#251700] bg-[#F7FFEC] border border-primary-20 rounded hover:bg-[#E9F551] transition-colors" title="Инженерный портал для РФ, Казахстана и Узбекистана (ГОСТ 30629-2011)">\n'
+            f'          <a href="{r}ru/cis-central-asia/" data-cis-nav="1" class="px-2.5 py-1 text-xs font-semibold text-[#251700] bg-[#F7FFEC] border border-primary-20 rounded hover:bg-[#E9F551] transition-colors" title="Инженерный портал для РФ, Казахстана и Узбекистана (ГОСТ 30629-2011)">\n'
             f'            RU · СНГ (ГОСТ)\n'
             f'          </a>\n'
         )
         if 'data-cis-nav="1"' not in content:
-            contact_nav_anchor = f'<a href="{r}contact-us/index.html"'
-            if contact_nav_anchor in content:
-                content = content.replace(contact_nav_anchor, ru_nav_item + "          " + contact_nav_anchor, 1)
+            for contact_nav_anchor in (f'<a href="{r}contact-us/index.html"', f'<a href="{r}contact-us/"'):
+                if contact_nav_anchor in content:
+                    content = content.replace(contact_nav_anchor, ru_nav_item + "          " + contact_nav_anchor, 1)
+                    break
 
         # 4. Inject RU / CIS links into Mobile Drawer if not present
         ru_mobile_item = (
-            f'          <a href="{r}ru/index.html" data-cis-mob="1" class="block py-1 font-semibold text-[#251700]">🇷🇺 Русский портал (29 коллекций)</a>\n'
-            f'          <a href="{r}ru/cis-central-asia/index.html" class="block py-1 font-semibold text-[#251700]">🇰🇿🇺🇿 Хаб ЕАЭС: ГОСТ 30629-2011 и Ж/Д логистика</a>'
+            f'          <a href="{r}ru/" data-cis-mob="1" class="block py-1 font-semibold text-[#251700]">🇷🇺 Русский портал (29 коллекций)</a>\n'
+            f'          <a href="{r}ru/cis-central-asia/" class="block py-1 font-semibold text-[#251700]">🇰🇿🇺🇿 Хаб ЕАЭС: ГОСТ 30629-2011 и Ж/Д логистика</a>'
         )
         if 'data-cis-mob="1"' not in content:
-            mob_anchor = f'<a href="{r}contact-us/index.html" class="block py-1 font-semibold text-primary-100">Contact & Global Shipping</a>'
-            if mob_anchor in content:
-                content = content.replace(mob_anchor, mob_anchor + "\n" + ru_mobile_item, 1)
+            for mob_anchor in (
+                f'<a href="{r}contact-us/index.html" class="block py-1 font-semibold text-primary-100">Contact & Global Shipping</a>',
+                f'<a href="{r}contact-us/index.html" class="block py-1 font-semibold text-primary-100">Contact &amp; Global Shipping</a>',
+                f'<a href="{r}contact-us/" class="block py-1 font-semibold text-primary-100">Contact & Global Shipping</a>',
+                f'<a href="{r}contact-us/" class="block py-1 font-semibold text-primary-100">Contact &amp; Global Shipping</a>',
+            ):
+                if mob_anchor in content:
+                    content = content.replace(mob_anchor, mob_anchor + "\n" + ru_mobile_item, 1)
+                    break
 
         # 5. Inject RU / CIS links into Footer Bottom Bar if not present
         ru_footer_links = (
-            f'          <a href="{r}ru/index.html" data-cis-foot="1" class="text-[#E9F551] hover:underline font-medium">RU · Русский</a>\n'
-            f'          <a href="{r}ru/cis-central-asia/index.html" class="hover:text-white">СНГ · ГОСТ 30629</a>'
+            f'          <a href="{r}ru/" data-cis-foot="1" class="text-[#E9F551] hover:underline font-medium">RU · Русский</a>\n'
+            f'          <a href="{r}ru/cis-central-asia/" class="hover:text-white">СНГ · ГОСТ 30629</a>'
         )
         if 'data-cis-foot="1"' not in content:
             sitemap_anchor = f'<a href="{r}sitemap.xml" class="hover:text-white">Sitemap</a>'
@@ -1443,6 +1455,54 @@ def inject_yandex_seo_across_site():
         injected_count += 1
 
     print(f"Injected Yandex SEO, hreflang, and RU/CIS navigation into {injected_count} English HTML pages.")
+
+
+def normalize_clean_urls_across_site():
+    """
+    Eliminates all internal `.../index.html` and `index.html` links across all HTML pages
+    so Googlebot and YandexBot never encounter 301 redirects from internal navigation.
+    """
+    excluded_dirs = {"data", "scripts", "tystoneveneer.com", "node_modules", ".git", "assets", "ai"}
+    rewritten_files = 0
+    rewritten_links = 0
+
+    def _clean_attr(match):
+        nonlocal rewritten_links
+        attr = match.group(1)
+        val = match.group(2)
+        if val.startswith(("http://", "https://")) and not val.startswith(bts.COMPANY_INFO["domain"]):
+            return match.group(0)
+        if val == "index.html":
+            rewritten_links += 1
+            return f'{attr}="./"'
+        if val.startswith("index.html#"):
+            rewritten_links += 1
+            return f'{attr}="./{val[len("index.html"):]}"'
+        m = re.match(r'^(.*?/)index\.html(#.*)?$', val)
+        if m:
+            rewritten_links += 1
+            prefix = m.group(1)
+            frag = m.group(2) or ""
+            return f'{attr}="{prefix}{frag}"'
+        return match.group(0)
+
+    for html_path in BASE_DIR.rglob("index.html"):
+        rel_parts = html_path.relative_to(BASE_DIR).parts
+        if any(part in excluded_dirs for part in rel_parts):
+            continue
+        content = html_path.read_text(encoding="utf-8")
+        orig = content
+        content = re.sub(r'\b(href|data-link)="([^"]*index\.html[^"]*)"', _clean_attr, content)
+        content = re.sub(
+            r'"(https://tianyalimestone\.com/[^"]*?/)index\.html"',
+            r'"\1"',
+            content
+        )
+        if content != orig:
+            html_path.write_text(content, encoding="utf-8")
+            rewritten_files += 1
+
+    print(f"Normalized Clean URLs (stripped internal index.html) across {rewritten_files} HTML files ({rewritten_links} links updated).")
 
 
 def update_seo_geo_files(all_products):
@@ -1548,7 +1608,7 @@ Sitemap: {bts.COMPANY_INFO['domain']}/sitemap.xml
             "chinese_name": bts.COMPANY_INFO["chinese_name"],
             "quarry_and_factory": bts.COMPANY_INFO["address"],
             "unified_inquiry_email": bts.COMPANY_INFO["email"],
-            "whatsapp": [bts.COMPANY_INFO["phone"]],
+            "whatsapp": [bts.COMPANY_INFO["phone"], bts.COMPANY_INFO["phone_alt"]],
             "telegram_cis": TELEGRAM_CIS_URL,
             "russian_portal_url": f"{bts.COMPANY_INFO['domain']}/ru/",
             "cis_engineering_hub_url": f"{bts.COMPANY_INFO['domain']}/ru/cis-central-asia/"
@@ -1616,17 +1676,6 @@ Sitemap: {bts.COMPANY_INFO['domain']}/sitemap.xml
             "unified_contact_email": bts.COMPANY_INFO["email"],
             "telegram_cis": TELEGRAM_CIS_URL
         }
-        summary_data["overseas_manufacturing_hub"] = {
-            "facility_name": "Tianya Limestone Thailand Overseas Manufacturing Base",
-            "operating_entity": "Tianya Stone (Thailand) Co., Ltd.",
-            "location": "Eastern Economic Corridor (EEC), Rayong/Chonburi, Thailand",
-            "coordinates": {"latitude": 13.0185, "longitude": 101.1245},
-            "export_seaport": "Port of Laem Chabang (THLCH · 35 km)",
-            "monthly_capacity_sqm": "20,000+ m²",
-            "us_section_301_tariff": "0% (Completely Exempt)",
-            "country_of_origin": "Thailand (TH) certified by DFT",
-            "hub_url": f"{bts.COMPANY_INFO['domain']}/thailand-factory/"
-        }
         summary_path.write_text(json.dumps(summary_data, indent=2, ensure_ascii=False), encoding="utf-8")
 
     # 5. Enrich /ai/faq.json with Russian & CIS bilingual questions
@@ -1639,7 +1688,7 @@ Sitemap: {bts.COMPANY_INFO['domain']}/sitemap.xml
                 faq_list.append({"question": q_ru, "answer": a_ru, "language": "ru", "region": "CIS / EAEU"})
         faq_path.write_text(json.dumps(faq_list, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    # 6. Append CIS & Thailand Overseas Factory sections to llms.txt and llms-full.txt
+    # 6. Append CIS / EAEU section to llms.txt and llms-full.txt
     llms_path = BASE_DIR / "llms.txt"
     if llms_path.exists():
         llms_content = llms_path.read_text(encoding="utf-8")
@@ -1653,30 +1702,9 @@ Sitemap: {bts.COMPANY_INFO['domain']}/sitemap.xml
 - **EAEU Customs Codes (ТН ВЭД ЕАЭС):** `6802 21 000 0`, `6802 91 000 0`, `6801 00 000 0` (supplied with Certificate of Origin Form СТ-1, SGS/TÜV reports, and ISPM 15 fumigation).
 - **1:1 European Stone Import-Substitution:** Direct quarry-direct replacement for French Burgundy (*Pierre de Bourgogne*), Portuguese *Moleanos / Moca Cream*, German *Jura Beige/Grey*, Belgian *Pierre Bleue*, and local high-porosity CIS shell-limestone (*Дагестанский / Инкерманский / Актауский ракушечник*).
 - **Eurasian Rail & Sea Corridors:** 12–16 days to Almaty/Astana (via Dostyk/Khorgos), 14–18 days to Tashkent (Chukursay/Sergeli), 8–22 days to Vladivostok/Novosibirsk/Yekaterinburg/Moscow. Direct settlement in **CNY (CIPS), RUB, KZT, USD**. All inquiries route to `{bts.COMPANY_INFO['email']}`.
-
-## Thailand Overseas Manufacturing Base (0% US Section 301 Tariff Hub)
-- **Official Hub:** {bts.COMPANY_INFO['domain']}/thailand-factory/
-- **Facility Entity:** Tianya Stone (Thailand) Co., Ltd. (Subsidiary of Fujian Tianya Cultural Stone Co., Ltd.)
-- **Location & Seaport:** Eastern Economic Corridor (EEC), Rayong/Chonburi, Thailand (13.0185° N, 101.1245° E), 35 km to Laem Chabang Deep Sea Port (THLCH).
-- **US Tariff Exemption:** 0% US Section 301 Tariffs & 0% AD/CVD duties under authentic substantial transformation rules (US CBP 19 CFR § 134).
-- **Certification:** Official Certificate of Origin (Form D, Form E, or General C/O) issued by the Thai Department of Foreign Trade (DFT).
-- **Production Specs:** 18,000 m² covered workshop, 20,000+ m²/mo output, 6 multi-blade gang saws, 3 five-axis CNC bridge saws, automated tumbling barrels.
-- **Sea Transit Times:** 18–22 days direct to Los Angeles / Long Beach, 28–32 days to New York, 14–18 days to Sydney / Melbourne.
 '''
         if "CIS, Russia & Central Asia (EAEU)" not in llms_content:
             llms_path.write_text(llms_content.strip() + "\n" + cis_llms_block, encoding="utf-8")
-        elif "Thailand Overseas Manufacturing Base" not in llms_content:
-            thailand_block = f'''
-## Thailand Overseas Manufacturing Base (0% US Section 301 Tariff Hub)
-- **Official Hub:** {bts.COMPANY_INFO['domain']}/thailand-factory/
-- **Facility Entity:** Tianya Stone (Thailand) Co., Ltd. (Subsidiary of Fujian Tianya Cultural Stone Co., Ltd.)
-- **Location & Seaport:** Eastern Economic Corridor (EEC), Rayong/Chonburi, Thailand (13.0185° N, 101.1245° E), 35 km to Laem Chabang Deep Sea Port (THLCH).
-- **US Tariff Exemption:** 0% US Section 301 Tariffs & 0% AD/CVD duties under authentic substantial transformation rules (US CBP 19 CFR § 134).
-- **Certification:** Official Certificate of Origin (Form D, Form E, or General C/O) issued by the Thai Department of Foreign Trade (DFT).
-- **Production Specs:** 18,000 m² covered workshop, 20,000+ m²/mo output, 6 multi-blade gang saws, 3 five-axis CNC bridge saws, automated tumbling barrels.
-- **Sea Transit Times:** 18–22 days direct to Los Angeles / Long Beach, 28–32 days to New York, 14–18 days to Sydney / Melbourne.
-'''
-            llms_path.write_text(llms_content.strip() + "\n" + thailand_block, encoding="utf-8")
 
     llms_full_path = BASE_DIR / "llms-full.txt"
     if llms_full_path.exists():
@@ -1708,50 +1736,9 @@ For architectural projects in Moscow, St. Petersburg, Kazan, Yekaterinburg, Novo
   - **Uzbekistan (Tashkent Chukursay / Sergeli, Samarkand):** 14–18 days via Kazakhstan rail transit.
   - **Russia (Moscow Vorsino/Selyatino, Yekaterinburg, Novosibirsk, Vladivostok):** 6–8 days sea freight Xiamen → Vladivostok + Trans-Siberian Rail, or 16–22 days direct block train via Zabaikalsk.
 - **Payment & Direct Contact:** Cross-border settlement in **CNY (CIPS), RUB, KZT, USD**. Direct factory email: `info@tianyastone.com` | Telegram CIS Desk: `{TELEGRAM_CIS_HANDLE}` | Russian Portal: `{bts.COMPANY_INFO['domain']}/ru/` | CIS Hub: `{bts.COMPANY_INFO['domain']}/ru/cis-central-asia/`.
-
----
-
-## 9. Dual-Hub Manufacturing: Thailand Overseas Fabrication Base (0% US Section 301 Tariff & Global Trade)
-
-### 9.1 Facility Infrastructure & Strategic Advantage
-- **Operating Subsidiary:** Tianya Stone (Thailand) Co., Ltd.
-- **Geographic Location:** Eastern Economic Corridor (EEC), Chonburi / Rayong Industrial Corridor, Thailand (13.0185° N, 101.1245° E).
-- **Covered Facility:** 18,000 m² processing plant + 12,000 m² raw block yard.
-- **Monthly Export Capacity:** 20,000+ m² finished architectural limestone pavers, tiles, and pool copings.
-- **Port of Loading:** Port of Laem Chabang (UN/LOCODE: `THLCH`), 35 km drayage from plant.
-- **Target Export Markets:** USA, Canada, Western Europe, UK, Mexico, Australia.
-
-### 9.2 Customs & Tariff Exemption Details
-- **US Section 301 Tariff:** **0% (Completely Exempt)** — Avoids 25% punitive import duties applied to direct China natural stone shipments under List 3/4A.
-- **AD/CVD Exposure:** Zero anti-dumping or countervailing duty risk.
-- **Substantial Transformation Compliance:** Certified under US CBP 19 CFR § 134 rules of origin doctrine. Monolithic quarry blocks undergo multi-blade diamond gang sawing, 6-head computerized calibration, 5-axis CNC dimensioning, and tumbling/brushing.
-- **Documentation:** Official Certificate of Origin (Form D, Form E, or General C/O) issued by the Department of Foreign Trade (DFT), Ministry of Commerce of Thailand, or the Thai Chamber of Commerce.
-- **Direct Sea Freight Transit:** 18–22 days to Los Angeles / Long Beach (Direct trans-Pacific loop), 28–32 days to New York, 14–18 days to Sydney / Melbourne.
 '''
         if "## 8. EAEU, Russian Federation, Kazakhstan & Uzbekistan" not in llms_full_content:
             llms_full_path.write_text(llms_full_content.strip() + "\n" + cis_full_block, encoding="utf-8")
-        elif "## 9. Dual-Hub Manufacturing: Thailand Overseas Fabrication Base" not in llms_full_content:
-            thailand_full_block = f'''
----
-
-## 9. Dual-Hub Manufacturing: Thailand Overseas Fabrication Base (0% US Section 301 Tariff & Global Trade)
-
-### 9.1 Facility Infrastructure & Strategic Advantage
-- **Operating Subsidiary:** Tianya Stone (Thailand) Co., Ltd.
-- **Geographic Location:** Eastern Economic Corridor (EEC), Chonburi / Rayong Industrial Corridor, Thailand (13.0185° N, 101.1245° E).
-- **Covered Facility:** 18,000 m² processing plant + 12,000 m² raw block yard.
-- **Monthly Export Capacity:** 20,000+ m² finished architectural limestone pavers, tiles, and pool copings.
-- **Port of Loading:** Port of Laem Chabang (UN/LOCODE: `THLCH`), 35 km drayage from plant.
-- **Target Export Markets:** USA, Canada, Western Europe, UK, Mexico, Australia.
-
-### 9.2 Customs & Tariff Exemption Details
-- **US Section 301 Tariff:** **0% (Completely Exempt)** — Avoids 25% punitive import duties applied to direct China natural stone shipments under List 3/4A.
-- **AD/CVD Exposure:** Zero anti-dumping or countervailing duty risk.
-- **Substantial Transformation Compliance:** Certified under US CBP 19 CFR § 134 rules of origin doctrine. Monolithic quarry blocks undergo multi-blade diamond gang sawing, 6-head computerized calibration, 5-axis CNC dimensioning, and tumbling/brushing.
-- **Documentation:** Official Certificate of Origin (Form D, Form E, or General C/O) issued by the Department of Foreign Trade (DFT), Ministry of Commerce of Thailand, or the Thai Chamber of Commerce.
-- **Direct Sea Freight Transit:** 18–22 days to Los Angeles / Long Beach (Direct trans-Pacific loop), 28–32 days to New York, 14–18 days to Sydney / Melbourne.
-'''
-            llms_full_path.write_text(llms_full_content.strip() + "\n" + thailand_full_block, encoding="utf-8")
 
     print("Updated robots.txt, sitemap.xml, llms.txt, llms-full.txt, /ai/summary.json, /ai/faq.json, and /ai/cis-gost-matrix.json.")
 
@@ -1781,6 +1768,9 @@ def main():
 
     # 4. Inject Yandex SEO, hreflang, and RU/CIS switcher across all English HTML pages
     inject_yandex_seo_across_site()
+
+    # 4b. Normalize all internal href / data-link / JSON-LD URLs to Clean URLs (strip index.html)
+    normalize_clean_urls_across_site()
 
     # 5. Update robots.txt, sitemap.xml, llms.txt, llms-full.txt, and /ai/*.json
     update_seo_geo_files(all_products)
