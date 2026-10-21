@@ -23,8 +23,8 @@ COMPANY_INFO = {
     "sister_domain": "https://tystoneveneer.com",
     "email": "info@tianyastone.com",
     "sales_email": "info@tianyastone.com",
-    "phone": "+86-19959797067",
-    "phone_alt": "+86-19959797067",
+    "phone": "+86-18960366169",
+    "phone_alt": "+86-17805982800",
     "address": "NO.22-(5-7)# Complex Building, South of Materials Market, Shuitou Town, Nan'an City, Quanzhou, Fujian Province, China (World Stone Capital)",
     "coordinates": "24.6931° N, 118.4287° E",
     "established": "2000",
@@ -216,50 +216,67 @@ def render_header(depth=0, active_tab='limestone'):
         <nav class="hidden lg:flex items-center space-x-1 xl:space-x-3">
           <!-- Limestone Hub (Active) -->
           <div class="relative group nav-item-dropdown">
-            <a href="{r}index.html" class="px-3 py-2 text-sm font-medium text-primary-100 border-b-2 { 'border-[#E9F551] text-black font-semibold' if active_tab == 'limestone' else 'border-transparent hover:border-primary-100' } inline-flex items-center gap-1">
+            <a href="{r}" class="px-3 py-2 text-sm font-medium text-primary-100 border-b-2 { 'border-[#E9F551] text-black font-semibold' if active_tab == 'limestone' else 'border-transparent hover:border-primary-100' } inline-flex items-center gap-1">
               <span>Limestone</span>
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" class="group-hover:rotate-180 transition-transform"><path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5"/></svg>
             </a>
             <!-- Mega Menu -->
-            <div class="mega-menu absolute left-1/2 -translate-x-1/2 top-full w-[850px] bg-white border border-primary-10 shadow-2xl p-8 rounded-b z-50">
+            <div class="mega-menu absolute left-1/2 -translate-x-1/2 top-full w-[850px] bg-white border border-primary-20 shadow-md p-8 rounded-b z-50">
               <div class="grid grid-cols-5 gap-6">
                 <div class="col-span-1 border-r border-primary-10 pr-4">
-                  <a href="{r}index.html" class="font-heading text-lg font-medium text-primary-100 block mb-2 hover:underline">All Limestone</a>
+                  <a href="{r}stone-flooring/limestone/" class="font-heading text-lg font-medium text-primary-100 block mb-2 hover:underline">All Limestone (29)</a>
                   <p class="text-xs text-primary-70 leading-relaxed mb-4">Quarry-direct natural limestone flooring, pavers and pool copings in 5 distinct finishes.</p>
-                  <a href="{r}index.html#enquiry-section" class="text-xs font-semibold text-primary-100 inline-flex items-center gap-1 hover:underline text-[#251700]">
+                  <a href="{r}#enquiry-section" class="text-xs font-semibold text-primary-100 inline-flex items-center gap-1 hover:underline text-[#251700]">
                     Request Sample Kit →
                   </a>
                 </div>
                 <div class="col-span-4 grid grid-cols-3 gap-6">
                   <div>
-                    <a href="{r}stone-flooring/limestone/tumbled/index.html" class="font-heading italic font-medium text-base text-primary-100 hover:underline block mb-2">Tumbled (8)</a>
+                    <a href="{r}stone-flooring/limestone/tumbled/" class="font-heading italic font-medium text-base text-primary-100 hover:underline block mb-2">Tumbled (8)</a>
                     <ul class="text-xs text-primary-70 space-y-1.5 font-copy">
-                      <li><a href="{r}stone-flooring/limestone/tumbled/guyu/index.html" class="hover:text-black hover:underline">Guyu (谷雨)</a></li>
-                      <li><a href="{r}stone-flooring/limestone/tumbled/zaojing/index.html" class="hover:text-black hover:underline">Zaojing (藻井)</a></li>
-                      <li><a href="{r}stone-flooring/limestone/tumbled/fengya/index.html" class="hover:text-black hover:underline">Fengya (风雅)</a></li>
-                      <li><a href="{r}stone-flooring/limestone/tumbled/shanshui/index.html" class="hover:text-black hover:underline">Shanshui (山水)</a></li>
-                      <li><a href="{r}stone-flooring/limestone/tumbled/qimeng/index.html" class="hover:text-black hover:underline">Qimeng (启蒙)</a></li>
-                      <li><a href="{r}stone-flooring/limestone/tumbled/xuansu/index.html" class="hover:text-black hover:underline">Xuansu (玄素)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/tumbled/guyu/" class="hover:text-black hover:underline">Guyu (谷雨)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/tumbled/zaojing/" class="hover:text-black hover:underline">Zaojing (藻井)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/tumbled/fengya/" class="hover:text-black hover:underline">Fengya (风雅)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/tumbled/shanshui/" class="hover:text-black hover:underline">Shanshui (山水)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/tumbled/qimeng/" class="hover:text-black hover:underline">Qimeng (启蒙)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/tumbled/xuansu/" class="hover:text-black hover:underline">Xuansu (玄素)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/tumbled/yexiang/" class="hover:text-black hover:underline">Yexiang (夜响)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/tumbled/baihe/" class="hover:text-black hover:underline">Baihe (白鹤)</a></li>
                     </ul>
                   </div>
                   <div>
-                    <a href="{r}stone-flooring/limestone/antique/index.html" class="font-heading italic font-medium text-base text-primary-100 hover:underline block mb-2">Antique (10)</a>
+                    <a href="{r}stone-flooring/limestone/antique/" class="font-heading italic font-medium text-base text-primary-100 hover:underline block mb-2">Antique (10)</a>
                     <ul class="text-xs text-primary-70 space-y-1.5 font-copy">
-                      <li><a href="{r}stone-flooring/limestone/antique/hanbai/index.html" class="hover:text-black hover:underline">Hanbai (汉白)</a></li>
-                      <li><a href="{r}stone-flooring/limestone/antique/lanting/index.html" class="hover:text-black hover:underline">Lanting (兰亭)</a></li>
-                      <li><a href="{r}stone-flooring/limestone/antique/guyun/index.html" class="hover:text-black hover:underline">Guyun (古韵)</a></li>
-                      <li><a href="{r}stone-flooring/limestone/antique/xieshan/index.html" class="hover:text-black hover:underline">Xieshan (歇山)</a></li>
-                      <li><a href="{r}stone-flooring/limestone/antique/zhuozheng/index.html" class="hover:text-black hover:underline">Zhuozheng (拙政)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/antique/hanbai/" class="hover:text-black hover:underline">Hanbai (汉白)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/antique/lanting/" class="hover:text-black hover:underline">Lanting (兰亭)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/antique/guyun/" class="hover:text-black hover:underline">Guyun (古韵)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/antique/xieshan/" class="hover:text-black hover:underline">Xieshan (歇山)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/antique/zhuozheng/" class="hover:text-black hover:underline">Zhuozheng (拙政)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/antique/dougong/" class="hover:text-black hover:underline">Dougong (斗栱)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/antique/heting/" class="hover:text-black hover:underline">Heting (鹤汀)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/antique/baichuan/" class="hover:text-black hover:underline">Baichuan (百川)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/antique/cangbi/" class="hover:text-black hover:underline">Cangbi (苍璧)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/antique/canglang/" class="hover:text-black hover:underline">Canglang (苍筤)</a></li>
                     </ul>
                   </div>
                   <div>
-                    <a href="{r}stone-flooring/limestone/lightly-distressed/index.html" class="font-heading italic font-medium text-base text-primary-100 hover:underline block mb-1">Lightly Distressed (6)</a>
+                    <a href="{r}stone-flooring/limestone/lightly-distressed/" class="font-heading italic font-medium text-base text-primary-100 hover:underline block mb-1">Lightly Distressed (6)</a>
                     <ul class="text-xs text-primary-70 space-y-1 font-copy mb-3">
-                      <li><a href="{r}stone-flooring/limestone/lightly-distressed/ningzhi/index.html" class="hover:text-black hover:underline">Ningzhi (凝脂)</a></li>
-                      <li><a href="{r}stone-flooring/limestone/lightly-distressed/qinghe/index.html" class="hover:text-black hover:underline">Qinghe (清和)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/lightly-distressed/ningzhi/" class="hover:text-black hover:underline">Ningzhi (凝脂)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/lightly-distressed/qinghe/" class="hover:text-black hover:underline">Qinghe (清和)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/lightly-distressed/feiyan/" class="hover:text-black hover:underline">Feiyan (飞檐)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/lightly-distressed/xiangye/" class="hover:text-black hover:underline">Xiangye (缃叶)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/lightly-distressed/yuebai/" class="hover:text-black hover:underline">Yuebai (月白)</a></li>
+                      <li><a href="{r}stone-flooring/limestone/lightly-distressed/chenglu/" class="hover:text-black hover:underline">Chenglu (承露)</a></li>
                     </ul>
-                    <a href="{r}stone-flooring/limestone/sandblasted-brushed/index.html" class="font-heading italic font-medium text-base text-primary-100 hover:underline block mb-1">Sandblasted & Brushed (2)</a>
-                    <a href="{r}stone-flooring/limestone/sandblasted/index.html" class="font-heading italic font-medium text-base text-primary-100 hover:underline block mt-2 mb-2">Sandblasted (3)</a>
+                    <a href="{r}stone-flooring/limestone/sandblasted-brushed/" class="font-heading italic font-medium text-base text-primary-100 hover:underline block mb-1">Sandblasted &amp; Brushed (2)</a>
+                    <ul class="text-xs text-primary-70 space-y-1 font-copy mb-2">
+                      <li><a href="{r}stone-flooring/limestone/sandblasted-brushed/daiwa/" class="hover:text-black hover:underline">Daiwa (黛瓦)</a> · <a href="{r}stone-flooring/limestone/sandblasted-brushed/wangchuan/" class="hover:text-black hover:underline">Wangchuan (辋川)</a></li>
+                    </ul>
+                    <a href="{r}stone-flooring/limestone/sandblasted/" class="font-heading italic font-medium text-base text-primary-100 hover:underline block mb-1">Sandblasted (3)</a>
+                    <ul class="text-xs text-primary-70 space-y-1 font-copy">
+                      <li><a href="{r}stone-flooring/limestone/sandblasted/xuanzhen/" class="hover:text-black hover:underline">Xuanzhen (玄真)</a> · <a href="{r}stone-flooring/limestone/sandblasted/sunmao/" class="hover:text-black hover:underline">Sunmao (榫卯)</a> · <a href="{r}stone-flooring/limestone/sandblasted/canghai/" class="hover:text-black hover:underline">Canghai (沧海)</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -268,34 +285,34 @@ def render_header(depth=0, active_tab='limestone'):
 
           <!-- Other Categories Dropdown -->
           <div class="relative group nav-item-dropdown">
-            <a href="{r}stone-flooring/other-categories/index.html" class="px-3 py-2 text-sm font-medium text-primary-100 border-b-2 { 'border-[#E9F551] font-semibold' if active_tab == 'other' else 'border-transparent hover:border-primary-100' } inline-flex items-center gap-1">
+            <a href="{r}stone-flooring/other-categories/" class="px-3 py-2 text-sm font-medium text-primary-100 border-b-2 { 'border-[#E9F551] font-semibold' if active_tab == 'other' else 'border-transparent hover:border-primary-100' } inline-flex items-center gap-1">
               <span>Other Categories</span>
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" class="group-hover:rotate-180 transition-transform"><path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5"/></svg>
             </a>
-            <div class="mega-menu absolute left-1/2 -translate-x-1/2 top-full w-[650px] bg-white border border-primary-10 shadow-2xl p-6 rounded-b z-50">
+            <div class="mega-menu absolute left-1/2 -translate-x-1/2 top-full w-[650px] bg-white border border-primary-20 shadow-md p-6 rounded-b z-50">
               <div class="grid grid-cols-2 gap-4">
-                <a href="{r}stone-flooring/other-categories/index.html#flexible-stone-veneer" class="p-3 hover:bg-[#F7FFEC] rounded flex gap-3 transition-colors">
+                <a href="{r}stone-flooring/other-categories/#flexible-stone-veneer" class="p-3 hover:bg-[#F7FFEC] rounded flex gap-3 transition-colors">
                   <div class="w-12 h-12 bg-primary-10 flex-shrink-0"><img src="{r}assets/images/related/slate-veneer.webp" alt="Flexible Stone" class="w-full h-full object-cover"></div>
                   <div>
                     <h4 class="text-sm font-semibold text-primary-100">Flexible Stone Veneer</h4>
                     <p class="text-xs text-primary-70">1.5–2.0mm ultra-thin bendable natural slate</p>
                   </div>
                 </a>
-                <a href="{r}stone-flooring/other-categories/index.html#natural-ledger-stone" class="p-3 hover:bg-[#F7FFEC] rounded flex gap-3 transition-colors">
+                <a href="{r}stone-flooring/other-categories/#natural-ledger-stone" class="p-3 hover:bg-[#F7FFEC] rounded flex gap-3 transition-colors">
                   <div class="w-12 h-12 bg-primary-10 flex-shrink-0"><img src="{r}assets/images/related/ledger-stone.webp" alt="Ledger Stone" class="w-full h-full object-cover"></div>
                   <div>
                     <h4 class="text-sm font-semibold text-primary-100">Natural Ledger Stone</h4>
                     <p class="text-xs text-primary-70">Z-profile interlocking stacked stone panels</p>
                   </div>
                 </a>
-                <a href="{r}stone-flooring/other-categories/index.html#travertine-pavers" class="p-3 hover:bg-[#F7FFEC] rounded flex gap-3 transition-colors">
+                <a href="{r}stone-flooring/other-categories/#travertine-pavers" class="p-3 hover:bg-[#F7FFEC] rounded flex gap-3 transition-colors">
                   <div class="w-12 h-12 bg-primary-10 flex-shrink-0"><img src="{r}assets/images/related/travertine.webp" alt="Travertine" class="w-full h-full object-cover"></div>
                   <div>
                     <h4 class="text-sm font-semibold text-primary-100">Classic Travertine</h4>
                     <p class="text-xs text-primary-70">Honed, tumbled & unfilled travertine pavers</p>
                   </div>
                 </a>
-                <a href="{r}stone-flooring/other-categories/index.html#sandstone-pavers" class="p-3 hover:bg-[#F7FFEC] rounded flex gap-3 transition-colors">
+                <a href="{r}stone-flooring/other-categories/#sandstone-pavers" class="p-3 hover:bg-[#F7FFEC] rounded flex gap-3 transition-colors">
                   <div class="w-12 h-12 bg-primary-10 flex-shrink-0"><img src="{r}assets/images/related/sandstone.webp" alt="Sandstone" class="w-full h-full object-cover"></div>
                   <div>
                     <h4 class="text-sm font-semibold text-primary-100">Sandstone Pavers</h4>
@@ -304,25 +321,25 @@ def render_header(depth=0, active_tab='limestone'):
                 </a>
               </div>
               <div class="mt-4 pt-3 border-t border-primary-10 text-center">
-                <a href="{r}stone-flooring/other-categories/index.html" class="text-xs font-semibold text-primary-100 hover:underline">→ View Full Companion Stone Directory</a>
+                <a href="{r}stone-flooring/other-categories/" class="text-xs font-semibold text-primary-100 hover:underline">→ View Full Companion Stone Directory</a>
               </div>
             </div>
           </div>
 
           <!-- Compliance & Resources -->
-          <a href="{r}compliance/index.html" class="px-3 py-2 text-sm font-medium text-primary-100 border-b-2 { 'border-[#E9F551] font-semibold' if active_tab == 'compliance' else 'border-transparent hover:border-primary-100' }">
+          <a href="{r}compliance/" class="px-3 py-2 text-sm font-medium text-primary-100 border-b-2 { 'border-[#E9F551] font-semibold' if active_tab == 'compliance' else 'border-transparent hover:border-primary-100' }">
             ASTM / CE Specs
           </a>
-          <a href="{r}resources/index.html" class="px-3 py-2 text-sm font-medium text-primary-100 border-b-2 { 'border-[#E9F551] font-semibold' if active_tab == 'resources' else 'border-transparent hover:border-primary-100' }">
+          <a href="{r}resources/" class="px-3 py-2 text-sm font-medium text-primary-100 border-b-2 { 'border-[#E9F551] font-semibold' if active_tab == 'resources' else 'border-transparent hover:border-primary-100' }">
             Resources & CAD
           </a>
-          <a href="{r}blog/index.html" class="px-3 py-2 text-sm font-medium text-primary-100 border-b-2 { 'border-[#E9F551] font-semibold' if active_tab == 'blog' else 'border-transparent hover:border-primary-100' }">
+          <a href="{r}blog/" class="px-3 py-2 text-sm font-medium text-primary-100 border-b-2 { 'border-[#E9F551] font-semibold' if active_tab == 'blog' else 'border-transparent hover:border-primary-100' }">
             Blog
           </a>
-          <a href="{r}about-us/index.html" class="px-3 py-2 text-sm font-medium text-primary-100 border-b-2 { 'border-[#E9F551] font-semibold' if active_tab == 'about' else 'border-transparent hover:border-primary-100' }">
+          <a href="{r}about-us/" class="px-3 py-2 text-sm font-medium text-primary-100 border-b-2 { 'border-[#E9F551] font-semibold' if active_tab == 'about' else 'border-transparent hover:border-primary-100' }">
             About Tianya
           </a>
-          <a href="{r}contact-us/index.html" class="px-3 py-2 text-sm font-medium text-primary-100 border-b-2 { 'border-[#E9F551] font-semibold' if active_tab == 'contact' else 'border-transparent hover:border-primary-100' }">
+          <a href="{r}contact-us/" class="px-3 py-2 text-sm font-medium text-primary-100 border-b-2 { 'border-[#E9F551] font-semibold' if active_tab == 'contact' else 'border-transparent hover:border-primary-100' }">
             Contact
           </a>
         </nav>
@@ -336,7 +353,7 @@ def render_header(depth=0, active_tab='limestone'):
           </button>
 
           <!-- Request Samples CTA -->
-          <a href="{r}index.html#enquiry-section" class="hidden md:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold uppercase tracking-wider bg-primary-100 text-white rounded hover:bg-[#E9F551] hover:text-black transition-colors">
+          <a href="{r}#enquiry-section" class="hidden md:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold uppercase tracking-wider bg-primary-100 text-white rounded hover:bg-[#E9F551] hover:text-black transition-colors">
             Request Samples
           </a>
 
@@ -370,35 +387,36 @@ def render_header(depth=0, active_tab='limestone'):
         <div>
           <span class="text-xs uppercase tracking-wider text-primary-40 font-semibold block mb-2">Limestone Finishes</span>
           <div class="space-y-2 pl-2">
-            <a href="{r}index.html" class="block py-1 text-primary-100 font-semibold hover:underline">All Limestone Collections (29)</a>
-            <a href="{r}stone-flooring/limestone/tumbled/index.html" class="block py-1 text-primary-70 hover:text-black italic font-heading">Tumbled Finish (8)</a>
-            <a href="{r}stone-flooring/limestone/antique/index.html" class="block py-1 text-primary-70 hover:text-black italic font-heading">Antique Finish (10)</a>
-            <a href="{r}stone-flooring/limestone/lightly-distressed/index.html" class="block py-1 text-primary-70 hover:text-black italic font-heading">Lightly Distressed (6)</a>
-            <a href="{r}stone-flooring/limestone/sandblasted-brushed/index.html" class="block py-1 text-primary-70 hover:text-black italic font-heading">Sandblasted & Brushed (2)</a>
-            <a href="{r}stone-flooring/limestone/sandblasted/index.html" class="block py-1 text-primary-70 hover:text-black italic font-heading">Sandblasted (3)</a>
+            <a href="{r}stone-flooring/limestone/" class="block py-1 text-primary-100 font-semibold hover:underline">All Limestone Collections (29)</a>
+            <a href="{r}stone-flooring/limestone/tumbled/" class="block py-1 text-primary-70 hover:text-black italic font-heading">Tumbled Finish (8)</a>
+            <a href="{r}stone-flooring/limestone/antique/" class="block py-1 text-primary-70 hover:text-black italic font-heading">Antique Finish (10)</a>
+            <a href="{r}stone-flooring/limestone/lightly-distressed/" class="block py-1 text-primary-70 hover:text-black italic font-heading">Lightly Distressed (6)</a>
+            <a href="{r}stone-flooring/limestone/sandblasted-brushed/" class="block py-1 text-primary-70 hover:text-black italic font-heading">Sandblasted &amp; Brushed (2)</a>
+            <a href="{r}stone-flooring/limestone/sandblasted/" class="block py-1 text-primary-70 hover:text-black italic font-heading">Sandblasted (3)</a>
           </div>
         </div>
 
         <div class="pt-4 border-t border-primary-10">
           <span class="text-xs uppercase tracking-wider text-primary-40 font-semibold block mb-2">Other Categories</span>
-          <a href="{r}stone-flooring/other-categories/index.html#flexible-stone-veneer" class="block py-1 text-primary-70 hover:text-black">Flexible Stone Veneer (1.5-2mm)</a>
-          <a href="{r}stone-flooring/other-categories/index.html#natural-ledger-stone" class="block py-1 text-primary-70 hover:text-black">Natural Ledger Stone Panels</a>
-          <a href="{r}stone-flooring/other-categories/index.html#travertine-pavers" class="block py-1 text-primary-70 hover:text-black">Travertine Pavers</a>
-          <a href="{r}stone-flooring/other-categories/index.html#sandstone-pavers" class="block py-1 text-primary-70 hover:text-black">Sandstone Pavers</a>
-          <a href="{r}stone-flooring/other-categories/index.html#crazy-paving" class="block py-1 text-primary-70 hover:text-black">Crazy Paving</a>
+          <a href="{r}stone-flooring/other-categories/#flexible-stone-veneer" class="block py-1 text-primary-70 hover:text-black">Flexible Stone Veneer (1.5-2mm)</a>
+          <a href="{r}stone-flooring/other-categories/#natural-ledger-stone" class="block py-1 text-primary-70 hover:text-black">Natural Ledger Stone Panels</a>
+          <a href="{r}stone-flooring/other-categories/#travertine-pavers" class="block py-1 text-primary-70 hover:text-black">Travertine Pavers</a>
+          <a href="{r}stone-flooring/other-categories/#sandstone-pavers" class="block py-1 text-primary-70 hover:text-black">Sandstone Pavers</a>
+          <a href="{r}stone-flooring/other-categories/#crazy-paving" class="block py-1 text-primary-70 hover:text-black">Crazy Paving</a>
         </div>
 
         <div class="pt-4 border-t border-primary-10 space-y-2">
-          <a href="{r}compliance/index.html" class="block py-1 font-semibold text-primary-100">ASTM & CE Compliance Hub</a>
-          <a href="{r}resources/index.html" class="block py-1 font-semibold text-primary-100">Technical Resources & CAD</a>
-          <a href="{r}about-us/index.html" class="block py-1 font-semibold text-primary-100">About Tianya Quarry & Factory</a>
-          <a href="{r}contact-us/index.html" class="block py-1 font-semibold text-primary-100">Contact & Global Shipping</a>
+          <a href="{r}compliance/" class="block py-1 font-semibold text-primary-100">ASTM &amp; CE Compliance Hub</a>
+          <a href="{r}resources/" class="block py-1 font-semibold text-primary-100">Technical Resources &amp; CAD</a>
+          <a href="{r}blog/" class="block py-1 font-semibold text-primary-100">Limestone Guides &amp; Blog</a>
+          <a href="{r}about-us/" class="block py-1 font-semibold text-primary-100">About Tianya Quarry &amp; Factory</a>
+          <a href="{r}contact-us/" class="block py-1 font-semibold text-primary-100">Contact &amp; Global Shipping</a>
         </div>
       </div>
     </div>
 
     <div class="pt-6 border-t border-primary-10">
-      <a href="{r}index.html#enquiry-section" class="w-full block py-3 bg-primary-100 text-white text-center font-semibold uppercase tracking-wider text-xs rounded hover:bg-[#E9F551] hover:text-black transition-colors mb-3">
+      <a href="{r}#enquiry-section" class="w-full block py-3 bg-primary-100 text-white text-center font-semibold uppercase tracking-wider text-xs rounded hover:bg-[#E9F551] hover:text-black transition-colors mb-3">
         Request Sample Kit
       </a>
       <p class="text-xs text-center text-primary-40">Direct Factory Hotline: {COMPANY_INFO['phone']}</p>
@@ -408,6 +426,7 @@ def render_header(depth=0, active_tab='limestone'):
 
 def render_footer(depth=0):
     r = get_rel_path(depth)
+    home_href = r if r else './'
     return f'''
   <!-- Architectural Stone Footer -->
   <footer class="bg-primary-100 text-white pt-16 pb-12 mt-16 border-t border-primary-80">
@@ -415,7 +434,7 @@ def render_footer(depth=0):
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-primary-80 text-sm">
         <!-- Col 1: Brand & Quarry Direct -->
         <div class="lg:col-span-2 space-y-4">
-          <a href="{r}index.html" class="flex items-center gap-3.5 group inline-flex" aria-label="Tianya Limestone Home">
+          <a href="{home_href}" class="flex items-center gap-3.5 group inline-flex" aria-label="Tianya Limestone Home">
             <img src="{r}assets/images/logo/tianya-logo.webp" alt="Tianya Stone Logo" class="h-11 w-auto object-contain transition-transform group-hover:scale-105 duration-300">
             <div class="flex flex-col justify-center">
               <span class="font-brand font-bold text-2xl tracking-[0.12em] text-white leading-none">TIANYA</span>
@@ -429,7 +448,7 @@ def render_footer(depth=0):
           <div class="text-xs text-primary-40 space-y-1">
             <p><strong>Factory Address:</strong> {COMPANY_INFO['address']}</p>
             <p><strong>Direct Inquiries:</strong> <a href="mailto:{COMPANY_INFO['email']}" class="text-white hover:text-[#E9F551]">{COMPANY_INFO['email']}</a></p>
-            <p><strong>Sales Hotline &amp; WhatsApp:</strong> <a href="tel:{COMPANY_INFO['phone']}" class="text-white hover:text-[#E9F551]">{COMPANY_INFO['phone']}</a></p>
+            <p><strong>Sales Hotline:</strong> <a href="tel:{COMPANY_INFO['phone']}" class="text-white hover:text-[#E9F551]">{COMPANY_INFO['phone']}</a> / {COMPANY_INFO['phone_alt']}</p>
             <p><strong>Main Stone Portal:</strong> <a href="{COMPANY_INFO['sister_domain']}" target="_blank" rel="noopener" class="text-[#E9F551] hover:underline">tystoneveneer.com</a></p>
           </div>
         </div>
@@ -438,39 +457,43 @@ def render_footer(depth=0):
         <div>
           <h4 class="font-heading italic text-base text-[#E9F551] mb-4">Limestone Collections</h4>
           <ul class="space-y-2 text-xs text-primary-40">
-            <li><a href="{r}stone-flooring/limestone/tumbled/index.html" class="hover:text-white">Tumbled Limestone (8)</a></li>
-            <li><a href="{r}stone-flooring/limestone/antique/index.html" class="hover:text-white">Antique Hand-Dressed (10)</a></li>
-            <li><a href="{r}stone-flooring/limestone/lightly-distressed/index.html" class="hover:text-white">Lightly Distressed (6)</a></li>
-            <li><a href="{r}stone-flooring/limestone/sandblasted-brushed/index.html" class="hover:text-white">Sandblasted & Brushed (2)</a></li>
-            <li><a href="{r}stone-flooring/limestone/sandblasted/index.html" class="hover:text-white">Sandblasted High-Grip (3)</a></li>
-            <li class="pt-2"><a href="{r}index.html" class="text-white font-semibold hover:underline">→ View All 29 Stones</a></li>
+            <li><a href="{r}stone-flooring/limestone/tumbled/" class="hover:text-white">Tumbled Limestone (8)</a></li>
+            <li><a href="{r}stone-flooring/limestone/antique/" class="hover:text-white">Antique Hand-Dressed (10)</a></li>
+            <li><a href="{r}stone-flooring/limestone/lightly-distressed/" class="hover:text-white">Lightly Distressed (6)</a></li>
+            <li><a href="{r}stone-flooring/limestone/sandblasted-brushed/" class="hover:text-white">Sandblasted &amp; Brushed (2)</a></li>
+            <li><a href="{r}stone-flooring/limestone/sandblasted/" class="hover:text-white">Sandblasted High-Grip (3)</a></li>
+            <li class="pt-2"><a href="{r}stone-flooring/limestone/" class="text-white font-semibold hover:underline">→ View All 29 Stones Catalog</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Companion Product Lines -->
+        <!-- Col 3: Companion Product Lines & Guides -->
         <div>
-          <h4 class="font-heading italic text-base text-[#E9F551] mb-4">Companion Categories</h4>
+          <h4 class="font-heading italic text-base text-[#E9F551] mb-4">Companion &amp; Guides</h4>
           <ul class="space-y-2 text-xs text-primary-40">
-            <li><a href="{r}stone-flooring/other-categories/index.html#flexible-stone-veneer" class="hover:text-white">Flexible Stone Veneer (1.5-2mm)</a></li>
-            <li><a href="{r}stone-flooring/other-categories/index.html#mcm-flexible-panels" class="hover:text-white">MCM Flexible Panels</a></li>
-            <li><a href="{r}stone-flooring/other-categories/index.html#natural-ledger-stone" class="hover:text-white">Natural Ledger Stone Panels</a></li>
-            <li><a href="{r}stone-flooring/other-categories/index.html#travertine-pavers" class="hover:text-white">Classic Travertine Pavers</a></li>
-            <li><a href="{r}stone-flooring/other-categories/index.html#sandstone-pavers" class="hover:text-white">Sandstone Pavers</a></li>
-            <li><a href="{r}stone-flooring/other-categories/index.html#crazy-paving" class="hover:text-white">Crazy Paving & Flagstone</a></li>
+            <li><a href="{r}stone-flooring/other-categories/#flexible-stone-veneer" class="hover:text-white">Flexible Stone Veneer (1.5-2mm)</a></li>
+            <li><a href="{r}stone-flooring/other-categories/#natural-ledger-stone" class="hover:text-white">Natural Ledger Stone Panels</a></li>
+            <li><a href="{r}stone-flooring/other-categories/#travertine-pavers" class="hover:text-white">Classic Travertine Pavers</a></li>
+            <li><a href="{r}stone-flooring/other-categories/#sandstone-pavers" class="hover:text-white">Sandstone Pavers</a></li>
+            <li class="pt-1 border-t border-primary-80"><a href="{r}blog/" class="text-white font-semibold hover:underline">Engineering Blog &amp; Guides</a></li>
+            <li><a href="{r}blog/tumbled-vs-honed-limestone-pool-surrounds/" class="hover:text-white">Pool Surround Finishes Guide</a></li>
+            <li><a href="{r}blog/limestone-paving-cost-australia-2026/" class="hover:text-white">2026 Limestone Cost Guide</a></li>
+            <li><a href="{r}blog/limestone-vs-travertine-vs-sandstone/" class="hover:text-white">Limestone vs Travertine vs Sandstone</a></li>
+            <li><a href="{r}blog/how-to-seal-limestone-pavers/" class="hover:text-white">How to Seal Limestone Pavers</a></li>
           </ul>
         </div>
 
         <!-- Col 4: Compliance & Global Logistics -->
         <div>
-          <h4 class="font-heading italic text-base text-[#E9F551] mb-4">Quality & Logistics</h4>
+          <h4 class="font-heading italic text-base text-[#E9F551] mb-4">Quality &amp; Logistics</h4>
           <ul class="space-y-2 text-xs text-primary-40">
-            <li><a href="{r}compliance/index.html" class="hover:text-white">ASTM C97 Absorption (&lt;0.22%)</a></li>
-            <li><a href="{r}compliance/index.html" class="hover:text-white">ASTM C170 Compressive (&gt;120 MPa)</a></li>
-            <li><a href="{r}compliance/index.html" class="hover:text-white">ASTM C666 Freeze-Thaw (100 Cycles)</a></li>
-            <li><a href="{r}compliance/index.html" class="hover:text-white">EN 13501-1 Class A1 Fireproof</a></li>
-            <li><a href="{r}resources/index.html" class="hover:text-white">Modular Laying Patterns (PDF)</a></li>
-            <li><a href="{r}resources/index.html" class="hover:text-white">Installation & Sealing Manual</a></li>
-            <li><a href="{r}contact-us/index.html" class="hover:text-white">Global Sea Freight to 50+ Ports</a></li>
+            <li><a href="{r}compliance/" class="hover:text-white">ASTM C97 Absorption (&lt;0.22%)</a></li>
+            <li><a href="{r}compliance/" class="hover:text-white">ASTM C170 Compressive (&gt;120 MPa)</a></li>
+            <li><a href="{r}compliance/" class="hover:text-white">ASTM C666 Freeze-Thaw (100 Cycles)</a></li>
+            <li><a href="{r}compliance/" class="hover:text-white">EN 13501-1 Class A1 Fireproof</a></li>
+            <li><a href="{r}resources/" class="hover:text-white">Modular Laying Patterns (PDF)</a></li>
+            <li><a href="{r}resources/" class="hover:text-white">Installation &amp; Sealing Manual</a></li>
+            <li><a href="{r}about-us/" class="hover:text-white">About Shuitou Quarry &amp; Factory</a></li>
+            <li><a href="{r}contact-us/" class="hover:text-white">Global Sea Freight to 50+ Ports</a></li>
           </ul>
         </div>
       </div>
@@ -481,8 +504,8 @@ def render_footer(depth=0):
           © 2000–2026 Fujian Tianya Cultural Stone Co., Ltd. (福建天涯文化石有限公司). Made by nature. Selected with care.
         </div>
         <div class="flex items-center gap-6">
-          <a href="{r}compliance/index.html" class="hover:text-white">Compliance</a>
-          <a href="{r}resources/index.html" class="hover:text-white">Downloads</a>
+          <a href="{r}compliance/" class="hover:text-white">Compliance</a>
+          <a href="{r}resources/" class="hover:text-white">Downloads</a>
           <a href="{r}sitemap.xml" class="hover:text-white">Sitemap</a>
           <a href="{COMPANY_INFO['sister_domain']}" target="_blank" rel="noopener" class="hover:text-[#E9F551]">tystoneveneer.com</a>
         </div>
@@ -533,14 +556,18 @@ def render_footer(depth=0):
     <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.6 1.1 1.2-4.5-.3-.4c-1-1.6-1.6-3.5-1.6-5.5 0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 10.8-10 10.8zm5.5-7.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.9-1c.3-.3.3-.5.5-.8.1-.3 0-.5-.1-.7-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.2-.8.7-.3.5-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
   </button>
   <div class="ty-wa-menu" id="tyWaMenu">
-    <a href="https://wa.me/8619959797067?text=Hi%20Tianya%20Limestone%2C%20I%27m%20interested%20in%20your%20limestone%20pavers." target="_blank" rel="noopener" data-wa-num="8619959797067">
+    <a href="https://wa.me/8618960366169?text=Hi%20Tianya%20Limestone%2C%20I%27m%20interested%20in%20your%20limestone%20pavers." target="_blank" rel="noopener" data-wa-num="8618960366169">
       <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3z"/></svg>
-      <span>WhatsApp Sales<small>+86 199 5979 7067</small></span>
+      <span>Sales Team 1<small>+86 189 6036 6169</small></span>
+    </a>
+    <a href="https://wa.me/8617805982800?text=Hi%20Tianya%20Limestone%2C%20I%27m%20interested%20in%20your%20limestone%20pavers." target="_blank" rel="noopener" data-wa-num="8617805982800">
+      <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3z"/></svg>
+      <span>Sales Team 2<small>+86 178 0598 2800</small></span>
     </a>
   </div>
   <nav class="ty-mobile-cta">
-    <a class="ty-btn-call" href="tel:+8619959797067" data-track="phone_click">📞 Call</a>
-    <a class="ty-btn-wa" href="https://wa.me/8619959797067?text=Hi%20Tianya%20Limestone%2C%20I%27m%20interested%20in%20your%20limestone%20pavers." target="_blank" rel="noopener" data-track="whatsapp_click">💬 WhatsApp</a>
+    <a class="ty-btn-call" href="tel:+8618960366169" data-track="phone_click">📞 Call</a>
+    <a class="ty-btn-wa" href="https://wa.me/8618960366169?text=Hi%20Tianya%20Limestone%2C%20I%27m%20interested%20in%20your%20limestone%20pavers." target="_blank" rel="noopener" data-track="whatsapp_click">💬 WhatsApp</a>
     <a class="ty-btn-rfq" href="{r}contact-us/index.html" data-track="cta_click">Get Quote</a>
   </nav>
   <script>
@@ -559,7 +586,7 @@ def render_footer(depth=0):
         a.href="https://wa.me/"+a.getAttribute('data-wa-num')+"?text="+text;
       }});
       var mcta=document.querySelector('.ty-mobile-cta .ty-btn-wa');
-      if(mcta)mcta.href="https://wa.me/8619959797067?text="+text;
+      if(mcta)mcta.href="https://wa.me/8618960366169?text="+text;
     }}
     // dataLayer tracking hooks (for GA4/GTM)
     window.dataLayer=window.dataLayer||[];
@@ -998,11 +1025,11 @@ def generate_product_page(prod, all_products):
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
     <!-- Breadcrumb -->
     <nav class="flex items-center gap-2 text-xs text-primary-70 mb-6 font-copy" aria-label="Breadcrumbs">
-      <a href="{r}index.html" class="hover:underline text-primary-40">Flooring</a>
+      <a href="{r or './'}" class="hover:underline text-primary-40">Home</a>
       <span>/</span>
-      <a href="{r}index.html" class="hover:underline text-primary-40">Limestone</a>
+      <a href="{r}stone-flooring/limestone/" class="hover:underline text-primary-40">Limestone</a>
       <span>/</span>
-      <a href="{r}stone-flooring/limestone/{prod['finish']}/index.html" class="hover:underline text-primary-40 italic font-heading">{prod['finish_title']}</a>
+      <a href="{r}stone-flooring/limestone/{prod['finish']}/" class="hover:underline text-primary-40 italic font-heading">{prod['finish_title']}</a>
       <span>/</span>
       <span class="font-medium text-primary-100">{prod['title']}</span>
     </nav>
@@ -1163,7 +1190,7 @@ def generate_product_page(prod, all_products):
           <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block">Comparative Selection</span>
           <h2 class="text-2xl lg:text-3xl font-heading font-medium text-primary-100">Alternative Limestone Stones</h2>
         </div>
-        <a href="{r}index.html" class="text-xs font-semibold text-primary-100 hover:underline">View All 29 Stones →</a>
+        <a href="{r}stone-flooring/limestone/" class="text-xs font-semibold text-primary-100 hover:underline">View All 29 Stones →</a>
       </div>
 
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
@@ -1236,7 +1263,7 @@ def generate_finish_page(finish_slug, finish_info, finish_products, all_products
     for p in finish_products:
         thumb_src = p['thumbnail'] if p['thumbnail'].startswith('http') else f"{r}{p['thumbnail']}"
         product_cards.append(f'''
-          <a href="{r}{p['url']}" class="group stone-card block text-left">
+          <a href="{r}{p['url'].replace('index.html', '')}" class="group stone-card block text-left">
             <div class="stone-card-media aspect-square w-full mb-3 bg-primary-10">
               <img src="{thumb_src}" alt="{p['title']}" class="w-full h-full object-cover">
             </div>
@@ -1301,9 +1328,9 @@ def generate_finish_page(finish_slug, finish_info, finish_products, all_products
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
     <!-- Breadcrumb -->
     <nav class="flex items-center gap-2 text-xs text-primary-70 mb-6 font-copy" aria-label="Breadcrumbs">
-      <a href="{r}index.html" class="hover:underline text-primary-40">Flooring</a>
+      <a href="{r or './'}" class="hover:underline text-primary-40">Home</a>
       <span>/</span>
-      <a href="{r}index.html" class="hover:underline text-primary-40">Limestone</a>
+      <a href="{r}stone-flooring/limestone/" class="hover:underline text-primary-40">Limestone</a>
       <span>/</span>
       <span class="font-medium text-primary-100 italic font-heading">{finish_info['title']}</span>
     </nav>
@@ -1380,15 +1407,14 @@ def generate_home_page(all_products, depth=0):
     description = "Tianya Limestone provides quarry-direct architectural limestone pavers, tiles, and pool copings in 5 distinct finishes. ASTM C97 & C170 certified. Request free sample kits or container quotes."
 
     if depth == 2:
-        # /stone-flooring/limestone/ category page: keep SEO head independent
-        # from the homepage to avoid duplicate title/description/H1.
+        # /stone-flooring/limestone/ category page: distinct B2B specification hub & 29-SKU matrix
         title = "Limestone Flooring Collection: 29 Pavers, Tiles & Pool Coping | Tianya Limestone"
         description = "Browse all 29 quarry-direct limestone pavers, tiles and pool copings from Tianya Limestone across 5 finishes: tumbled, antique, lightly-distressed, sandblasted and sandblasted-brushed. ASTM C97 & C170 certified. Order free samples or request a container quote."
-        hero_h1 = "Limestone Pavers, Tiles<br>& Pool Coping"
-        hero_eyebrow = "Natural Limestone · Tianya Stone"
+        hero_h1 = "Limestone Pavers, Tiles &amp; Pool Coping — 29 Quarry-Direct Collections"
+        hero_eyebrow = "Architectural Specification Catalog · Shuitou Quarry Direct"
     else:
         # Homepage: keyword-rich H1; brand line "Stone with soul." kept as eyebrow.
-        hero_h1 = "Quarry-Direct Limestone<br>Pavers, Tiles & Pool Coping"
+        hero_h1 = "Quarry-Direct Limestone<br>Pavers, Tiles &amp; Pool Coping"
         hero_eyebrow = "Stone with soul."
 
     finish_sections = []
@@ -1402,7 +1428,7 @@ def generate_home_page(all_products, depth=0):
         for p in f_prods:
             thumb_src = p['thumbnail'] if p['thumbnail'].startswith('http') else f"{r}{p['thumbnail']}"
             prod_cards.append(f'''
-              <a href="{r}{p['url']}" class="group stone-card block text-left">
+              <a href="{r}{p['url'].replace('index.html', '')}" class="group stone-card block text-left">
                 <div class="stone-card-media aspect-square w-full mb-2 bg-primary-10">
                   <img src="{thumb_src}" alt="{p['title']} Limestone" class="w-full h-full object-cover">
                 </div>
@@ -1416,9 +1442,9 @@ def generate_home_page(all_products, depth=0):
 
         finish_sections.append(f'''
           <!-- Finish Row: {f_info['title']} -->
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 py-10 border-b border-primary-10">
+          <div id="finish-{f_slug}" class="grid grid-cols-1 lg:grid-cols-12 gap-6 py-10 border-b border-primary-10">
             <div class="lg:col-span-3">
-              <a href="{r}stone-flooring/limestone/{f_slug}/index.html" class="group inline-block">
+              <a href="{r}stone-flooring/limestone/{f_slug}/" class="group inline-block">
                 <h2 class="text-3xl lg:text-4xl font-heading font-medium text-primary-100 group-hover:underline">
                   <i>{f_info['title']}</i>
                 </h2>
@@ -1438,6 +1464,7 @@ def generate_home_page(all_products, depth=0):
 
     related_cards = []
     for cat in OTHER_CATEGORIES:
+        clean_cat_url = cat['url'].replace('index.html', '')
         related_cards.append(f'''
           <div class="border border-primary-10 bg-white hover:border-black transition-colors p-4 flex flex-col justify-between">
             <div>
@@ -1452,10 +1479,58 @@ def generate_home_page(all_products, depth=0):
             </div>
             <div class="mt-4 pt-3 border-t border-primary-10 flex items-center justify-between text-xs">
               <span class="text-primary-40">Tianya Production Line</span>
-              <a href="{r}{cat['url']}" class="font-semibold text-primary-100 hover:underline">Learn More →</a>
+              <a href="{r}{clean_cat_url}" class="font-semibold text-primary-100 hover:underline">Learn More →</a>
             </div>
           </div>
         ''')
+
+    blog_guide_cards = f'''
+      <section class="my-14 pt-8 border-t border-primary-10">
+        <div class="flex items-baseline justify-between mb-8">
+          <div>
+            <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block">Technical Specification &amp; Budgeting</span>
+            <h2 class="text-2xl lg:text-3xl font-heading font-medium text-primary-100">Limestone Engineering Guides &amp; 2026 Cost Benchmarks</h2>
+          </div>
+          <a href="{r}blog/" class="text-xs font-semibold text-primary-100 hover:underline">
+            View All Engineering Guides →
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <a href="{r}blog/tumbled-vs-honed-limestone-pool-surrounds/" class="group border border-primary-10 bg-white hover:border-black transition-colors p-5 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] uppercase tracking-wider font-semibold text-primary-40 block mb-1.5">Pool Surrounds · AS 4586</span>
+              <h3 class="font-heading text-base font-medium text-primary-100 group-hover:underline mb-2">Tumbled vs Honed Limestone for Pool Surrounds</h3>
+              <p class="text-xs text-primary-70 leading-relaxed font-copy">Compare P4 tumbled vs P5 sandblasted wet barefoot slip ratings, salt-pool resistance, and bullnose coping specifications.</p>
+            </div>
+            <span class="text-xs font-semibold text-primary-100 mt-4 pt-3 border-t border-primary-10 inline-block">Read Specification Guide →</span>
+          </a>
+          <a href="{r}blog/limestone-paving-cost-australia-2026/" class="group border border-primary-10 bg-white hover:border-black transition-colors p-5 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] uppercase tracking-wider font-semibold text-primary-40 block mb-1.5">2026 Cost Breakdown</span>
+              <h3 class="font-heading text-base font-medium text-primary-100 group-hover:underline mb-2">Limestone Paving Cost Per m² in Australia (2026)</h3>
+              <p class="text-xs text-primary-70 leading-relaxed font-copy">FOB Xiamen factory rates vs landed Sydney/Melbourne container costs, sea freight math, and quarry-direct savings.</p>
+            </div>
+            <span class="text-xs font-semibold text-primary-100 mt-4 pt-3 border-t border-primary-10 inline-block">Read Cost Analysis →</span>
+          </a>
+          <a href="{r}blog/limestone-vs-travertine-vs-sandstone/" class="group border border-primary-10 bg-white hover:border-black transition-colors p-5 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] uppercase tracking-wider font-semibold text-primary-40 block mb-1.5">Material Petrography</span>
+              <h3 class="font-heading text-base font-medium text-primary-100 group-hover:underline mb-2">Limestone vs Travertine vs Sandstone Pavers</h3>
+              <p class="text-xs text-primary-70 leading-relaxed font-copy">Head-to-head ASTM C97 water absorption (&lt;0.22%), freeze-thaw durability, thermal comfort underfoot, and lifecycle cost.</p>
+            </div>
+            <span class="text-xs font-semibold text-primary-100 mt-4 pt-3 border-t border-primary-10 inline-block">Read Stone Comparison →</span>
+          </a>
+          <a href="{r}blog/how-to-seal-limestone-pavers/" class="group border border-primary-10 bg-white hover:border-black transition-colors p-5 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] uppercase tracking-wider font-semibold text-primary-40 block mb-1.5">Installation &amp; Care</span>
+              <h3 class="font-heading text-base font-medium text-primary-100 group-hover:underline mb-2">How to Seal Limestone Pavers (2026 Manual)</h3>
+              <p class="text-xs text-primary-70 leading-relaxed font-copy">Why penetrating silane/siloxane sealers outperform topical films, coverage rates per 100 m², and re-sealing schedules.</p>
+            </div>
+            <span class="text-xs font-semibold text-primary-100 mt-4 pt-3 border-t border-primary-10 inline-block">Read Maintenance Guide →</span>
+          </a>
+        </div>
+      </section>
+    '''
 
     item_list_elements = []
     for idx, p in enumerate(all_products):
@@ -1463,98 +1538,231 @@ def generate_home_page(all_products, depth=0):
             "@type": "ListItem",
             "position": idx + 1,
             "name": f"{p['title']} {p['finish_title']} Limestone",
-            "url": f"{COMPANY_INFO['domain']}/{p['url'].lstrip('/')}",
+            "url": get_canonical_url(p['url']),
             "description": p.get('subtitle', '')
         })
 
-    schema_data = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "WebPage",
-                "name": title,
-                "description": description,
-                "inLanguage": "en",
-                "url": canonical
-            },
-            {
-                "@type": "Organization",
-                "name": COMPANY_INFO['name'],
-                "alternateName": COMPANY_INFO['chinese_name'],
-                "url": COMPANY_INFO['domain'],
-                "sameAs": [COMPANY_INFO['sister_domain']],
-                "logo": f"{COMPANY_INFO['domain']}/assets/images/logo/tianya-limestone-logo.svg",
-                "foundingDate": COMPANY_INFO['established'],
-                "telephone": COMPANY_INFO['phone'],
-                "email": COMPANY_INFO['email'],
-                "knowsAbout": [
-                    "Architectural Limestone",
-                    "Natural Stone Flooring",
-                    "Outdoor Pool Coping",
-                    "French Pattern Limestone Pavers",
-                    "ASTM C97 Water Absorption Testing",
-                    "ASTM C170 Compressive Strength",
-                    "Shuitou Stone Processing"
-                ],
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": 24.6931,
-                    "longitude": 118.4287
+    if depth == 2:
+        schema_data = {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "CollectionPage",
+                    "name": title,
+                    "description": description,
+                    "inLanguage": "en",
+                    "url": canonical
                 },
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "NO.22-(5-7)# Complex Building, South of Materials Market, Shuitou Town",
-                    "addressLocality": "Nanan City, Quanzhou",
-                    "addressRegion": "Fujian Province",
-                    "addressCountry": "China"
+                {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{COMPANY_INFO['domain']}/"},
+                        {"@type": "ListItem", "position": 2, "name": "Limestone Flooring Collection (29 SKUs)", "item": canonical}
+                    ]
+                },
+                {
+                    "@type": "ItemList",
+                    "name": "Complete 29-SKU Tianya Architectural Limestone Catalog",
+                    "description": "All 29 quarry-direct natural limestone flooring, paver, and pool coping collections across 5 surface finishes.",
+                    "numberOfItems": len(item_list_elements),
+                    "itemListElement": item_list_elements
                 }
-            },
-            {
-                "@type": "ItemList",
-                "name": "Tianya Natural Limestone Collections",
-                "description": "Quarry-direct 29 architectural natural limestone pavers and tiles across 5 artisanal finishes.",
-                "numberOfItems": len(item_list_elements),
-                "itemListElement": item_list_elements
-            }
-        ]
-    }
+            ]
+        }
+    else:
+        schema_data = {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebPage",
+                    "name": title,
+                    "description": description,
+                    "inLanguage": "en",
+                    "url": canonical
+                },
+                {
+                    "@type": "Organization",
+                    "name": COMPANY_INFO['name'],
+                    "alternateName": COMPANY_INFO['chinese_name'],
+                    "url": COMPANY_INFO['domain'],
+                    "sameAs": [COMPANY_INFO['sister_domain']],
+                    "logo": f"{COMPANY_INFO['domain']}/assets/images/logo/tianya-limestone-logo.svg",
+                    "foundingDate": COMPANY_INFO['established'],
+                    "telephone": COMPANY_INFO['phone'],
+                    "email": COMPANY_INFO['email'],
+                    "knowsAbout": [
+                        "Architectural Limestone",
+                        "Natural Stone Flooring",
+                        "Outdoor Pool Coping",
+                        "French Pattern Limestone Pavers",
+                        "ASTM C97 Water Absorption Testing",
+                        "ASTM C170 Compressive Strength",
+                        "Shuitou Stone Processing"
+                    ],
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 24.6931,
+                        "longitude": 118.4287
+                    },
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "NO.22-(5-7)# Complex Building, South of Materials Market, Shuitou Town",
+                        "addressLocality": "Nanan City, Quanzhou",
+                        "addressRegion": "Fujian Province",
+                        "addressCountry": "China"
+                    }
+                },
+                {
+                    "@type": "ItemList",
+                    "name": "Tianya Natural Limestone Collections",
+                    "description": "Quarry-direct 29 architectural natural limestone pavers and tiles across 5 artisanal finishes.",
+                    "numberOfItems": len(item_list_elements),
+                    "itemListElement": item_list_elements
+                }
+            ]
+        }
 
-    html = f'''<!DOCTYPE html>
-<html lang="en">
-<head>
-  {GA4_SNIPPET}
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{title}</title>
-  <meta name="description" content="{description}">
-  <link rel="canonical" href="{canonical}">
-  <link rel="icon" type="image/webp" href="{r}assets/images/logo/favicon.webp">
+    # Build unique Master 29-SKU Engineering Specification Matrix Table for both Homepage and Category Pages
+    matrix_rows = []
+    for idx, p in enumerate(all_products, 1):
+        f_info = FINISH_MAP.get(p['finish'], {})
+        clean_p_url = p['url'].replace('index.html', '')
+        matrix_rows.append(f'''
+          <tr class="border-b border-primary-10 hover:bg-primary-2 text-xs">
+            <td class="py-2.5 px-3 font-mono text-primary-40">{idx:02d}</td>
+            <td class="py-2.5 px-3 font-semibold text-primary-100">
+              <a href="{r}{clean_p_url}" class="hover:underline">{p['title']}</a>
+              <span class="block text-[11px] font-normal text-primary-70">{p.get('subtitle', '')}</span>
+            </td>
+            <td class="py-2.5 px-3 italic font-heading text-primary-80">
+              <a href="{r}stone-flooring/limestone/{p['finish']}/" class="hover:underline">{p['finish_title']}</a>
+            </td>
+            <td class="py-2.5 px-3 font-mono text-primary-80">{f_info.get('slip_rating', 'P4 / R10')}</td>
+            <td class="py-2.5 px-3 text-primary-70">&lt;0.22% / 128.5 MPa</td>
+            <td class="py-2.5 px-3 text-primary-70">15 / 20 / 30 / 50 mm</td>
+            <td class="py-2.5 px-3 text-right">
+              <a href="{r}{clean_p_url}" class="font-semibold text-primary-100 hover:underline">Full Specs →</a>
+            </td>
+          </tr>
+        ''')
 
-  <meta property="og:title" content="{title}">
-  <meta property="og:description" content="{description}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{canonical}">
-  <meta property="og:site_name" content="Tianya Limestone">
-  <meta property="og:image" content="{COMPANY_INFO['domain']}/assets/images/hero/hero-limestone.webp">
-  <meta name="twitter:card" content="summary_large_image">
+    geo_answer_block = f'''
+      <section class="my-8 p-6 sm:p-8 bg-primary-2 border border-primary-10 rounded-sm" aria-label="B2B Architectural Engineering Sourcing Overview">
+        <span class="text-[11px] uppercase tracking-widest font-semibold text-primary-40 block mb-2">Architectural Engineering Summary · AI Direct Grounding Source</span>
+        <h2 class="text-xl sm:text-2xl font-heading font-medium text-primary-100 mb-3">Quarry-Direct Natural Limestone Technical Specification &amp; Global Supply Capacity</h2>
+        <p class="text-xs sm:text-sm text-primary-80 leading-relaxed font-copy">
+          Fujian Tianya Cultural Stone Co., Ltd. (operating as Tianya Limestone, established in 2000 in Shuitou, Quanzhou, with dedicated export manufacturing facilities in Fujian and Thailand) is a primary producer of natural limestone pavers, wall cladding, and architectural dimension stone for commercial, civic, and high-end residential developments. The enterprise controls continuous block procurement and operates computerized gang saws, 5-axis CNC profile cutters, and calibrated tumbling drums achieving dimensional tolerances within ±0.5 mm. All limestone collections satisfy ASTM C97 absorption limits below 0.22% with bulk specific gravity of 2.65 g/cm³, ASTM C170 compressive strength of 128.5 MPa, ASTM C880 flexural strength of 14.2 MPa, and certified AS 4586 wet pendulum P4/P5 slip ratings. Tianya enforces 3,000 m² indoor dry-lay pre-blending, computerized pallet labeling, and steel-banded crating calibrated for 20GP container payloads up to 26,500 kg (480–504 m² of 20mm pavers). Standard sample kits dispatch within 48 hours via express freight.
+        </p>
+      </section>
+    '''
 
-  <script type="application/ld+json">
-{json.dumps(schema_data, indent=2)}
-  </script>
+    spec_matrix_table = f'''
+      <!-- Complete 29-SKU Technical Specification & Comparison Table -->
+      <section id="master-spec-matrix" class="my-16 pt-8 border-t border-primary-10">
+        <div class="mb-6">
+          <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block">Architectural Specification Index</span>
+          <h2 class="text-2xl lg:text-3xl font-heading font-medium text-primary-100">Master 29-SKU Limestone Technical Comparison Matrix</h2>
+          <p class="text-xs text-primary-70 mt-1">Compare surface finishes, AS 4586 / DIN 51130 slip resistance, ASTM C97 absorption, and standard calibrated thicknesses across all 29 collections.</p>
+        </div>
+        <div class="overflow-x-auto border border-primary-10 bg-white">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-primary-2 border-b border-primary-10 text-[11px] uppercase tracking-wider text-primary-70">
+                <th scope="col" class="py-3 px-3">#</th>
+                <th scope="col" class="py-3 px-3">Collection &amp; Cultural Heritage</th>
+                <th scope="col" class="py-3 px-3">Surface Finish</th>
+                <th scope="col" class="py-3 px-3">Slip Rating</th>
+                <th scope="col" class="py-3 px-3">Absorption / Strength</th>
+                <th scope="col" class="py-3 px-3">Standard Thickness</th>
+                <th scope="col" class="py-3 px-3 text-right">Dossier</th>
+              </tr>
+            </thead>
+            <tbody>
+              { ''.join(matrix_rows) }
+            </tbody>
+          </table>
+        </div>
+      </section>
+    '''
 
-  <link rel="stylesheet" href="{r}assets/css/eco-outdoor.css?v=3">
-  <link rel="stylesheet" href="{r}assets/css/tianya-custom.css?v=3">
-</head>
-<body class="bg-white">
-  {render_header(depth, active_tab='limestone')}
+    if depth == 2:
 
-  <main class="pt-4">
+        main_body_html = f'''
     <!-- Breadcrumb -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
       <nav class="flex items-center gap-2 text-xs text-primary-70 font-copy" aria-label="Breadcrumbs">
-        <a href="{r}index.html" class="hover:underline text-primary-40">Flooring</a>
+        <a href="{r or './'}" class="hover:underline text-primary-40">Home</a>
         <span>/</span>
-        <span class="font-medium text-primary-100">Limestone</span>
+        <span class="font-medium text-primary-100">Limestone Flooring Collection (29 SKUs)</span>
+      </nav>
+    </div>
+
+    <div class="sr-only">
+      <p>{description}</p>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Dedicated Category Specification Hero -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-10 mb-8 border-b border-primary-10 items-end">
+        <div class="lg:col-span-7 space-y-3">
+          <span class="inline-block px-3 py-1 bg-primary-2 border border-primary-10 text-[11px] uppercase tracking-widest font-semibold text-primary-70">{hero_eyebrow}</span>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-medium text-primary-100 leading-tight">{hero_h1}</h1>
+          {geo_answer_block}
+        </div>
+        <div class="lg:col-span-5 bg-primary-2 border border-primary-10 p-5 rounded-sm space-y-3 text-xs">
+          <div class="font-semibold text-primary-100 uppercase tracking-wider">Quick Finish Directory &amp; Slip Ratings</div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a href="#finish-tumbled" class="p-2 bg-white border border-primary-10 hover:border-black transition-colors flex justify-between"><span>1. Tumbled (8)</span><strong class="font-mono">P4 / R10</strong></a>
+            <a href="#finish-antique" class="p-2 bg-white border border-primary-10 hover:border-black transition-colors flex justify-between"><span>2. Antique (10)</span><strong class="font-mono">P4 / R10</strong></a>
+            <a href="#finish-lightly-distressed" class="p-2 bg-white border border-primary-10 hover:border-black transition-colors flex justify-between"><span>3. Distressed (6)</span><strong class="font-mono">P4 / R10</strong></a>
+            <a href="#finish-sandblasted-brushed" class="p-2 bg-white border border-primary-10 hover:border-black transition-colors flex justify-between"><span>4. Brushed (2)</span><strong class="font-mono">P5 / R11</strong></a>
+            <a href="#finish-sandblasted" class="p-2 bg-white border border-primary-10 hover:border-black transition-colors flex justify-between sm:col-span-2"><span>5. Sandblasted High-Grip (3)</span><strong class="font-mono">P5 / R11–R12</strong></a>
+          </div>
+          <div class="pt-1 flex items-center justify-between">
+            <a href="#master-spec-matrix" class="font-semibold text-primary-100 hover:underline">↓ Jump to 29-SKU Technical Matrix</a>
+            <a href="#enquiry-section" class="font-semibold text-primary-100 hover:underline">Order Sample Box →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 Finish Rows (29 Curated Collections) -->
+      <div id="collections" class="my-6">
+        { ''.join(finish_sections) }
+      </div>
+
+      {spec_matrix_table}
+
+      <!-- Container Estimator Tool -->
+      { render_container_estimator() }
+
+      <!-- Engineering Blog Guides -->
+      { blog_guide_cards }
+
+      <!-- Related Materials / Companion Categories Section -->
+      <section class="my-14">
+        <div class="flex items-baseline justify-between mb-8">
+          <div>
+            <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block">Companion Collections</span>
+            <h2 class="text-2xl lg:text-3xl font-heading font-medium text-primary-100">Related Natural Stone &amp; Veneer Materials</h2>
+          </div>
+          <a href="{r}stone-flooring/other-categories/" class="text-xs font-semibold text-primary-100 hover:underline">
+            View Companion Directory →
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          { ''.join(related_cards) }
+        </div>
+      </section>
+    </div>
+'''
+    else:
+        main_body_html = f'''
+    <!-- Breadcrumb -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
+      <nav class="flex items-center gap-2 text-xs text-primary-70 font-copy" aria-label="Breadcrumbs">
+        <a href="./" class="hover:underline text-primary-40">Home</a>
+        <span>/</span>
+        <a href="stone-flooring/limestone/" class="hover:underline text-primary-100 font-medium">Limestone</a>
       </nav>
     </div>
 
@@ -1565,7 +1773,7 @@ def generate_home_page(all_products, depth=0):
 
     <!-- 3-Banner Interactive Architectural Hero Slider (Fusing 127.0.0.1:8796 with Eco Outdoor) -->
     <div class="max-w-[1520px] mx-auto px-0 sm:px-4 lg:px-6 mb-8 lg:mb-12">
-      <section class="home-hero-slider sm:rounded-sm shadow-xl" aria-label="Limestone in Architecture" id="heroSlider">
+      <section class="home-hero-slider sm:rounded-sm shadow-sm border border-primary-10" aria-label="Limestone in Architecture" id="heroSlider">
         <!-- Slide 0: Facades & Entrances -->
         <div class="hero-slide active" data-index="0" data-link="#collections" data-label="Facades & entrances">
           <img src="{r}assets/images/hero/scene-facade.webp" alt="Limestone facade architectural inspiration" class="hero-slide-bg" loading="eager" fetchpriority="high">
@@ -1582,7 +1790,7 @@ def generate_home_page(all_products, depth=0):
         </div>
 
         <!-- Slide 1: Living Spaces & Fireplaces -->
-        <div class="hero-slide" data-index="1" data-link="{r}stone-flooring/limestone/antique/index.html" data-label="Living spaces & fireplaces">
+        <div class="hero-slide" data-index="1" data-link="{r}stone-flooring/limestone/antique/" data-label="Living spaces & fireplaces">
           <img src="{r}assets/images/hero/scene-living.webp" alt="Living spaces and fireplaces limestone inspiration" class="hero-slide-bg" loading="lazy">
           <div class="hero-slide-shade"></div>
           <div class="hero-slide-content">
@@ -1590,14 +1798,14 @@ def generate_home_page(all_products, depth=0):
             <h2 class="hero-title">Quiet warmth.<br>Tactile luxury.</h2>
             <p class="hero-desc">Soft hand-dressed and antique finishes bring understated elegance, acoustic calm, and timeless organic warmth to living rooms, hearths, and interior walls.</p>
             <div class="hero-actions">
-              <a href="{r}stone-flooring/limestone/antique/index.html" class="btn-hero-primary">Explore Antique & Tumbled <span aria-hidden="true">↗</span></a>
+              <a href="{r}stone-flooring/limestone/antique/" class="btn-hero-primary">Explore Antique &amp; Tumbled <span aria-hidden="true">↗</span></a>
               <a href="#enquiry-section" class="btn-hero-secondary">Order Finish Samples <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </div>
 
         <!-- Slide 2: Floors & Outdoor Living -->
-        <div class="hero-slide" data-index="2" data-link="{r}stone-flooring/limestone/sandblasted-brushed/index.html" data-label="Floors & outdoor living">
+        <div class="hero-slide" data-index="2" data-link="{r}stone-flooring/limestone/sandblasted-brushed/" data-label="Floors & outdoor living">
           <img src="{r}assets/images/hero/scene-terrace.webp" alt="Floors and outdoor living limestone inspiration" class="hero-slide-bg" loading="lazy">
           <div class="hero-slide-shade"></div>
           <div class="hero-slide-content">
@@ -1605,7 +1813,7 @@ def generate_home_page(all_products, depth=0):
             <h2 class="hero-title">Seamless transition.<br>Outdoor mastery.</h2>
             <p class="hero-desc">High-density, low-porosity limestone pavers engineered with certified P4/P5 slip resistance and freeze-thaw resilience for alfresco dining, pools, and courtyards.</p>
             <div class="hero-actions">
-              <a href="{r}stone-flooring/limestone/sandblasted-brushed/index.html" class="btn-hero-primary">Explore Outdoor Pavers <span aria-hidden="true">↗</span></a>
+              <a href="{r}stone-flooring/limestone/sandblasted-brushed/" class="btn-hero-primary">Explore Outdoor Pavers <span aria-hidden="true">↗</span></a>
               <a href="#estimator-section" class="btn-hero-secondary">Calculate Freight <span aria-hidden="true">↗</span></a>
             </div>
           </div>
@@ -1628,7 +1836,7 @@ def generate_home_page(all_products, depth=0):
             </button>
           </div>
           <a href="#collections" id="heroDynamicLink" class="hero-explore-link">
-            <span id="heroDynamicLinkText">Explore facades & entrances</span> <span aria-hidden="true">↗</span>
+            <span id="heroDynamicLinkText">Explore facades &amp; entrances</span> <span aria-hidden="true">↗</span>
           </a>
         </div>
       </section>
@@ -1675,8 +1883,8 @@ def generate_home_page(all_products, depth=0):
             <span class="text-xs uppercase tracking-widest text-primary-40 font-semibold block mb-2">Imagine the possibilities</span>
             <h2 class="text-3xl lg:text-4xl font-heading font-medium text-primary-100">Spaces, Shaped by Stone.</h2>
           </div>
-          <a href="#collections" class="text-xs font-semibold uppercase tracking-wider text-primary-100 hover:underline flex items-center gap-1">
-            Explore All 29 Limestone Collections <span aria-hidden="true">↗</span>
+          <a href="{r}stone-flooring/limestone/" class="text-xs font-semibold uppercase tracking-wider text-primary-100 hover:underline flex items-center gap-1">
+            Open Full 29-SKU Technical Matrix <span aria-hidden="true">↗</span>
           </a>
         </div>
 
@@ -1689,10 +1897,10 @@ def generate_home_page(all_products, depth=0):
             <div class="relative z-10 p-6 sm:p-8 text-white flex items-end justify-between">
               <div>
                 <span class="text-[10px] uppercase tracking-widest text-[#E9F551] block mb-1">Limestone in Context</span>
-                <h3 class="font-heading text-2xl sm:text-3xl font-medium text-white group-hover:underline">Living Spaces & Fireplaces</h3>
+                <h3 class="font-heading text-2xl sm:text-3xl font-medium text-white group-hover:underline">Living Spaces &amp; Fireplaces</h3>
                 <p class="text-xs text-white/80 mt-1 max-w-md hidden sm:block">Soft mineral warmth, low acoustic reverberation, and hand-dressed masonry crafted for hearths and open interiors.</p>
               </div>
-              <a href="{r}stone-flooring/limestone/antique/index.html" class="w-10 h-10 rounded-full bg-white/20 hover:bg-[#E9F551] hover:text-black flex items-center justify-center transition-colors shrink-0 ml-4 font-bold" aria-label="Explore Living Spaces">↗</a>
+              <a href="{r}stone-flooring/limestone/antique/" class="w-10 h-10 rounded-full bg-white/20 hover:bg-[#E9F551] hover:text-black flex items-center justify-center transition-colors shrink-0 ml-4 font-bold" aria-label="Explore Living Spaces">↗</a>
             </div>
           </div>
 
@@ -1706,9 +1914,9 @@ def generate_home_page(all_products, depth=0):
               <div class="relative z-10 p-5 text-white flex items-end justify-between">
                 <div>
                   <span class="text-[9px] uppercase tracking-widest text-[#E9F551] block">Limestone in Context</span>
-                  <h3 class="font-heading text-xl font-medium text-white group-hover:underline">Kitchens & Gathering</h3>
+                  <h3 class="font-heading text-xl font-medium text-white group-hover:underline">Kitchens &amp; Gathering</h3>
                 </div>
-                <a href="{r}stone-flooring/limestone/tumbled/index.html" class="w-8 h-8 rounded-full bg-white/20 hover:bg-[#E9F551] hover:text-black flex items-center justify-center transition-colors shrink-0 ml-3 font-bold" aria-label="Explore Kitchens">↗</a>
+                <a href="{r}stone-flooring/limestone/tumbled/" class="w-8 h-8 rounded-full bg-white/20 hover:bg-[#E9F551] hover:text-black flex items-center justify-center transition-colors shrink-0 ml-3 font-bold" aria-label="Explore Kitchens">↗</a>
               </div>
             </div>
 
@@ -1720,14 +1928,17 @@ def generate_home_page(all_products, depth=0):
               <div class="relative z-10 p-5 text-white flex items-end justify-between">
                 <div>
                   <span class="text-[9px] uppercase tracking-widest text-[#E9F551] block">Limestone in Context</span>
-                  <h3 class="font-heading text-xl font-medium text-white group-hover:underline">Floors & Outdoor Living</h3>
+                  <h3 class="font-heading text-xl font-medium text-white group-hover:underline">Floors &amp; Outdoor Living</h3>
                 </div>
-                <a href="{r}stone-flooring/limestone/sandblasted-brushed/index.html" class="w-8 h-8 rounded-full bg-white/20 hover:bg-[#E9F551] hover:text-black flex items-center justify-center transition-colors shrink-0 ml-3 font-bold" aria-label="Explore Outdoor Living">↗</a>
+                <a href="{r}stone-flooring/limestone/sandblasted-brushed/" class="w-8 h-8 rounded-full bg-white/20 hover:bg-[#E9F551] hover:text-black flex items-center justify-center transition-colors shrink-0 ml-3 font-bold" aria-label="Explore Outdoor Living">↗</a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Self-contained GEO Engineering Direct Answer Block -->
+      {geo_answer_block}
 
       <!-- Product Catalog Header & 29 Curated Collections Section -->
       <div id="collections" class="pt-4">
@@ -1747,6 +1958,8 @@ def generate_home_page(all_products, depth=0):
         <div class="my-6">
           { ''.join(finish_sections) }
         </div>
+
+        {spec_matrix_table}
       </div>
 
       <!-- Close-up Material Story (127.0.0.1:8796 Fusion) -->
@@ -1765,7 +1978,7 @@ def generate_home_page(all_products, depth=0):
               Our collection brings together linear limestone, softly tumbled strips, and natural walling. Explore the material from every angle, then speak with Tianya’s stone specialists about tailored specifications for your project.
             </p>
             <div class="pt-2">
-              <a href="{r}contact-us/index.html" class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary-100 hover:text-black hover:underline">
+              <a href="{r}contact-us/" class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary-100 hover:text-black hover:underline">
                 Speak With A Tianya Stone Specialist <span aria-hidden="true">↗</span>
               </a>
             </div>
@@ -1786,7 +1999,7 @@ def generate_home_page(all_products, depth=0):
             <p class="text-sm text-primary-80 leading-relaxed font-copy max-w-lg">
               Fujian Tianya Cultural Stone Co., Ltd. is based in Shuitou, Nan’an (The World Stone Capital). Our work brings together direct quarry reserves, advanced CNC waterjet and wire cutting, and the practical construction details that turn raw mineral into refined architecture.
             </p>
-            <a href="{r}about-us/index.html" class="text-xs font-semibold uppercase tracking-wider text-primary-100 hover:underline shrink-0">
+            <a href="{r}about-us/" class="text-xs font-semibold uppercase tracking-wider text-primary-100 hover:underline shrink-0">
               Get to know Tianya <span aria-hidden="true">↗</span>
             </a>
           </div>
@@ -1817,14 +2030,14 @@ def generate_home_page(all_products, depth=0):
         </div>
 
         <div class="space-y-3">
-          <h3 class="font-heading text-xl font-medium text-primary-100">Where do we find & quarry it?</h3>
+          <h3 class="font-heading text-xl font-medium text-primary-100">Where do we find &amp; quarry it?</h3>
           <p class="text-xs text-primary-70 leading-relaxed font-copy">
-            We operate direct quarry concessions and partnership reserves, fabricating raw blocks at our automated manufacturing center in Shuitou Town, Fujian (The World Stone Capital). Our range is strictly curated to include higher performing, dense materials (bulk specific gravity >2.60 g/cm³, water absorption &lt;0.22%) ensuring enduring tactile quality and high freeze-thaw resilience across all climates.
+            We operate direct quarry concessions and partnership reserves, fabricating raw blocks at our automated manufacturing center in Shuitou Town, Fujian (The World Stone Capital). Our range is strictly curated to include higher performing, dense materials (bulk specific gravity &gt;2.60 g/cm³, water absorption &lt;0.22%) ensuring enduring tactile quality and high freeze-thaw resilience across all climates.
           </p>
         </div>
 
         <div class="space-y-3">
-          <h3 class="font-heading text-xl font-medium text-primary-100">How do we offer & fabricate it?</h3>
+          <h3 class="font-heading text-xl font-medium text-primary-100">How do we offer &amp; fabricate it?</h3>
           <p class="text-xs text-primary-70 leading-relaxed font-copy">
             Much of our Limestone range comes in complete modular Roman laying patterns (combining 4 intermeshing tile dimensions) and large architectural formats (600x400, 800x400, 900x600mm). We experiment by tumbling, sandblasting, and heavily or lightly distressing the rock to offer dynamic visual experiences and certified P4/P5 wet pendulum slip resistance for swimming pools and public plazas.
           </p>
@@ -1834,14 +2047,17 @@ def generate_home_page(all_products, depth=0):
       <!-- Container Estimator Tool -->
       { render_container_estimator() }
 
+      <!-- Engineering Blog Guides -->
+      { blog_guide_cards }
+
       <!-- Related Materials / Companion Categories Section -->
       <section class="my-14">
         <div class="flex items-baseline justify-between mb-8">
           <div>
             <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block">Companion Collections</span>
-            <h2 class="text-2xl lg:text-3xl font-heading font-medium text-primary-100">Related Natural Stone & Veneer Materials</h2>
+            <h2 class="text-2xl lg:text-3xl font-heading font-medium text-primary-100">Related Natural Stone &amp; Veneer Materials</h2>
           </div>
-          <a href="{r}stone-flooring/other-categories/index.html" class="text-xs font-semibold text-primary-100 hover:underline">
+          <a href="{r}stone-flooring/other-categories/" class="text-xs font-semibold text-primary-100 hover:underline">
             View Companion Directory →
           </a>
         </div>
@@ -1851,6 +2067,39 @@ def generate_home_page(all_products, depth=0):
         </div>
       </section>
     </div> <!-- Close max-w-7xl before Enquiry Section -->
+'''
+
+    html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+  {GA4_SNIPPET}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title}</title>
+  <meta name="description" content="{description}">
+  <link rel="canonical" href="{canonical}">
+  <link rel="icon" type="image/webp" href="{r}assets/images/logo/favicon.webp">
+
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{description}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{canonical}">
+  <meta property="og:site_name" content="Tianya Limestone">
+  <meta property="og:image" content="{COMPANY_INFO['domain']}/assets/images/hero/hero-limestone.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+{json.dumps(schema_data, indent=2)}
+  </script>
+
+  <link rel="stylesheet" href="{r}assets/css/eco-outdoor.css?v=3">
+  <link rel="stylesheet" href="{r}assets/css/tianya-custom.css?v=3">
+</head>
+<body class="bg-white">
+  {render_header(depth, active_tab='limestone')}
+
+  <main class="pt-4">
+    {main_body_html}
 
     <!-- Make an Enquiry / Free Sample Kit Section -->
     <section id="enquiry-section" class="bg-cream-warm border-t border-b border-primary-10 py-12 lg:py-16 my-14">
@@ -1858,7 +2107,7 @@ def generate_home_page(all_products, depth=0):
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           <div class="lg:col-span-5 space-y-6">
             <div>
-              <span class="text-xs uppercase font-semibold text-primary-70 tracking-widest block mb-2">Architectural Support & Sampling</span>
+              <span class="text-xs uppercase font-semibold text-primary-70 tracking-widest block mb-2">Architectural Support &amp; Sampling</span>
               <h2 class="text-3xl lg:text-4xl font-heading font-medium text-primary-100 leading-tight">Make an Enquiry</h2>
             </div>
             <p class="text-xs lg:text-sm text-primary-80 leading-relaxed font-copy">
@@ -1886,7 +2135,7 @@ def generate_home_page(all_products, depth=0):
 
           <div class="lg:col-span-7 bg-white p-6 sm:p-8 lg:p-10 shadow-sm border border-primary-10 rounded-sm">
             <div class="mb-5">
-              <h3 class="font-heading text-xl lg:text-2xl font-medium text-primary-100 mb-1">Direct Factory Specification & RFQ</h3>
+              <h3 class="font-heading text-xl lg:text-2xl font-medium text-primary-100 mb-1">Direct Factory Specification &amp; RFQ</h3>
               <p class="text-xs text-primary-70 font-copy">Request technical data, container freight calculations, or express sample kits.</p>
             </div>
             { render_progressive_rfq_form("General Limestone Inquiry", "rfq_home_form") }
@@ -2129,676 +2378,6 @@ def generate_other_categories_page(all_products):
 </html>
 '''
     return html
-
-
-def generate_thailand_factory_page():
-    depth = 1
-    r = get_rel_path(depth)
-    rel_file = "thailand-factory/index.html"
-    canonical = f"{COMPANY_INFO['domain']}/thailand-factory/"
-
-    title = "Thailand Limestone Factory & Overseas Fabrication Hub | 0% Section 301 Tariff | Tianya Limestone"
-    description = "Tianya Limestone's Thailand manufacturing base in Rayong/Chonburi delivers 20,000+ m²/mo of architectural limestone pavers and pool coping with 0% US Section 301 tariffs, authentic Thai Country of Origin, FOB Laem Chabang, and full ASTM C568 compliance."
-
-    schema_data = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "WebPage",
-                "name": title,
-                "description": description,
-                "inLanguage": "en",
-                "url": canonical
-            },
-            {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{COMPANY_INFO['domain']}/"},
-                    {"@type": "ListItem", "position": 2, "name": "Thailand Overseas Factory", "item": canonical}
-                ]
-            },
-            {
-                "@type": "ManufacturingFacility",
-                "name": "Tianya Limestone Thailand Overseas Manufacturing Base",
-                "legalName": "Tianya Stone (Thailand) Co., Ltd.",
-                "parentOrganization": {
-                    "@type": "Organization",
-                    "name": COMPANY_INFO["name"],
-                    "url": COMPANY_INFO["domain"]
-                },
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Eastern Economic Corridor (EEC), Chonburi / Rayong Industrial Corridor",
-                    "addressLocality": "Rayong",
-                    "addressCountry": "TH"
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": 13.0185,
-                    "longitude": 101.1245
-                },
-                "telephone": COMPANY_INFO["phone"],
-                "email": COMPANY_INFO["email"]
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Does importing limestone from Tianya's Thailand factory avoid US Section 301 tariffs?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Finished natural limestone fabricated at our Thailand facility undergoes authentic substantial transformation (sawing, calibration, CNC profiling, tumbling, and brushing) in accordance with US CBP 19 CFR § 134. Products enter the United States with 0% Section 301 tariffs and 0% AD/CVD duties under an official Certificate of Origin issued by the Thai Department of Foreign Trade."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What is the monthly production capacity and port of loading in Thailand?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "The 18,000 m² covered fabrication plant in Rayong/Chonburi produces over 20,000 m² of finished architectural limestone monthly. Shipments depart directly from Laem Chabang Deep Sea Port (THLCH), located 35 km from the facility, with direct ocean container transit to Los Angeles / Long Beach in 18 to 22 days."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Are physical test reports and ASTM standards identical between China and Thailand facilities?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Slabs and pavers fabricated at our Thailand base utilize identical high-density marine limestone blocks meeting ASTM C568 Class III standards: water absorption under 0.22%, compressive strength 128.5 MPa, and F100 freeze-thaw durability (100 cycles, 0% mass loss)."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Can US and European architects request physical sample kits from the Thailand facility?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Sample kits featuring all 29 architectural limestone selections across 5 finishes are dispatched via DHL or FedEx Express directly to North America, Europe, and Australia within 3 to 5 business days."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What documentation accompanies each Thailand container shipment?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Every container includes an official Thai Department of Foreign Trade Certificate of Origin (Form D, Form E, or General C/O), commercial invoice, packing list, ISPM-15 fumigation certificate, ocean bill of lading, and independent ASTM laboratory physical test reports."
-                        }
-                    }
-                ]
-            }
-        ]
-    }
-
-    html = f'''<!DOCTYPE html>
-<html lang="en">
-<head>
-  {GA4_SNIPPET}
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{title}</title>
-  <meta name="description" content="{description}">
-  <link rel="canonical" href="{canonical}">
-  <link rel="icon" type="image/webp" href="{r}assets/images/logo/favicon.webp">
-
-  <meta property="og:title" content="{title}">
-  <meta property="og:description" content="{description}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{canonical}">
-  <meta property="og:site_name" content="Tianya Limestone">
-  <meta property="og:image" content="{COMPANY_INFO['domain']}/assets/images/about/factory_fabrication.webp">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <script type="application/ld+json">
-{json.dumps(schema_data, indent=2)}
-  </script>
-
-  <link rel="stylesheet" href="{r}assets/css/eco-outdoor.css?v=3">
-  <link rel="stylesheet" href="{r}assets/css/tianya-custom.css?v=3">
-</head>
-<body class="bg-white">
-  {render_header(depth, active_tab='thailand-factory')}
-
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
-    <nav class="flex items-center gap-2 text-xs text-primary-70 mb-6 font-copy" aria-label="Breadcrumbs">
-      <a href="{r}index.html" class="hover:underline text-primary-40">Home</a>
-      <span>/</span>
-      <span class="font-medium text-primary-100">Thailand Overseas Factory</span>
-    </nav>
-
-    <!-- Visible Meta Description Matching Schema Rule -->
-    <div class="sr-only">
-      <p>{description}</p>
-    </div>
-
-    <!-- Editorial Hero Section -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-primary-10 items-center">
-      <div class="lg:col-span-6 space-y-4">
-        <div class="flex flex-wrap items-center gap-2">
-          <span class="px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider rounded bg-[#E9F551] text-[#251700]">0% US Section 301 Tariff</span>
-          <span class="px-2.5 py-1 text-[11px] font-semibold tracking-wider rounded bg-primary-2 text-primary-100 border border-primary-10">Direct FOB Laem Chabang (THLCH)</span>
-          <span class="px-2.5 py-1 text-[11px] font-semibold tracking-wider rounded bg-primary-2 text-primary-100 border border-primary-10">20,000+ m²/mo Output</span>
-        </div>
-        <h1 class="text-4xl lg:text-5xl font-heading font-medium text-primary-100 leading-tight">
-          Thailand Architectural Limestone Factory &amp; Overseas Fabrication Base
-        </h1>
-        <span class="text-xs uppercase tracking-wider text-primary-40 font-semibold block">
-          Dual-Hub Global Manufacturing • 0% Section 301 Tariffs • Zero AD/CVD Exposure for North America &amp; Europe
-        </span>
-        <p class="text-base text-primary-80 leading-relaxed font-copy">
-          To provide North American, European, and Australian commercial projects with complete insulation against punitive tariffs and geopolitical disruptions, <strong>Fujian Tianya Cultural Stone Co., Ltd.</strong> operates a modern 18,000 m² overseas stone fabrication facility in Thailand’s Eastern Economic Corridor (Rayong/Chonburi).
-        </p>
-        <p class="text-xs sm:text-sm text-primary-70 leading-relaxed font-copy">
-          Operating under authentic substantial transformation rules (US CBP 19 CFR § 134), our Thailand plant executes block gang sawing, CNC profiling, tumbling, and anti-slip brushing, exporting directly via <strong>Laem Chabang Deep Sea Port</strong> with official Thai Country of Origin certification.
-        </p>
-        <div class="pt-2 flex flex-wrap gap-4">
-          <a href="#tariff-comparison" class="px-5 py-2.5 bg-primary-100 text-white text-xs font-semibold uppercase tracking-wider rounded-sm hover:bg-[#E9F551] hover:text-black transition-colors">
-            View Tariff Comparison Matrix
-          </a>
-          <a href="#rfq-section" class="px-5 py-2.5 border border-primary-100 text-primary-100 text-xs font-semibold uppercase tracking-wider rounded-sm hover:bg-primary-100 hover:text-white transition-colors">
-            Request FOB Laem Chabang RFQ
-          </a>
-        </div>
-      </div>
-      <div class="lg:col-span-6">
-        <div class="aspect-[16/11] overflow-hidden rounded-sm border border-primary-10 shadow-sm relative group">
-          <img src="{r}assets/images/about/factory_fabrication.webp" alt="Tianya Stone Overseas Manufacturing Base in Thailand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="800" height="550">
-          <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 text-white text-xs">
-            <span class="font-semibold block">Tianya Thailand Fabrication Complex</span>
-            <span class="text-white/80 text-[11px]">Industrial multi-blade diamond gang saws and automated calibration lines operating in Rayong, Thailand.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Core Factory Value Proposition Badges -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-14">
-      <div class="p-6 bg-primary-2 border border-primary-10 rounded-sm space-y-2">
-        <div class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#E9F551] text-[#251700] inline-block mb-1">0% Tariff</div>
-        <h3 class="font-heading text-lg font-medium text-primary-100">Section 301 Exemption</h3>
-        <p class="text-xs text-primary-70 font-copy leading-relaxed">Completely exempt from US Section 301 List 3 &amp; 4A punitive tariffs (25% saving vs. direct China stone imports).</p>
-      </div>
-
-      <div class="p-6 bg-primary-2 border border-primary-10 rounded-sm space-y-2">
-        <div class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#E9F551] text-[#251700] inline-block mb-1">Authentic COO</div>
-        <h3 class="font-heading text-lg font-medium text-primary-100">Certified Thai Origin</h3>
-        <p class="text-xs text-primary-70 font-copy leading-relaxed">Official Certificate of Origin issued by the Department of Foreign Trade (DFT), Ministry of Commerce of Thailand.</p>
-      </div>
-
-      <div class="p-6 bg-primary-2 border border-primary-10 rounded-sm space-y-2">
-        <div class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#E9F551] text-[#251700] inline-block mb-1">35 km Drayage</div>
-        <h3 class="font-heading text-lg font-medium text-primary-100">Port of Laem Chabang</h3>
-        <p class="text-xs text-primary-70 font-copy leading-relaxed">Direct container loading at Thailand’s premier deep-sea port with 18–22 days transit to Los Angeles / Long Beach.</p>
-      </div>
-
-      <div class="p-6 bg-primary-2 border border-primary-10 rounded-sm space-y-2">
-        <div class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#E9F551] text-[#251700] inline-block mb-1">ASTM C568</div>
-        <h3 class="font-heading text-lg font-medium text-primary-100">Class III High-Density</h3>
-        <p class="text-xs text-primary-70 font-copy leading-relaxed">Water absorption &lt;0.22%, compressive strength 128.5 MPa, and F100 freeze-thaw durability for harsh climates.</p>
-      </div>
-    </div>
-
-    <!-- Section 1: The Tariff Challenge & Side-by-Side Comparison -->
-    <section id="tariff-comparison" class="my-16">
-      <div class="border-b border-primary-10 pb-4 mb-6">
-        <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider">Commercial Procurement Strategy</span>
-        <h2 class="text-3xl font-heading font-medium text-primary-100">Direct China Export vs. Tianya Thailand Factory Export</h2>
-        <p class="text-xs text-primary-70 mt-1">Comparing regulatory exposure, customs duties, and logistics performance for US and global developers.</p>
-      </div>
-
-      <div class="overflow-x-auto border border-primary-10 bg-white shadow-sm">
-        <table class="spec-table w-full text-left text-xs font-copy">
-          <thead>
-            <tr class="bg-primary-100 text-white">
-              <th class="py-3 px-4 font-semibold">Procurement Metric</th>
-              <th class="py-3 px-4 font-semibold">Direct China Export (Shuitou)</th>
-              <th class="py-3 px-4 font-semibold text-[#E9F551]">Tianya Thailand Factory (Rayong)</th>
-              <th class="py-3 px-4 font-semibold">Client Strategic Advantage</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-primary-10">
-            <tr>
-              <td class="py-3 px-4 font-semibold text-primary-100">US Section 301 Tariff</td>
-              <td class="py-3 px-4 text-rose-700 font-semibold">25.0% Punitive Tariff</td>
-              <td class="py-3 px-4 text-emerald-800 font-bold bg-emerald-50">0.0% (Completely Exempt)</td>
-              <td class="py-3 px-4 text-primary-70">Immediate 25% cost reduction on landed cost for US projects.</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 font-semibold text-primary-100">Anti-Dumping / CVD Exposure</td>
-              <td class="py-3 px-4 text-amber-700">Subject to ongoing trade actions</td>
-              <td class="py-3 px-4 text-emerald-800 font-bold bg-emerald-50">Zero AD/CVD Exposure</td>
-              <td class="py-3 px-4 text-primary-70">Eliminates customs bond hold risks and retroactive tariff audits.</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 font-semibold text-primary-100">Country of Origin (COO)</td>
-              <td class="py-3 px-4">People's Republic of China (CN)</td>
-              <td class="py-3 px-4 text-primary-100 font-bold bg-emerald-50">Kingdom of Thailand (TH)</td>
-              <td class="py-3 px-4 text-primary-70">Authenticated by Thai Department of Foreign Trade (DFT).</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 font-semibold text-primary-100">Primary Export Seaport</td>
-              <td class="py-3 px-4">Xiamen Port (CNXMN · 28 km)</td>
-              <td class="py-3 px-4 font-bold bg-emerald-50">Laem Chabang Port (THLCH · 35 km)</td>
-              <td class="py-3 px-4 text-primary-70">Direct carrier liner calls (ONE, Evergreen, Maersk, COSCO, MSC).</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 font-semibold text-primary-100">Sea Transit to US West Coast</td>
-              <td class="py-3 px-4">16 – 20 Days (LA / Long Beach)</td>
-              <td class="py-3 px-4 font-semibold bg-emerald-50">18 – 22 Days (Direct Pacific Loop)</td>
-              <td class="py-3 px-4 text-primary-70">Virtually identical maritime lead times with no Panama detour.</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 font-semibold text-primary-100">Monthly Factory Output</td>
-              <td class="py-3 px-4">50,000+ m² / month</td>
-              <td class="py-3 px-4 font-semibold bg-emerald-50">20,000+ m² / month</td>
-              <td class="py-3 px-4 text-primary-70">Combined 70,000+ m²/mo guarantees multi-phase project scaling.</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 font-semibold text-primary-100">Physical ASTM C568 Testing</td>
-              <td class="py-3 px-4">&lt;0.22% absorption · 128.5 MPa</td>
-              <td class="py-3 px-4 font-semibold bg-emerald-50">&lt;0.22% absorption · 128.5 MPa</td>
-              <td class="py-3 px-4 text-primary-70">Identical dense marine bioclastic limestone block material.</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 font-semibold text-primary-100">Factory Audit Eligibility</td>
-              <td class="py-3 px-4">ISO 9001:2015 Accredited</td>
-              <td class="py-3 px-4 font-semibold bg-emerald-50">ISO 9001 + Sedex SMETA Audit</td>
-              <td class="py-3 px-4 text-primary-70">Welcomes independent SGS, BV, and client physical factory audits.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- Section 2: Substantial Transformation Workflow -->
-    <section class="my-16 bg-primary-2 border border-primary-10 p-8 lg:p-12 rounded-sm">
-      <div class="max-w-3xl mb-10">
-        <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block mb-1">Legal Origin Compliance</span>
-        <h2 class="text-3xl font-heading font-medium text-primary-100">Authentic Substantial Transformation (19 CFR § 134)</h2>
-        <p class="text-xs text-primary-80 leading-relaxed font-copy mt-2">
-          Under US Customs and Border Protection (CBP) doctrine and international trade law, a substantial transformation occurs when raw monolithic blocks emerge with a distinct new name, character, and commercial use. Tianya operates a fully equipped, heavy-industrial stone processing plant in Thailand—never transshipment:
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-xs font-copy">
-        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
-          <div class="flex items-center gap-2">
-            <span class="text-xs font-bold text-primary-100 bg-[#E9F551] px-2 py-0.5 rounded">01</span>
-            <strong class="text-primary-100 text-sm">Monolithic Block Inflow</strong>
-          </div>
-          <p class="text-primary-70">Raw quarry blocks (6–12 tonnes each) enter the Rayong stockyard under certified ocean bills of lading and Thai customs transit manifests.</p>
-        </div>
-
-        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
-          <div class="flex items-center gap-2">
-            <span class="text-xs font-bold text-primary-100 bg-[#E9F551] px-2 py-0.5 rounded">02</span>
-            <strong class="text-primary-100 text-sm">Multi-Blade Diamond Gang Sawing</strong>
-          </div>
-          <p class="text-primary-70">Heavy-duty multi-blade frame saws slice monolithic stone blocks into raw dimensional slabs of 20mm, 30mm, 40mm, and 50mm thicknesses.</p>
-        </div>
-
-        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
-          <div class="flex items-center gap-2">
-            <span class="text-xs font-bold text-primary-100 bg-[#E9F551] px-2 py-0.5 rounded">03</span>
-            <strong class="text-primary-100 text-sm">6-Head Slab Calibration</strong>
-          </div>
-          <p class="text-primary-70">Continuous diamond calibration lines plane slabs to precise &plusmn;0.5mm bedding tolerances, eliminating lippage during tile laying.</p>
-        </div>
-
-        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
-          <div class="flex items-center gap-2">
-            <span class="text-xs font-bold text-primary-100 bg-[#E9F551] px-2 py-0.5 rounded">04</span>
-            <strong class="text-primary-100 text-sm">5-Axis CNC Dimensioning &amp; Coping</strong>
-          </div>
-          <p class="text-primary-70">Automated bridge saws cut architectural dimensions (600x400, 800x400, 900x600mm) and carve seamless drop-face pool copings with 50–100mm aprons.</p>
-        </div>
-
-        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
-          <div class="flex items-center gap-2">
-            <span class="text-xs font-bold text-primary-100 bg-[#E9F551] px-2 py-0.5 rounded">05</span>
-            <strong class="text-primary-100 text-sm">Tumbling &amp; Diamond Brushing</strong>
-          </div>
-          <p class="text-primary-70">Continuous vibration rumbler drums round paver edges (Tumbled/Antique) while automated diamond rotary brushes impart tactile P5/R11 wet slip grip.</p>
-        </div>
-
-        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
-          <div class="flex items-center gap-2">
-            <span class="text-xs font-bold text-primary-100 bg-[#E9F551] px-2 py-0.5 rounded">06</span>
-            <strong class="text-primary-100 text-sm">ISPM-15 Crating &amp; DFT Certification</strong>
-          </div>
-          <p class="text-primary-70">Packaged into kiln-dried heat-treated timber crates with foam interleaves, sealed with heat-shrink wrap, and issued official Thai DFT Origin Certificates.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 3: Factory Floor Infrastructure -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center my-16 py-10 border-t border-b border-primary-10">
-      <div class="lg:col-span-6 space-y-4">
-        <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block">Heavy Industrial Equipment</span>
-        <h2 class="text-3xl lg:text-4xl font-heading font-medium text-primary-100 leading-tight">
-          Rayong Fabrication Plant Machinery Roster
-        </h2>
-        <p class="text-xs sm:text-sm text-primary-80 leading-relaxed font-copy">
-          Located in the WHA/Amata City industrial corridor in Rayong, our Thailand plant spans an 18,000 m² covered workshop and a 12,000 m² outdoor block gantry yard. It is engineered specifically for export-oriented architectural stonework:
-        </p>
-        <ul class="text-xs text-primary-70 space-y-2 font-copy pt-1">
-          <li class="flex items-start gap-2">
-            <span class="text-primary-100 font-bold">✓</span>
-            <span><strong>6 Multi-Blade Diamond Block Gang Saws:</strong> High-torque diamond frames slicing hard marine limestone blocks with computerized feed control.</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <span class="text-primary-100 font-bold">✓</span>
-            <span><strong>3 Five-Axis CNC Diamond Bridge Saws:</strong> 3D CAD/CAM integration for curved pool copings, step nosings, and mitered architectural profiles.</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <span class="text-primary-100 font-bold">✓</span>
-            <span><strong>Automated Continuous Tumbling Drums:</strong> Heavy-duty water-rumbler barrels achieving genuine, organic pillowed antique edge patinas.</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <span class="text-primary-100 font-bold">✓</span>
-            <span><strong>Closed-Loop Water Filtration &amp; Sludge Press:</strong> Recycles 95% of industrial coolant water with zero environmental discharge.</span>
-          </li>
-        </ul>
-      </div>
-      <div class="lg:col-span-6">
-        <div class="aspect-[4/3] overflow-hidden rounded-sm border border-primary-10 shadow-sm relative group">
-          <img src="{r}assets/images/about/export_crates_logistics.webp" alt="Thailand Export Timber Crates ISPM-15" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="700" height="525">
-          <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 text-white text-xs">
-            <span class="font-semibold block">Export Packaging in Rayong Base</span>
-            <span class="text-white/80 text-[11px]">Kiln-dried ISPM-15 certified timber crates with steel strapping and waterproof protective wrapping.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 4: Available Finishes & Collections -->
-    <section class="my-16">
-      <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-8 pb-4 border-b border-primary-10 gap-2">
-        <div>
-          <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block">Production Capabilities</span>
-          <h2 class="text-2xl lg:text-3xl font-heading font-medium text-primary-100">Limestone Finishes Available from Thailand Base</h2>
-        </div>
-        <a href="{r}index.html" class="text-xs font-semibold text-primary-100 hover:underline">
-          Browse All 29 Limestone Collections &rarr;
-        </a>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
-          <h3 class="font-heading text-lg font-medium text-primary-100">Tumbled Finish (P4 / R10)</h3>
-          <p class="text-xs text-primary-70 font-copy leading-relaxed">
-            Softened, pillowed edges and a weathered antique patina created in our automated continuous tumbling drums. Ideal for luxury residential terraces, pool decks, and French provincial courtyards.
-          </p>
-          <a href="{r}stone-flooring/limestone/tumbled/index.html" class="text-xs font-semibold text-primary-100 hover:underline block pt-2">Explore Tumbled Range (8) &rarr;</a>
-        </div>
-
-        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
-          <h3 class="font-heading text-lg font-medium text-primary-100">Antique Hand-Dressed (P4 / R10-R11)</h3>
-          <p class="text-xs text-primary-70 font-copy leading-relaxed">
-            Chiseled rustic borders with undulating, pillowed surface texturing. Recreates centuries-old European manor flagstones with authentic tactile grip.
-          </p>
-          <a href="{r}stone-flooring/limestone/antique/index.html" class="text-xs font-semibold text-primary-100 hover:underline block pt-2">Explore Antique Range (10) &rarr;</a>
-        </div>
-
-        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
-          <h3 class="font-heading text-lg font-medium text-primary-100">Lightly Distressed (P3 / R9)</h3>
-          <p class="text-xs text-primary-70 font-copy leading-relaxed">
-            Contemporary clean lines with delicate micro-chamfering. Balances organic natural stone variation with minimalist modern villa architecture.
-          </p>
-          <a href="{r}stone-flooring/limestone/lightly-distressed/index.html" class="text-xs font-semibold text-primary-100 hover:underline block pt-2">Explore Distressed Range (6) &rarr;</a>
-        </div>
-
-        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
-          <h3 class="font-heading text-lg font-medium text-primary-100">Sandblasted &amp; Brushed (P5 / R11)</h3>
-          <p class="text-xs text-primary-70 font-copy leading-relaxed">
-            Fine quartz sandblasting followed by diamond rotary brushes. Creates a velvety soft-underfoot surface with certified commercial wet slip safety for public concourses and spas.
-          </p>
-          <a href="{r}stone-flooring/limestone/sandblasted-brushed/index.html" class="text-xs font-semibold text-primary-100 hover:underline block pt-2">Explore Brushed Range (2) &rarr;</a>
-        </div>
-
-        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
-          <h3 class="font-heading text-lg font-medium text-primary-100">Sandblasted High-Grip (P5 / R11-R12)</h3>
-          <p class="text-xs text-primary-70 font-copy leading-relaxed">
-            Uniform granular texturing maximizing mechanical grip under wet conditions. Specified for zero-entry pool ramps, water parks, and outdoor hotel plazas.
-          </p>
-          <a href="{r}stone-flooring/limestone/sandblasted/index.html" class="text-xs font-semibold text-primary-100 hover:underline block pt-2">Explore Sandblasted Range (3) &rarr;</a>
-        </div>
-
-        <div class="p-6 bg-primary-2 border border-primary-10 rounded-sm space-y-3 flex flex-col justify-between">
-          <div>
-            <h3 class="font-heading text-lg font-medium text-primary-100">Custom Drop-Face Pool Coping</h3>
-            <p class="text-xs text-primary-70 font-copy leading-relaxed">
-              Monolithic rebated drop-down aprons (50mm, 75mm, 100mm drop) precision-mitered or machined from single solid blocks on our 5-axis CNC saws.
-            </p>
-          </div>
-          <a href="#rfq-section" class="px-4 py-2 bg-primary-100 text-white text-xs font-semibold uppercase tracking-wider rounded text-center hover:bg-[#E9F551] hover:text-black transition-colors">
-            Custom Coping RFQ &rarr;
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 5: Global Shipping & Laem Chabang Port Schedules -->
-    <section class="my-16 bg-[#FAF8F5] border border-[#E8E4DE] p-8 lg:p-12 rounded-sm">
-      <div class="max-w-3xl mb-8">
-        <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block mb-1">Ocean Container Freight</span>
-        <h2 class="text-3xl font-heading font-medium text-primary-100">Direct Maritime Departures from Port of Laem Chabang (THLCH)</h2>
-        <p class="text-xs text-primary-80 leading-relaxed font-copy mt-2">
-          Laem Chabang Port handles over 8 million TEUs annually and offers frequent, scheduled direct carrier rotations to all major global ports:
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs font-copy">
-        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
-          <div>
-            <strong class="text-primary-100 block">Los Angeles / Long Beach, CA</strong>
-            <span class="text-primary-70">Direct Pacific trans-Pacific carrier loop</span>
-          </div>
-          <span class="transit-badge font-bold">18 – 22 Days</span>
-        </div>
-
-        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
-          <div>
-            <strong class="text-primary-100 block">Oakland / San Francisco, CA</strong>
-            <span class="text-primary-70">Direct weekly carrier departures</span>
-          </div>
-          <span class="transit-badge font-bold">20 – 24 Days</span>
-        </div>
-
-        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
-          <div>
-            <strong class="text-primary-100 block">Seattle / Tacoma, WA</strong>
-            <span class="text-primary-70">North Pacific weekly service</span>
-          </div>
-          <span class="transit-badge font-bold">22 – 26 Days</span>
-        </div>
-
-        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
-          <div>
-            <strong class="text-primary-100 block">New York / New Jersey</strong>
-            <span class="text-primary-70">Trans-Suez / Panama liner call</span>
-          </div>
-          <span class="transit-badge font-bold">28 – 32 Days</span>
-        </div>
-
-        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
-          <div>
-            <strong class="text-primary-100 block">Savannah, GA / Houston, TX</strong>
-            <span class="text-primary-70">Gulf &amp; South Atlantic loops</span>
-          </div>
-          <span class="transit-badge font-bold">30 – 34 Days</span>
-        </div>
-
-        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
-          <div>
-            <strong class="text-primary-100 block">Sydney / Melbourne / Brisbane</strong>
-            <span class="text-primary-70">Direct Oceania express rotation</span>
-          </div>
-          <span class="transit-badge font-bold">14 – 18 Days</span>
-        </div>
-
-        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
-          <div>
-            <strong class="text-primary-100 block">Rotterdam / Antwerp / Hamburg</strong>
-            <span class="text-primary-70">Direct North European container calls</span>
-          </div>
-          <span class="transit-badge font-bold">24 – 28 Days</span>
-        </div>
-
-        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
-          <div>
-            <strong class="text-primary-100 block">London Gateway / Southampton</strong>
-            <span class="text-primary-70">UK direct ocean freight</span>
-          </div>
-          <span class="transit-badge font-bold">26 – 30 Days</span>
-        </div>
-
-        <div class="p-4 bg-white border border-primary-10 rounded-sm flex justify-between items-center">
-          <div>
-            <strong class="text-primary-100 block">Jebel Ali (Dubai) / Dammam</strong>
-            <span class="text-primary-70">Middle East Arabian Gulf service</span>
-          </div>
-          <span class="transit-badge font-bold">12 – 16 Days</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 6: ASEAN Supply Chain Footprint -->
-    <section class="my-16">
-      <div class="border-b border-primary-10 pb-4 mb-6">
-        <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider">Supply Chain Resilience</span>
-        <h2 class="text-3xl font-heading font-medium text-primary-100">Integrated ASEAN Manufacturing &amp; Logistics Network</h2>
-        <p class="text-xs text-primary-70 mt-1">Strengthening global projects with multi-hub fabrication and bonded distribution nodes.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs font-copy">
-        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
-          <div class="font-bold text-primary-100 text-sm">Thailand Rayong Hub (Primary)</div>
-          <p class="text-primary-70 leading-relaxed">
-            Main overseas fabrication facility equipped with multi-blade block saws, 5-axis CNC machines, automated calibration lines, and continuous tumbling drums. Primary departure point for tariff-free US and European exports via Laem Chabang Port.
-          </p>
-        </div>
-
-        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
-          <div class="font-bold text-primary-100 text-sm">Vietnam Da Nang Processing Unit</div>
-          <p class="text-primary-70 leading-relaxed">
-            Specialized fabrication center for high-density architectural bluestone, crystal-white marble paving, and dense basalt tiles. Supports Pacific Rim commercial developments with regional quarry reserves.
-          </p>
-        </div>
-
-        <div class="p-6 bg-white border border-primary-10 rounded-sm space-y-3 shadow-sm">
-          <div class="font-bold text-primary-100 text-sm">Cambodia Sihanoukville Logistics Node</div>
-          <p class="text-primary-70 leading-relaxed">
-            Bonded warehousing and container consolidation center in Sihanoukville Special Economic Zone (SSEZ). Facilitates raw material buffering, mixed-container staging, and rapid project staging across Southeast Asia.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Container Estimator Tool -->
-    { render_container_estimator() }
-
-    <!-- Section 7: RFQ Form Section -->
-    <section id="rfq-section" class="my-16">
-      <div class="border-b border-primary-10 pb-4 mb-8">
-        <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider">Direct Factory Sourcing</span>
-        <h2 class="text-3xl font-heading font-medium text-primary-100">Request Thailand Factory FOB Quotation &amp; Sample Kits</h2>
-        <p class="text-xs text-primary-70 mt-1">Our international engineering desk provides itemized FOB Laem Chabang container pricing, tariff documentation, and express DHL sample kits.</p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-        <div class="lg:col-span-5 space-y-4 text-xs font-copy">
-          <div class="bg-primary-2 border border-primary-10 p-6 rounded-sm space-y-3">
-            <h3 class="font-heading text-base font-semibold text-primary-100">Thailand Facility Direct Inquiries</h3>
-            <p><strong>Operating Entity:</strong> Tianya Stone (Thailand) Co., Ltd.</p>
-            <p><strong>Factory Location:</strong> Eastern Economic Corridor (EEC), Rayong/Chonburi, Thailand</p>
-            <p><strong>Port of Loading:</strong> Port of Laem Chabang (THLCH)</p>
-            <p><strong>US Tariff Status:</strong> 0% Section 301 Tariff Exempt</p>
-            <p><strong>Direct Inquiries Email:</strong> <a href="mailto:{COMPANY_INFO['email']}" class="text-primary-100 font-semibold underline">{COMPANY_INFO['email']}</a></p>
-            <p><strong>Sales Hotline:</strong> <a href="tel:{COMPANY_INFO['phone']}" class="text-primary-100 font-semibold underline">{COMPANY_INFO['phone']}</a></p>
-          </div>
-
-          <div class="bg-white border border-primary-10 p-6 rounded-sm space-y-2 shadow-sm">
-            <h4 class="font-heading text-sm font-semibold text-primary-100">Sample Kit Dispatch Timeline</h4>
-            <p class="text-primary-70 leading-relaxed">
-              Curated architectural sample presentation boxes containing 100x100mm limestone swatches across our signature finishes ship via DHL/FedEx Express directly from our Thailand hub to the US, Canada, Australia, and Europe in 3 to 5 business days.
-            </p>
-          </div>
-        </div>
-
-        <div class="lg:col-span-7 bg-white border border-primary-10 p-6 sm:p-8 rounded-sm shadow-sm">
-          { render_progressive_rfq_form("Thailand Overseas Factory Sourcing (0% US Tariff)", "thailand_rfq_form") }
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 8: Frequently Asked Questions (FAQ) -->
-    <section class="my-16 border-t border-primary-10 pt-12">
-      <div class="max-w-3xl mb-8">
-        <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block mb-1">Procurement Clarifications</span>
-        <h2 class="text-3xl font-heading font-medium text-primary-100">Frequently Asked Questions</h2>
-      </div>
-
-      <div class="space-y-4 max-w-4xl text-xs font-copy">
-        <details class="group border border-primary-10 p-4 rounded-sm bg-white open:bg-primary-2 transition-colors">
-          <summary class="font-semibold text-sm text-primary-100 cursor-pointer list-none flex justify-between items-center">
-            <span>Does importing limestone from Tianya's Thailand factory avoid US Section 301 tariffs?</span>
-            <span class="group-open:rotate-180 transition-transform">▼</span>
-          </summary>
-          <p class="mt-3 text-primary-70 leading-relaxed">
-            Yes. Finished natural limestone fabricated at our Thailand facility undergoes authentic substantial transformation (sawing, calibration, CNC profiling, tumbling, and brushing) in accordance with US CBP 19 CFR § 134. Products enter the United States with 0% Section 301 tariffs and 0% AD/CVD duties under an official Certificate of Origin issued by the Thai Department of Foreign Trade.
-          </p>
-        </details>
-
-        <details class="group border border-primary-10 p-4 rounded-sm bg-white open:bg-primary-2 transition-colors">
-          <summary class="font-semibold text-sm text-primary-100 cursor-pointer list-none flex justify-between items-center">
-            <span>What is the monthly production capacity and port of loading in Thailand?</span>
-            <span class="group-open:rotate-180 transition-transform">▼</span>
-          </summary>
-          <p class="mt-3 text-primary-70 leading-relaxed">
-            The 18,000 m² covered fabrication plant in Rayong/Chonburi produces over 20,000 m² of finished architectural limestone monthly. Shipments depart directly from Laem Chabang Deep Sea Port (THLCH), located 35 km from the facility, with direct ocean container transit to Los Angeles / Long Beach in 18 to 22 days.
-          </p>
-        </details>
-
-        <details class="group border border-primary-10 p-4 rounded-sm bg-white open:bg-primary-2 transition-colors">
-          <summary class="font-semibold text-sm text-primary-100 cursor-pointer list-none flex justify-between items-center">
-            <span>Are physical test reports and ASTM standards identical between China and Thailand facilities?</span>
-            <span class="group-open:rotate-180 transition-transform">▼</span>
-          </summary>
-          <p class="mt-3 text-primary-70 leading-relaxed">
-            Yes. Slabs and pavers fabricated at our Thailand base utilize identical high-density marine limestone blocks meeting ASTM C568 Class III standards: water absorption under 0.22%, compressive strength 128.5 MPa, and F100 freeze-thaw durability (100 cycles, 0% mass loss).
-          </p>
-        </details>
-
-        <details class="group border border-primary-10 p-4 rounded-sm bg-white open:bg-primary-2 transition-colors">
-          <summary class="font-semibold text-sm text-primary-100 cursor-pointer list-none flex justify-between items-center">
-            <span>Can US and European architects request physical sample kits from the Thailand facility?</span>
-            <span class="group-open:rotate-180 transition-transform">▼</span>
-          </summary>
-          <p class="mt-3 text-primary-70 leading-relaxed">
-            Yes. Sample kits featuring all 29 architectural limestone selections across 5 finishes are dispatched via DHL or FedEx Express directly to North America, Europe, and Australia within 3 to 5 business days.
-          </p>
-        </details>
-
-        <details class="group border border-primary-10 p-4 rounded-sm bg-white open:bg-primary-2 transition-colors">
-          <summary class="font-semibold text-sm text-primary-100 cursor-pointer list-none flex justify-between items-center">
-            <span>What documentation accompanies each Thailand container shipment?</span>
-            <span class="group-open:rotate-180 transition-transform">▼</span>
-          </summary>
-          <p class="mt-3 text-primary-70 leading-relaxed">
-            Every container includes an official Thai Department of Foreign Trade Certificate of Origin (Form D, Form E, or General C/O), commercial invoice, packing list, ISPM-15 fumigation certificate, ocean bill of lading, and independent ASTM laboratory physical test reports.
-          </p>
-        </details>
-      </div>
-    </section>
-  </main>
-
-  {render_footer(depth)}
-  <script src="{r}assets/js/search_index.js"></script>
-  <script src="{r}assets/js/main.js?v=20261006_rfq"></script>
-</body>
-</html>
-'''
-    return html
-
 
 def generate_about_page():
     depth = 1
@@ -3118,14 +2697,6 @@ def generate_about_page():
         </div>
 
         <div class="timeline-node">
-          <span class="text-xs font-semibold text-primary-40 uppercase tracking-wider block mb-1">June 2022</span>
-          <h3 class="font-heading text-lg font-medium text-primary-100 mb-1">Global Dual-Hub Expansion: Thailand Overseas Manufacturing Base</h3>
-          <p class="text-xs text-primary-70 leading-relaxed font-copy">
-            Commissioned Tianya Stone (Thailand) Co., Ltd. in the Eastern Economic Corridor (EEC) of Rayong/Chonburi, adding an 18,000 m² state-of-the-art stone fabrication facility. Strategically located 35 km from Laem Chabang Deep Sea Port, this facility delivers 20,000 m²/month of architectural limestone with 0% US Section 301 tariffs and authentic Thai Country of Origin (DFT) certification.
-          </p>
-        </div>
-
-        <div class="timeline-node">
           <span class="text-xs font-semibold text-primary-40 uppercase tracking-wider block mb-1">2024 – Present</span>
           <h3 class="font-heading text-lg font-medium text-primary-100 mb-1">Digital B2B Architectural Platform Launch</h3>
           <p class="text-xs text-primary-70 leading-relaxed font-copy">
@@ -3139,31 +2710,26 @@ def generate_about_page():
     <div class="bg-primary-2 border border-primary-10 p-8 lg:p-12 my-12">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div>
-          <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block mb-2">Dual-Hub Manufacturing Footprint</span>
-          <h2 class="text-3xl font-heading font-medium text-primary-100 mb-4">China Mega-Hub &amp; Thailand Overseas Base</h2>
+          <span class="text-xs uppercase font-semibold text-primary-40 tracking-wider block mb-2">Facility Credentials</span>
+          <h2 class="text-3xl font-heading font-medium text-primary-100 mb-4">Shuitou Automated Fabrication Center</h2>
           <p class="text-xs text-primary-80 leading-relaxed font-copy mb-4">
-            Whether crafting interlocking Roman modular paving sets or custom drop-down pool copings with 50mm rebated aprons, our dual-hub production system delivers unparalleled supply security, capacity (70,000+ m²/mo total), and tariff mitigation for international developers.
+            Whether crafting interlocking Roman modular paving sets or custom drop-down pool copings with 50mm rebated aprons, every piece meets millimeter tolerances.
           </p>
           <ul class="text-xs text-primary-70 space-y-2 font-copy">
-            <li>✓ <strong>China Base (Shuitou):</strong> 35,000 m² workshop, 3 quarry concessions, FOB Xiamen (28 km)</li>
-            <li>✓ <strong>Thailand Base (Rayong/Chonburi):</strong> 18,000 m² plant, FOB Laem Chabang (35 km), <strong>0% US Section 301 Tariffs</strong></li>
-            <li>✓ ISO 9001:2015 Quality Management &amp; Sedex SMETA Ethical Audit Readiness</li>
-            <li>✓ Certified Thai Country of Origin (DFT) &amp; Fumigated ISPM-15 Timber Crates</li>
+            <li>✓ ISO 9001:2015 Quality Management System Certification</li>
+            <li>✓ Fumigated ISPM 15 Heavy-Duty Timber Export Crates</li>
+            <li>✓ Full Traceability from Raw Quarry Block to Finished Pallet</li>
+            <li>✓ Dedicated Logistics Fleet for 28km Xiamen Port Container Drayage</li>
           </ul>
-          <div class="pt-4">
-            <a href="{r}thailand-factory/index.html" class="inline-flex items-center gap-1.5 px-4 py-2 bg-primary-100 text-white text-xs font-semibold uppercase tracking-wider rounded hover:bg-[#E9F551] hover:text-black transition-colors">
-              <span>View Thailand Factory Details</span> &rarr;
-            </a>
-          </div>
         </div>
         <div class="bg-white p-6 border border-primary-10 space-y-3 text-xs">
-          <h4 class="font-heading text-base font-semibold text-primary-100">Global Manufacturing Coordinates</h4>
-          <p><strong>China Headquarters:</strong> {COMPANY_INFO['address']}</p>
-          <p><strong>China Port Gateway:</strong> Xiamen Deep-Water Seaport (CNXMN · 28 km)</p>
-          <p><strong>Thailand Overseas Base:</strong> Eastern Economic Corridor (EEC), Rayong/Chonburi, Thailand</p>
-          <p><strong>Thailand Port Gateway:</strong> Laem Chabang Deep Sea Port (THLCH · 35 km · 0% US Tariff)</p>
-          <p><strong>Global Inquiries:</strong> <a href="mailto:{COMPANY_INFO['email']}" class="text-primary-100 underline font-semibold">{COMPANY_INFO['email']}</a></p>
+          <h4 class="font-heading text-base font-semibold text-primary-100">Factory Coordinates & Direct Contacts</h4>
+          <p><strong>Legal Entity:</strong> {COMPANY_INFO['name']} ({COMPANY_INFO['chinese_name']})</p>
+          <p><strong>Factory Address:</strong> {COMPANY_INFO['address']}</p>
+          <p><strong>GPS Coordinates:</strong> {COMPANY_INFO['coordinates']}</p>
+          <p><strong>Direct Inquiries:</strong> <a href="mailto:{COMPANY_INFO['email']}" class="text-primary-100 underline font-semibold">{COMPANY_INFO['email']}</a></p>
           <p><strong>Sales Hotline:</strong> <a href="tel:{COMPANY_INFO['phone']}" class="text-primary-100 underline font-semibold">{COMPANY_INFO['phone']}</a></p>
+          <p><strong>Main Stone Portal:</strong> <a href="{COMPANY_INFO['sister_domain']}" target="_blank" rel="noopener" class="text-primary-100 underline font-semibold">tystoneveneer.com</a></p>
         </div>
       </div>
     </div>
@@ -3475,52 +3041,6 @@ def generate_compliance_page():
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Section 301 Tariff & Thailand Substantial Transformation Compliance -->
-    <section class="my-14 p-8 lg:p-10 bg-[#FAF8F5] border border-[#E8E4DE] rounded-sm">
-      <div class="max-w-3xl space-y-4 mb-8">
-        <div class="flex flex-wrap items-center gap-2">
-          <span class="px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider rounded bg-[#E9F551] text-[#251700]">0% US Section 301 Tariff</span>
-          <span class="px-2.5 py-1 text-[11px] font-semibold tracking-wider rounded bg-white text-primary-100 border border-primary-20">US CBP 19 CFR § 134 Compliant</span>
-        </div>
-        <h2 class="text-3xl font-heading font-medium text-primary-100">
-          US Section 301 Tariff Exemption &amp; Thailand Country of Origin (COO) Audit Trail
-        </h2>
-        <p class="text-sm text-primary-80 leading-relaxed font-copy">
-          To provide US architects, contractors, and national stone distributors with absolute regulatory protection from 25% Section 301 tariffs and AD/CVD duties, Tianya’s Thailand manufacturing hub (Rayong/Chonburi) executes authentic substantial transformation on raw quarry blocks.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs font-copy">
-        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
-          <div class="font-bold text-primary-100 text-sm">Substantial Transformation</div>
-          <p class="text-primary-70">
-            Raw quarry blocks undergo multi-blade diamond gang sawing, computerized 6-head calibration, CNC edge profiling, and mechanical tumbling, satisfying US CBP 19 CFR § 134 rules of origin doctrine.
-          </p>
-        </div>
-        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
-          <div class="font-bold text-primary-100 text-sm">Official DFT Thai C/O</div>
-          <p class="text-primary-70">
-            Every container is accompanied by an authenticated Certificate of Origin issued by the Department of Foreign Trade (DFT), Ministry of Commerce of Thailand, or the Thai Chamber of Commerce.
-          </p>
-        </div>
-        <div class="p-5 bg-white border border-primary-10 rounded-sm space-y-2">
-          <div class="font-bold text-primary-100 text-sm">FOB Laem Chabang (THLCH)</div>
-          <p class="text-primary-70">
-            Containers are drayed directly to Port of Laem Chabang with direct trans-Pacific sea transit to Long Beach/Los Angeles in 18–22 days and New York in 28–32 days.
-          </p>
-        </div>
-      </div>
-
-      <div class="mt-8 pt-6 border-t border-primary-10 flex flex-wrap items-center justify-between gap-4">
-        <p class="text-xs text-primary-70">
-          Require full factory audit dossier, Sedex SMETA compliance, or a FOB Laem Chabang price comparison?
-        </p>
-        <a href="{r}thailand-factory/index.html" class="px-5 py-2.5 bg-primary-100 text-white text-xs font-semibold uppercase tracking-wider rounded hover:bg-[#E9F551] hover:text-black transition-colors">
-          Explore Thailand Factory &amp; Tariff Solution &rarr;
-        </a>
       </div>
     </section>
 
@@ -4065,7 +3585,7 @@ def generate_contact_page():
       <!-- Info Left -->
       <div class="lg:col-span-5 space-y-6">
         <div class="bg-primary-2 border border-primary-10 p-6 space-y-4 text-xs font-copy rounded-sm">
-          <h3 class="font-heading text-lg font-medium text-primary-100">Quarry & Manufacturing HQ (China)</h3>
+          <h3 class="font-heading text-lg font-medium text-primary-100">Quarry & Manufacturing HQ</h3>
           <p><strong>Legal Entity:</strong> {COMPANY_INFO['name']} ({COMPANY_INFO['chinese_name']})</p>
           <p><strong>Factory Address:</strong> {COMPANY_INFO['address']}</p>
           <p><strong>GPS Coordinates:</strong> {COMPANY_INFO['coordinates']}</p>
@@ -4073,28 +3593,10 @@ def generate_contact_page():
         </div>
 
         <div class="bg-primary-2 border border-primary-10 p-6 space-y-4 text-xs font-copy rounded-sm">
-          <div class="flex items-center justify-between">
-            <h3 class="font-heading text-lg font-medium text-primary-100">Thailand Overseas Manufacturing Base</h3>
-            <span class="px-2 py-0.5 rounded bg-[#E9F551] text-[#251700] text-[10px] font-bold uppercase">0% US Tariff</span>
-          </div>
-          <p><strong>Operating Entity:</strong> Tianya Stone (Thailand) Co., Ltd.</p>
-          <p><strong>Factory Location:</strong> Eastern Economic Corridor (EEC), Rayong/Chonburi, Thailand</p>
-          <p><strong>Export Seaport:</strong> Port of Laem Chabang (THLCH · 35 km)</p>
-          <p><strong>US Section 301 Tariff:</strong> <strong>0% (Completely Exempt)</strong></p>
-          <p><strong>Country of Origin (COO):</strong> Certified by Department of Foreign Trade (DFT), Thailand</p>
-          <p><strong>Direct Inquiries Email:</strong> <a href="mailto:{COMPANY_INFO['email']}" class="text-primary-100 font-semibold underline">{COMPANY_INFO['email']}</a></p>
-          <div class="pt-1">
-            <a href="{r}thailand-factory/index.html" class="inline-flex items-center gap-1 font-semibold text-primary-100 hover:underline">
-              <span>View Thailand Facility &amp; Port Schedules</span> &rarr;
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-primary-2 border border-primary-10 p-6 space-y-4 text-xs font-copy rounded-sm">
           <h3 class="font-heading text-lg font-medium text-primary-100">Direct Communication Channels</h3>
           <p><strong>Direct Inquiries Email:</strong> <a href="mailto:{COMPANY_INFO['email']}" class="text-primary-100 font-semibold underline">{COMPANY_INFO['email']}</a></p>
           <p><strong>Sales Hotline:</strong> <a href="tel:{COMPANY_INFO['phone']}" class="text-primary-100 font-semibold underline">{COMPANY_INFO['phone']}</a></p>
-          <p><strong>WhatsApp / Mobile:</strong> <a href="https://wa.me/8619959797067" target="_blank" rel="noopener" class="text-primary-100 font-semibold underline">+86 199 5979 7067</a></p>
+          <p><strong>WhatsApp / Mobile:</strong> <a href="tel:{COMPANY_INFO['phone_alt']}" class="text-primary-100 font-semibold underline">{COMPANY_INFO['phone_alt']}</a></p>
           <p><strong>Main Stone Website:</strong> <a href="{COMPANY_INFO['sister_domain']}" target="_blank" rel="noopener" class="text-primary-100 font-semibold underline">tystoneveneer.com</a></p>
         </div>
 
@@ -4186,9 +3688,6 @@ def generate_sitemap_and_robots(all_pages, all_products):
         if p == "index.html":
             prio = "1.0"
             freq = "daily"
-        elif "thailand-factory" in p or "overseas-manufacturing" in p:
-            prio = "0.95"
-            freq = "weekly"
         elif p.startswith("stone-flooring/limestone/") and (p.count("/") == 2 or (p.endswith("index.html") and p.count("/") == 3)):
             prio = "0.9"
             freq = "weekly"
@@ -4204,7 +3703,7 @@ def generate_sitemap_and_robots(all_pages, all_products):
 
         sitemap_entries.append(f'''  <url>
     <loc>{canonical}</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>{freq}</changefreq>
     <priority>{prio}</priority>{image_tags}
   </url>''')
@@ -4415,7 +3914,7 @@ Sitemap: {COMPANY_INFO['domain']}/sitemap.xml
             "finish_type": p.get('finish_title'),
             "finish_slug": p.get('finish'),
             "subtitle_cultural": p.get('subtitle', ''),
-            "canonical_url": f"{COMPANY_INFO['domain']}/{p.get('url', '').lstrip('/')}",
+            "canonical_url": get_canonical_url(p.get('url', '')),
             "slip_rating": f_info.get('slip_rating', 'P4 / R10'),
             "water_absorption": "<0.22% (ASTM C97)",
             "compressive_strength": "128.5 MPa (ASTM C170)",
@@ -4439,7 +3938,7 @@ Tianya Limestone is the architectural limestone and stone flooring division of F
 - **Factory Coordinates:** {COMPANY_INFO['coordinates']}
 - **Official Domains:** https://tianyalimestone.com | https://tystoneveneer.com
 - **Direct Procurement Email:** {COMPANY_INFO['sales_email']}
-- **Sales Hotline & WhatsApp:** {COMPANY_INFO['phone']}
+- **Sales Hotline:** {COMPANY_INFO['phone']} / {COMPANY_INFO['phone_alt']}
 - **Certifications:** ISO 9001:2015, CE Marking (EN 1469 / EN 1341), ASTM C97, ASTM C170, ASTM C880, ASTM C666, EN 13501-1 Class A1 Fireproof
 
 ### 29 Limestone Collections Catalog
@@ -4600,7 +4099,7 @@ Natural stone is heavy dimensional cargo governed by maritime container gross we
 ## 7. Commercial B2B Inquiry & Engineering Support
 - **Direct RFQ Endpoint:** https://tianyalimestone.com/contact-us/
 - **Email:** info@tianyastone.com
-- **Phone & WhatsApp:** +86-19959797067
+- **Phone:** +86-18960366169 / +86-17805982800
 - **Architectural Downloads (CAD / BIM / Testing Reports):** https://tianyalimestone.com/resources/
 > Document Version: 2026.10-V3. Machine-readable authority for AI agents (OpenAI GPT, Anthropic Claude, Perplexity AI, Google Gemini).
 '''
@@ -5067,7 +4566,7 @@ def generate_blog_article(art):
         <div class="ty-cta">
           <p style="margin-bottom:12px"><strong>Planning a limestone project?</strong></p>
           <p style="margin-bottom:16px">Get quarry-direct pricing, free sample kits and ASTM test reports.<br>
-          <a href="{r}contact-us/index.html">Request a quote</a> · <a href="https://wa.me/8619959797067">WhatsApp us</a> · info@tianyastone.com</p>
+          <a href="{r}contact-us/index.html">Request a quote</a> · <a href="https://wa.me/8618960366169">WhatsApp us</a> · info@tianyastone.com</p>
         </div>
       </div>
     </article>
@@ -5091,7 +4590,7 @@ def build_all():
             "name": p['title'],
             "subtitle": p.get('subtitle', ''),
             "finish": p['finish_title'],
-            "url": "/" + p['url'],
+            "url": "/" + p['url'].replace('index.html', ''),
             "image": "/" + p['thumbnail'].lstrip('/'),
             "desc": p['desc'][:140]
         })
@@ -5147,6 +4646,7 @@ def build_all():
 <head>
   {GA4_SNIPPET}
   <meta charset="utf-8">
+  <meta name="robots" content="noindex, follow">
   <title>Redirecting to {p['title']} Limestone...</title>
   <meta http-equiv="refresh" content="0; url={redir_target}">
   <link rel="canonical" href="{COMPANY_INFO['domain']}{redir_target}">
@@ -5166,21 +4666,6 @@ def build_all():
         f.write(other_html)
     all_pages.append('stone-flooring/other-categories/index.html')
     print("Generated stone-flooring/other-categories/index.html")
-
-    # 5b. Build Thailand Overseas Factory Page (0% US Tariff Hub)
-    thailand_html = generate_thailand_factory_page()
-    os.makedirs(os.path.join(BASE_DIR, 'thailand-factory'), exist_ok=True)
-    with open(os.path.join(BASE_DIR, 'thailand-factory', 'index.html'), 'w') as f:
-        f.write(thailand_html)
-    all_pages.append('thailand-factory/index.html')
-    print("Generated thailand-factory/index.html")
-
-    # Generate alias /overseas-manufacturing/ for seamless cross-linking
-    os.makedirs(os.path.join(BASE_DIR, 'overseas-manufacturing'), exist_ok=True)
-    with open(os.path.join(BASE_DIR, 'overseas-manufacturing', 'index.html'), 'w') as f:
-        f.write(thailand_html)
-    all_pages.append('overseas-manufacturing/index.html')
-    print("Generated overseas-manufacturing/index.html (alias)")
 
     # 6. Build Corporate & Technical Pages
     about_html = generate_about_page()
