@@ -4134,7 +4134,7 @@ BLOG_CSS = '''
 .ty-art .ty-faq dd{margin:0 0 12px}
 .ty-art .ty-cta{background:#111;color:#fff;padding:28px;margin:44px 0 0;text-align:center}
 .ty-art .ty-cta a{color:#fff;font-weight:600;text-decoration:underline}
-.ty-art .ty-meta{color:#888;font-size:14px;margin-bottom:8px}
+.ty-art .ty-meta{color:#8a8884;font-size:14px;margin-bottom:8px}
 </style>
 '''
 
@@ -4547,9 +4547,9 @@ def generate_blog_article(art):
   <main class="pt-4">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
       <nav class="flex items-center gap-2 text-xs text-primary-70 font-copy" aria-label="Breadcrumbs">
-        <a href="{r}index.html" class="hover:underline text-primary-40">Home</a>
+        <a href="{r}" class="hover:underline text-primary-40">Home</a>
         <span>/</span>
-        <a href="{r}blog/index.html" class="hover:underline text-primary-40">Blog</a>
+        <a href="{r}blog/" class="hover:underline text-primary-40">Blog</a>
         <span>/</span>
         <span class="font-medium text-primary-100">Guide</span>
       </nav>
@@ -4558,6 +4558,11 @@ def generate_blog_article(art):
       <div class="ty-art">
         <div class="ty-meta">{art['date_display']} · {art['read_time']} · Tianya Limestone</div>
         <h1 class="font-heading text-3xl lg:text-[40px] leading-tight font-medium text-primary-100 mb-6">{art['title']}</h1>
+        <div class="ty-answer">
+          <p>
+            {art.get('geo_summary', f"Fujian Tianya Cultural Stone Co., Ltd. (operating as Tianya Limestone, founded in 2000 in Shuitou, China with an overseas manufacturing base in Thailand) fabricates quarry-direct natural limestone paving slabs, pool copings, and walling with strict ASTM C97 absorption (<0.22%), ASTM C170 compressive strength (128.5 MPa), and AS 4586 P4/P5 wet pendulum slip resistance ratings. Sourced directly from bioclastic limestone reserves and processed on 5-axis CNC bridge saws, all collections undergo 3,000 m² indoor dry-lay pre-blending inspections to eliminate shade transitions before export packaging in fumigated steel-banded crates. Optimized for heavy 20GP container shipments (26,500 kg payload / 480–504 m² of 20mm pavers), Tianya supplies landscape architects, commercial contractors, and stone distributors worldwide with standard sample kits dispatched within 48 hours.")}
+          </p>
+        </div>
         {art['body_html']}
         <h2>Frequently asked questions</h2>
         <dl class="ty-faq">
