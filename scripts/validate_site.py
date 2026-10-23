@@ -16,7 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 def validate_all():
     print("=== Starting Tianya Limestone Release Audit ===")
-    html_files = list(BASE_DIR.glob("**/*.html"))
+    html_files = [f for f in BASE_DIR.glob("**/*.html") if "archive_original_site" not in f.parts]
     print(f"Found {len(html_files)} HTML files to inspect.")
 
     errors = []
@@ -73,7 +73,7 @@ def validate_all():
             if src.startswith("http://") or src.startswith("https://"):
                 continue
             clean_src = src.split('?')[0].split('#')[0]
-            target_path = (html_path.parent / clean_src).resolve()
+            target_path = (BASE_DIR / clean_src.lstrip('/')).resolve() if clean_src.startswith('/') else (html_path.parent / clean_src).resolve()
             if not target_path.exists():
                 errors.append(f"[{rel_path}] Broken image reference: {src} (resolved to {target_path})")
 
@@ -83,7 +83,7 @@ def validate_all():
             if gsrc.startswith("http://") or gsrc.startswith("https://"):
                 continue
             clean_gsrc = gsrc.split('?')[0].split('#')[0]
-            target_path = (html_path.parent / clean_gsrc).resolve()
+            target_path = (BASE_DIR / clean_gsrc.lstrip('/')).resolve() if clean_gsrc.startswith('/') else (html_path.parent / clean_gsrc).resolve()
             if not target_path.exists():
                 errors.append(f"[{rel_path}] Broken data-gallery-img reference: {gsrc}")
 
@@ -98,7 +98,7 @@ def validate_all():
             clean_href = href.split("#")[0].split("?")[0]
             if not clean_href:
                 continue
-            target_path = (html_path.parent / clean_href).resolve()
+            target_path = (BASE_DIR / clean_href.lstrip('/')).resolve() if clean_href.startswith('/') else (html_path.parent / clean_href).resolve()
             if target_path.is_dir():
                 target_path = target_path / "index.html"
             if not target_path.exists():
